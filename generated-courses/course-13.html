@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第13课：排序与序列（复杂规律）</title>
+    <link rel="stylesheet" href="assets/css/clean-course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态禅意背景 -->
+    <div class="zen-background">
+        <canvas id="zenCanvas"></canvas>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- 禅意导航 -->
+    <nav class="zen-nav">
+        <div class="nav-essence">
+            <div class="course-spirit">
+                <h1 class="spirit-title">第13课：排序与序列（复杂规律）</h1>
+                <div class="journey-meta">
+                    <span class="time-flow">⏳ 20分钟</span>
+                    <span class="wisdom-level">🌱 4年级及以上</span>
+                </div>
+            </div>
+            <div class="progress-mandala">
+                开始
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容流 -->
+    <main class="wisdom-flow">
+        
+        <section class="course-header" data-section="header">
+            <div class="zen-container">
+                <div class="header-card">
+                    <div class="course-badge">第13课</div>
+                    <h1 class="course-main-title">排序与序列（复杂规律）</h1>
+                    <p class="course-subtitle">培养批判性思维，提升逻辑分析能力</p>
+                    
+            <div class="course-meta-info">
+                <div class="meta-item">
+                    <span class="meta-icon">📚</span>
+                    <span class="meta-text">逻辑思维入门</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <span class="meta-text">4年级及以上</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    <span class="meta-text">20分钟</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-of-contents">
+            <div class="zen-container">
+                <div class="toc-card">
+                    <h3 class="toc-title">📋 课程目录</h3>
+                    <div class="toc-list">
+                        
+                            <a href="#section-0" class="toc-item content">
+                                <span class="toc-number">01</span>
+                                <span class="toc-text">� 课程信息</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-1" class="toc-item content">
+                                <span class="toc-number">02</span>
+                                <span class="toc-text">� 学习目标</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-2" class="toc-item concept">
+                                <span class="toc-number">03</span>
+                                <span class="toc-text">� 概念导入（3分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-3" class="toc-item case">
+                                <span class="toc-number">04</span>
+                                <span class="toc-text">� 案例展示（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-4" class="toc-item content">
+                                <span class="toc-number">05</span>
+                                <span class="toc-text">🧠 核心内容（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-5" class="toc-item practice">
+                                <span class="toc-number">06</span>
+                                <span class="toc-text">� 交互练习（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-6" class="toc-item test">
+                                <span class="toc-number">07</span>
+                                <span class="toc-text">技能确认测试（2分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-7" class="toc-item advanced">
+                                <span class="toc-number">08</span>
+                                <span class="toc-text">� 深度拓展：成人世界的规律思维（8分钟）</span>
+                                <span class="toc-duration">3分钟</span>
+                            </a>
+                        
+                            <a href="#section-8" class="toc-item application">
+                                <span class="toc-number">09</span>
+                                <span class="toc-text">� 生活应用提示</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-9" class="toc-item summary">
+                                <span class="toc-number">10</span>
+                                <span class="toc-text">� 课程小结</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-0" id="section-0">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">01</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程信息</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">所属模块</strong>：逻辑思维入门</li><li class="zen-list-item"><strong class="zen-bold">适合年级</strong>：4年级及以上</li><li class="zen-list-item"><strong class="zen-bold">学习时长</strong>：23分钟（技能掌握15分钟 + 深度拓展8分钟）</li><li class="zen-list-item"><strong class="zen-bold">核心技能</strong>：识别并应用复杂的排序规律，预测序列中的下一个元素</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-1" id="section-1">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">02</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 学习目标</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph">学完这节课，你将能够：</p><ul class="content-list content-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 识别各种类型的排序规律（数字、图形、时间、逻辑）</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 根据发现的规律预测序列的下一个元素</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 在生活中运用排序思维解决实际问题</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解规律的重要性和应用价值</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section concept" data-section="section-2" id="section-2">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">03</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 概念导入（3分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">概念学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 思考一下</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">观察这些序列，你能发现规律吗？</p><ul class="content-list concept-list"><li class="zen-list-item">数字序列：2, 4, 6, 8, ?</li><li class="zen-list-item">颜色序列：红、黄、蓝、红、黄、蓝、?</li><li class="zen-list-item">时间序列：春、夏、秋、冬、春、夏、?</li></ul><p class="zen-paragraph">生活中到处都有规律，发现规律就能预测未来！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section case" data-section="section-3" id="section-3">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">04</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 案例展示（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">案例分析</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 场景1：整理照片的时间顺序</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">小青一家旅游照片</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">日出照片（早上6点）</li><li class="zen-list-item">爬山途中照片（上午9点）</li><li class="zen-list-item">山顶风景照片（中午12点）</li><li class="zen-list-item">午餐照片（下午1点）</li><li class="zen-list-item">下山照片（下午3点）</li><li class="zen-list-item">晚餐照片（晚上7点）</li></ul><p class="zen-paragraph"><strong class="zen-bold">排序分析</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">规律类型</strong>：时间顺序排列</li><li class="zen-list-item"><strong class="zen-bold">排序标准</strong>：按照事件发生的时间先后</li><li class="zen-list-item"><strong class="zen-bold">逻辑关系</strong>：符合一天游玩的自然流程</li></ul><p class="zen-paragraph"><strong class="zen-bold">为什么这样排序？</strong></p><ol class="content-list case-list"><li class="zen-numbered-item">符合时间的自然流动</li><li class="zen-numbered-item">展现完整的游玩过程</li><li class="zen-numbered-item">便于回忆和分享经历</li></ol>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 场景2：发现数字密码</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">密码锁提示</strong>：2, 4, ?, 8</p><p class="zen-paragraph"><strong class="zen-bold">分析过程</strong>：</p><ol class="content-list case-list"><li class="zen-numbered-item"><strong class="zen-bold">观察相邻数字</strong>：2到4，增加了2</li><li class="zen-numbered-item"><strong class="zen-bold">验证规律</strong>：如果规律是+2，那么4+2=6</li><li class="zen-numbered-item"><strong class="zen-bold">确认规律</strong>：6+2=8，正好是最后一个数字</li><li class="zen-numbered-item"><strong class="zen-bold">得出答案</strong>：缺失的数字是6</li></ol><p class="zen-paragraph"><strong class="zen-bold">规律总结</strong>：这是一个等差数列，每次增加2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-4" id="section-4">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">05</div>
+                        <div class="section-info">
+                            <h2 class="section-title">🧠 核心内容（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 识别排序规律的方法</h3>
+                            <div class="block-content">
+                                <ul class="content-list content-list"><li class="zen-list-item">看看是否有重复的部分</li><li class="zen-list-item">注意数量、颜色、形状的变化</li><li class="zen-list-item">寻找可能的周期性</li><li class="zen-list-item">相邻元素之间有什么关系？</li><li class="zen-list-item">是增加、减少，还是其他变化？</li><li class="zen-list-item">变化的幅度是否固定？</li><li class="zen-list-item"><strong class="zen-bold">等差变化</strong>：每次增加或减少相同的量</li><li class="zen-list-item"><strong class="zen-bold">等比变化</strong>：每次乘以或除以相同的数</li><li class="zen-list-item"><strong class="zen-bold">循环变化</strong>：按照固定模式重复</li><li class="zen-list-item"><strong class="zen-bold">组合变化</strong>：多种规律的组合</li><li class="zen-list-item">用发现的规律检验已知元素</li><li class="zen-list-item">预测下一个或缺失的元素</li><li class="zen-list-item">确认预测结果的合理性</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 常见排序规律类型</h3>
+                            <div class="block-content">
+                                <ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">等差数列</strong>：1, 3, 5, 7, 9...（每次+2）</li><li class="zen-list-item"><strong class="zen-bold">等比数列</strong>：2, 4, 8, 16, 32...（每次×2）</li><li class="zen-list-item"><strong class="zen-bold">平方数列</strong>：1, 4, 9, 16, 25...（1², 2², 3², 4², 5²）</li><li class="zen-list-item"><strong class="zen-bold">斐波那契</strong>：1, 1, 2, 3, 5, 8...（前两数之和）</li><li class="zen-list-item"><strong class="zen-bold">形状循环</strong>：○△□○△□...</li><li class="zen-list-item"><strong class="zen-bold">大小变化</strong>：大圆、中圆、小圆、大圆...</li><li class="zen-list-item"><strong class="zen-bold">颜色循环</strong>：红、黄、蓝、红、黄、蓝...</li><li class="zen-list-item"><strong class="zen-bold">位置变化</strong>：左、中、右、左、中、右...</li><li class="zen-list-item"><strong class="zen-bold">自然循环</strong>：春夏秋冬、昼夜交替</li><li class="zen-list-item"><strong class="zen-bold">人工循环</strong>：工作日、周末、节假日</li><li class="zen-list-item"><strong class="zen-bold">发展阶段</strong>：婴儿、儿童、青少年、成年、老年</li><li class="zen-list-item"><strong class="zen-bold">字母顺序</strong>：A, B, C, D, E...</li><li class="zen-list-item"><strong class="zen-bold">分类递进</strong>：个位、十位、百位、千位...</li><li class="zen-list-item"><strong class="zen-bold">层次关系</strong>：市、区、街道、社区...</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">⚠️ 识别规律的常见错误</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">错误做法</strong>：看到2, 4就认为规律是+2</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：至少观察3-4个元素再确定规律</p><p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">错误思维</strong>：只考虑简单的加减规律</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确思维</strong>：考虑循环、组合等复杂规律</p><p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">错误做法</strong>：发现一个规律就认为适用于所有情况</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：验证规律是否真的适用</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section practice" data-section="section-5" id="section-5">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">06</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 交互练习（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">实践练习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 练习1：数字序列挑战</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">找出下面序列的规律，并写出下一个数字：</p><ol class="content-list practice-list"><li class="zen-numbered-item"><strong class="zen-bold">序列A</strong>：1, 4, 7, 10, ?</li></ol><ul class="content-list practice-list"><li class="zen-list-item">规律：________________</li><li class="zen-list-item">下一个：________________</li></ul><ol class="content-list practice-list"><li class="zen-numbered-item"><strong class="zen-bold">序列B</strong>：2, 6, 18, 54, ?</li></ol><ul class="content-list practice-list"><li class="zen-list-item">规律：________________</li><li class="zen-list-item">下一个：________________</li></ul><ol class="content-list practice-list"><li class="zen-numbered-item"><strong class="zen-bold">序列C</strong>：1, 1, 2, 3, 5, 8, ?</li></ol><ul class="content-list practice-list"><li class="zen-list-item">规律：________________</li><li class="zen-list-item">下一个：________________</li></ul><p class="zen-paragraph"><strong class="zen-bold">参考答案</strong>：</p><ol class="content-list practice-list"><li class="zen-numbered-item">等差数列，每次+3，下一个是13</li><li class="zen-numbered-item">等比数列，每次×3，下一个是162</li><li class="zen-numbered-item">斐波那契数列，前两数之和，下一个是13</li></ol>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 练习2：图形序列推理</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">序列</strong>：△□○△□□○△□□□○ ?</p><p class="zen-paragraph"><strong class="zen-bold">分析步骤</strong>：</p><ol class="content-list practice-list"><li class="zen-numbered-item">寻找重复模式：________________</li><li class="zen-numbered-item">发现的规律：________________</li><li class="zen-numbered-item">下一个图形组合：________________</li></ol><p class="zen-paragraph"><strong class="zen-bold">参考答案</strong>：</p><ol class="content-list practice-list"><li class="zen-numbered-item">△□○, △□□○, △□□□○</li><li class="zen-numbered-item">每组以△开始，以○结束，中间□的数量依次增加</li><li class="zen-numbered-item">△□□□□○</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section test" data-section="section-6" id="section-6">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">07</div>
+                        <div class="section-info">
+                            <h2 class="section-title">技能确认测试（2分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">技能测试</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 快速测试</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">序列</strong>：红、红、黄、红、红、黄、黄、红、红、黄、黄、黄、?</p><p class="zen-paragraph">这个序列的规律是什么？下一个颜色应该是什么？</p><p class="zen-paragraph">A. 红色，因为红色出现得多</p><p class="zen-paragraph">B. 黄色，因为黄色数量在增加</p><p class="zen-paragraph">C. 红色，因为规律是红红黄、红红黄黄、红红黄黄黄，下一组应该是红红黄黄黄黄</p><p class="zen-paragraph">D. 无法确定，没有明显规律</p><p class="zen-paragraph"><strong class="zen-bold">正确答案</strong>：C</p><p class="zen-paragraph"><strong class="zen-bold">解释</strong>：这是一个复杂的循环规律，每组都以"红红黄"开始，然后黄色的数量依次增加。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section advanced" data-section="section-7" id="section-7">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">08</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 深度拓展：成人世界的规律思维（8分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">拓展提升</span>
+                                <span class="section-duration">3 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 商业世界中的序列分析</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">在成人世界里，识别和应用规律是商业成功的关键技能：</p><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：投资者分析股票价格走势</p><p class="zen-paragraph"><strong class="zen-bold">技术分析方法</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">趋势分析</strong>：识别上升、下降、横盘趋势</li><li class="zen-list-item"><strong class="zen-bold">周期分析</strong>：寻找价格变化的周期性规律</li><li class="zen-list-item"><strong class="zen-bold">形态分析</strong>：识别特定的价格形态模式</li></ul><p class="zen-paragraph"><strong class="zen-bold">常见价格规律</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">支撑位和阻力位</strong>：价格在某些水平反复反弹或受阻</li><li class="zen-list-item"><strong class="zen-bold">季节性规律</strong>：某些股票在特定季节表现更好</li><li class="zen-list-item"><strong class="zen-bold">周期性规律</strong>：经济周期对股价的影响</li></ul><p class="zen-paragraph"><strong class="zen-bold">风险提醒</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">历史规律不保证未来重复</li><li class="zen-list-item">市场会受到突发事件影响</li><li class="zen-list-item">过度依赖技术分析可能导致损失</li></ul><p class="zen-paragraph"><strong class="zen-bold">🧠 投资智慧</strong>：规律分析是工具，不是保证。</p><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：超市经理分析商品销售规律</p><p class="zen-paragraph"><strong class="zen-bold">销售规律分析</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">季节性规律</strong>：</li><li class="zen-list-item">夏天：冷饮、防晒用品销量增加</li><li class="zen-list-item">冬天：保暖用品、热饮销量增加</li><li class="zen-list-item">节假日：礼品、聚餐用品销量增加</li><li class="zen-list-item"><strong class="zen-bold">周期性规律</strong>：</li><li class="zen-list-item">周末：休闲食品销量增加</li><li class="zen-list-item">月初：大宗商品销量增加（发工资后）</li><li class="zen-list-item">月末：促销商品销量增加</li><li class="zen-list-item"><strong class="zen-bold">趋势性规律</strong>：</li><li class="zen-list-item">健康食品需求逐年增加</li><li class="zen-list-item">传统商品需求可能下降</li><li class="zen-list-item">线上购物影响线下销售</li></ul><p class="zen-paragraph"><strong class="zen-bold">应用策略</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">根据规律调整进货量</li><li class="zen-list-item">提前准备季节性商品</li><li class="zen-list-item">制定有针对性的促销计划</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 社会现象中的规律识别</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">场景</strong>：城市规划部门分析人口变化规律</p><p class="zen-paragraph"><strong class="zen-bold">人口规律分析</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">年龄结构变化</strong>：老龄化趋势</li><li class="zen-list-item"><strong class="zen-bold">地域分布变化</strong>：城市化进程</li><li class="zen-list-item"><strong class="zen-bold">教育水平变化</strong>：高等教育普及</li><li class="zen-list-item"><strong class="zen-bold">职业结构变化</strong>：服务业比重增加</li></ul><p class="zen-paragraph"><strong class="zen-bold">规划应用</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">根据老龄化趋势增加养老设施</li><li class="zen-list-item">根据城市化趋势规划交通和住房</li><li class="zen-list-item">根据教育趋势调整学校布局</li><li class="zen-list-item">根据职业变化调整产业结构</li></ul><p class="zen-paragraph"><strong class="zen-bold">摩尔定律</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">内容：集成电路上晶体管数量每18个月翻一倍</li><li class="zen-list-item">应用：指导芯片产业发展规划</li><li class="zen-list-item">现状：接近物理极限，规律可能改变</li></ul><p class="zen-paragraph"><strong class="zen-bold">技术采用生命周期</strong>：</p><ol class="content-list advanced-list"><li class="zen-numbered-item">创新者（2.5%）</li><li class="zen-numbered-item">早期采用者（13.5%）</li><li class="zen-numbered-item">早期大众（34%）</li><li class="zen-numbered-item">晚期大众（34%）</li><li class="zen-numbered-item">落后者（16%）</li></ol><p class="zen-paragraph"><strong class="zen-bold">商业应用</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">新技术推广策略</li><li class="zen-list-item">市场时机选择</li><li class="zen-list-item">产品生命周期管理</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">� 高级规律分析技巧</h3>
+                            <div class="block-content">
+                                <ul class="content-list advanced-list"><li class="zen-list-item">不只看单一指标</li><li class="zen-list-item">综合考虑多个因素</li><li class="zen-list-item">寻找因素间的关联</li><li class="zen-list-item">规律可能随时间改变</li><li class="zen-list-item">定期验证和更新</li><li class="zen-list-item">保持灵活性</li><li class="zen-list-item">规律不是绝对的</li><li class="zen-list-item">考虑例外和变化</li><li class="zen-list-item">用概率而非确定性思考</li><li class="zen-list-item">考虑外部环境变化</li><li class="zen-list-item">识别影响规律的因素</li><li class="zen-list-item">预测规律可能的变化</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="3">
+                            <h3 class="block-title">� 成年人的规律智慧</h3>
+                            <div class="block-content">
+                                <ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">项目管理</strong>：识别项目进展的规律，预测风险</li><li class="zen-list-item"><strong class="zen-bold">团队管理</strong>：了解团队工作的规律，提高效率</li><li class="zen-list-item"><strong class="zen-bold">客户服务</strong>：掌握客户需求的规律，提供更好服务</li><li class="zen-list-item"><strong class="zen-bold">市场分析</strong>：识别市场变化的规律和周期</li><li class="zen-list-item"><strong class="zen-bold">风险管理</strong>：根据历史规律制定风险控制策略</li><li class="zen-list-item"><strong class="zen-bold">资产配置</strong>：利用不同资产的规律进行组合</li><li class="zen-list-item"><strong class="zen-bold">健康管理</strong>：了解身体变化的规律，保持健康</li><li class="zen-list-item"><strong class="zen-bold">时间管理</strong>：掌握自己的生物钟规律，提高效率</li><li class="zen-list-item"><strong class="zen-bold">人际关系</strong>：理解人际交往的规律，改善关系</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section application" data-section="section-8" id="section-8">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">09</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 生活应用提示</h2>
+                            <div class="section-meta">
+                                <span class="section-type">应用实战</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">今天就可以尝试：</h3>
+                            <div class="block-content">
+                                <ol class="content-list application-list"><li class="zen-numbered-item"><strong class="zen-bold">观察作息规律</strong>：记录自己一天的精力变化，找出规律</li><li class="zen-numbered-item"><strong class="zen-bold">分析学习效果</strong>：观察什么时候学习效果最好</li><li class="zen-numbered-item"><strong class="zen-bold">注意情绪变化</strong>：看看自己的情绪是否有规律可循</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section summary" data-section="section-9" id="section-9">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">10</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程小结</h2>
+                            <div class="section-meta">
+                                <span class="section-type">总结回顾</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph"><strong class="zen-bold">今天你学会了</strong>：</p><ul class="content-list summary-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 识别各种类型的排序规律和序列模式</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 运用规律进行预测和分析的方法</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 在成人世界中应用规律思维的智慧</li></ul><p class="zen-paragraph"><strong class="zen-bold">下节课预告</strong>：</p><p class="zen-paragraph">我们将学习"因果关系（多因一果，一因多果）"，深入理解复杂的因果联系！</p><p class="zen-paragraph"><strong class="zen-bold">学习成就解锁</strong> <span class="zen-emoji">🏆</span>：</p><p class="zen-paragraph"><span class="zen-emoji">🔍</span> 规律发现大师 - 你已经能够在复杂的信息中发现隐藏的规律了！</p><p class="zen-paragraph"><em class="zen-italic">记住：规律是理解世界的钥匙，但要记住规律可能改变，保持开放和灵活的心态。</em></p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 交互脚本 -->
+    <script src="assets/js/zen-course.js"></script>
+</body>
+</html>

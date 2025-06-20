@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第99课：决策理论与博弈论初步（在策略互动中进行理性决策）</title>
+    <link rel="stylesheet" href="assets/css/clean-course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态禅意背景 -->
+    <div class="zen-background">
+        <canvas id="zenCanvas"></canvas>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- 禅意导航 -->
+    <nav class="zen-nav">
+        <div class="nav-essence">
+            <div class="course-spirit">
+                <h1 class="spirit-title">第99课：决策理论与博弈论初步（在策略互动中进行理性决策）</h1>
+                <div class="journey-meta">
+                    <span class="time-flow">⏳ 20分钟</span>
+                    <span class="wisdom-level">🌱 6年级及以上（已完成基础阶段学习）</span>
+                </div>
+            </div>
+            <div class="progress-mandala">
+                开始
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容流 -->
+    <main class="wisdom-flow">
+        
+        <section class="course-header" data-section="header">
+            <div class="zen-container">
+                <div class="header-card">
+                    <div class="course-badge">第99课</div>
+                    <h1 class="course-main-title">决策理论与博弈论初步（在策略互动中进行理性决策）</h1>
+                    <p class="course-subtitle">培养批判性思维，提升逻辑分析能力</p>
+                    
+            <div class="course-meta-info">
+                <div class="meta-item">
+                    <span class="meta-icon">📚</span>
+                    <span class="meta-text">逻辑思维进阶</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <span class="meta-text">6年级及以上（已完成基础阶段学习）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    <span class="meta-text">20分钟</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-of-contents">
+            <div class="zen-container">
+                <div class="toc-card">
+                    <h3 class="toc-title">📋 课程目录</h3>
+                    <div class="toc-list">
+                        
+                            <a href="#section-0" class="toc-item content">
+                                <span class="toc-number">01</span>
+                                <span class="toc-text">� 课程信息</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-1" class="toc-item content">
+                                <span class="toc-number">02</span>
+                                <span class="toc-text">� 学习目标</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-2" class="toc-item concept">
+                                <span class="toc-number">03</span>
+                                <span class="toc-text">� 概念导入（3分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-3" class="toc-item case">
+                                <span class="toc-number">04</span>
+                                <span class="toc-text">� 案例展示（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-4" class="toc-item content">
+                                <span class="toc-number">05</span>
+                                <span class="toc-text">🧠 核心内容（5分钟）</span>
+                                <span class="toc-duration">4分钟</span>
+                            </a>
+                        
+                            <a href="#section-5" class="toc-item practice">
+                                <span class="toc-number">06</span>
+                                <span class="toc-text">� 交互练习（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-6" class="toc-item test">
+                                <span class="toc-number">07</span>
+                                <span class="toc-text">技能确认测试（2分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-7" class="toc-item summary">
+                                <span class="toc-number">08</span>
+                                <span class="toc-text">� 课程小结</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-8" class="toc-item advanced">
+                                <span class="toc-number">09</span>
+                                <span class="toc-text">� 深度拓展：成人世界的决策与博弈智慧（8分钟）</span>
+                                <span class="toc-duration">6分钟</span>
+                            </a>
+                        
+                            <a href="#section-9" class="toc-item application">
+                                <span class="toc-number">10</span>
+                                <span class="toc-text">� 生活应用提示</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-0" id="section-0">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">01</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程信息</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">所属模块</strong>：逻辑思维进阶</li><li class="zen-list-item"><strong class="zen-bold">适合年级</strong>：6年级及以上（已完成基础阶段学习）</li><li class="zen-list-item"><strong class="zen-bold">学习时长</strong>：23分钟（技能掌握15分钟 + 深度拓展8分钟）</li><li class="zen-list-item"><strong class="zen-bold">核心技能</strong>：掌握决策理论和博弈论的基本思维，学会在复杂的策略互动中进行理性决策</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-1" id="section-1">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">02</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 学习目标</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph">学完这节课，你将能够：</p><ul class="content-list content-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解决策理论的基本原理和应用</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 掌握博弈论的基本概念和分析方法</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 学会分析策略互动中的最优选择</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 运用决策和博弈思维解决实际问题</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section concept" data-section="section-2" id="section-2">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">03</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 概念导入（3分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">概念学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 思考一下</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">比较这两种决策方式：</p><p class="zen-paragraph"><strong class="zen-bold">直觉决策方式</strong>：</p><p class="zen-paragraph">"班级要选班长，我觉得小王不错，就投票给他吧。反正大家都会按自己的想法投票，我也不用考虑太多。"</p><p class="zen-paragraph"><strong class="zen-bold">策略决策方式</strong>：</p><p class="zen-paragraph">"班级选班长的情况分析：</p><ol class="content-list concept-list"><li class="zen-numbered-item"><strong class="zen-bold">候选人分析</strong>：小王（学习好）、小李（人缘好）、小张（组织能力强）</li><li class="zen-numbered-item"><strong class="zen-bold">其他同学的偏好</strong>：学霸派支持小王，社交派支持小李，实干派支持小张</li><li class="zen-numbered-item"><strong class="zen-bold">投票规则</strong>：简单多数制，得票最多者当选</li><li class="zen-numbered-item"><strong class="zen-bold">策略考虑</strong>：</li></ol><ul class="content-list concept-list"><li class="zen-list-item">如果我真心支持小王，但他获胜希望不大，我是否要投给更有希望的小李？</li><li class="zen-list-item">如果大家都这样想，结果会如何变化？</li><li class="zen-list-item">我的一票在什么情况下最有影响力？</li></ul><ol class="content-list concept-list"><li class="zen-numbered-item"><strong class="zen-bold">最优策略</strong>：综合考虑个人偏好和获胜可能性，做出最优选择"</li></ol><p class="zen-paragraph">哪种方式更可能达到理想结果？为什么？</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section case" data-section="section-3" id="section-3">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">04</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 案例展示（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">案例分析</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-4" id="section-4">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">05</div>
+                        <div class="section-info">
+                            <h2 class="section-title">🧠 核心内容（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">4 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 决策理论的基本方法</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">基本原理</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">效用函数</strong>：将结果转化为效用值，反映决策者的偏好</li><li class="zen-list-item"><strong class="zen-bold">期望计算</strong>：计算不同选择的期望效用</li><li class="zen-list-item"><strong class="zen-bold">最优选择</strong>：选择期望效用最大的方案</li></ul><p class="zen-paragraph"><strong class="zen-bold">应用步骤</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">步骤1：确定所有可能的行动方案</p><p class="zen-paragraph">步骤2：识别所有可能的状态（情况）</p><p class="zen-paragraph">步骤3：估计每种状态的发生概率</p><p class="zen-paragraph">步骤4：评估每种行动在每种状态下的结果</p><p class="zen-paragraph">步骤5：将结果转化为效用值</p><p class="zen-paragraph">步骤6：计算每种行动的期望效用</p><p class="zen-paragraph">步骤7：选择期望效用最大的行动</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">实际应用例子</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">选择课外班决策：</p><p class="zen-paragraph">行动方案：A.数学班 B.英语班 C.不报班</p><p class="zen-paragraph">可能状态：</p><ul class="content-list content-list"><li class="zen-list-item">学习压力大（概率30%）</li><li class="zen-list-item">学习压力中等（概率50%）</li><li class="zen-list-item">学习压力小（概率20%）</li></ul><p class="zen-paragraph">效用评估（1-10分）：</p><p class="zen-paragraph">数学班：压力大时4分，中等时7分，小时9分</p><p class="zen-paragraph">英语班：压力大时5分，中等时8分，小时8分</p><p class="zen-paragraph">不报班：压力大时8分，中等时6分，小时5分</p><p class="zen-paragraph">期望效用计算：</p><p class="zen-paragraph">数学班：0.3×4 + 0.5×7 + 0.2×9 = 6.5分</p><p class="zen-paragraph">英语班：0.3×5 + 0.5×8 + 0.2×8 = 7.1分</p><p class="zen-paragraph">不报班：0.3×8 + 0.5×6 + 0.2×5 = 6.4分</p><p class="zen-paragraph">最优选择：英语班（期望效用最高）</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">基本思想</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">多个标准</strong>：决策往往涉及多个评价标准</li><li class="zen-list-item"><strong class="zen-bold">权重分配</strong>：不同标准的重要性不同</li><li class="zen-list-item"><strong class="zen-bold">综合评分</strong>：将多个标准的评分加权综合</li></ul><p class="zen-paragraph"><strong class="zen-bold">分析方法</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">加权评分法：</p><p class="zen-paragraph">总分 = Σ(权重i × 评分i)</p><p class="zen-paragraph">层次分析法：</p><ol class="content-list content-list"><li class="zen-numbered-item">建立层次结构</li><li class="zen-numbered-item">构造判断矩阵</li><li class="zen-numbered-item">计算权重向量</li><li class="zen-numbered-item">一致性检验</li><li class="zen-numbered-item">综合评价</li></ol><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">实际应用例子</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">选择大学专业决策：</p><p class="zen-paragraph">评价标准：</p><ul class="content-list content-list"><li class="zen-list-item">个人兴趣（权重30%）</li><li class="zen-list-item">就业前景（权重25%）</li><li class="zen-list-item">学习难度（权重20%）</li><li class="zen-list-item">发展潜力（权重25%）</li></ul><p class="zen-paragraph">候选专业评分（1-10分）：</p><p class="zen-paragraph">计算机科学：兴趣7分，就业9分，难度6分，潜力9分</p><p class="zen-paragraph">经济学：兴趣8分，就业7分，难度7分，潜力7分</p><p class="zen-paragraph">心理学：兴趣9分，就业6分，难度8分，潜力6分</p><p class="zen-paragraph">综合评分：</p><p class="zen-paragraph">计算机：0.3×7 + 0.25×9 + 0.2×6 + 0.25×9 = 7.65分</p><p class="zen-paragraph">经济学：0.3×8 + 0.25×7 + 0.2×7 + 0.25×7 = 7.35分</p><p class="zen-paragraph">心理学：0.3×9 + 0.25×6 + 0.2×8 + 0.25×6 = 7.30分</p><p class="zen-paragraph">推荐选择：计算机科学</p><p class="zen-paragraph"><code class="zen-code"></code>`</p>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 博弈论的基本概念</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">按参与者数量</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">两人博弈</strong>：只有两个参与者</li><li class="zen-list-item"><strong class="zen-bold">多人博弈</strong>：三个或更多参与者</li><li class="zen-list-item"><strong class="zen-bold">大群体博弈</strong>：参与者数量很大</li></ul><p class="zen-paragraph"><strong class="zen-bold">按信息结构</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">完全信息</strong>：所有参与者都知道博弈的完整结构</li><li class="zen-list-item"><strong class="zen-bold">不完全信息</strong>：某些信息是私人的或未知的</li><li class="zen-list-item"><strong class="zen-bold">完美信息</strong>：参与者知道之前所有的行动</li><li class="zen-list-item"><strong class="zen-bold">不完美信息</strong>：某些行动是同时进行的或不可观察的</li></ul><p class="zen-paragraph"><strong class="zen-bold">按合作可能性</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">合作博弈</strong>：参与者可以达成有约束力的协议</li><li class="zen-list-item"><strong class="zen-bold">非合作博弈</strong>：参与者独立决策，不能达成约束性协议</li></ul><p class="zen-paragraph"><strong class="zen-bold">基本概念</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">定义</strong>：每个参与者的策略都是对其他参与者策略的最优反应</li><li class="zen-list-item"><strong class="zen-bold">特点</strong>：没有参与者有单方面改变策略的动机</li><li class="zen-list-item"><strong class="zen-bold">意义</strong>：预测博弈的可能结果</li></ul><p class="zen-paragraph"><strong class="zen-bold">寻找方法</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">方法1：划线法</p><ol class="content-list content-list"><li class="zen-numbered-item">对每个参与者，在每种情况下标出最优反应</li><li class="zen-numbered-item">找到所有参与者的最优反应重合的点</li></ol><p class="zen-paragraph">方法2：最优反应函数法</p><ol class="content-list content-list"><li class="zen-numbered-item">写出每个参与者的最优反应函数</li><li class="zen-numbered-item">求解函数组的交点</li></ol><p class="zen-paragraph">方法3：迭代消除法</p><ol class="content-list content-list"><li class="zen-numbered-item">消除严格劣势策略</li><li class="zen-numbered-item">重复直到无法再消除</li><li class="zen-numbered-item">剩余的策略组合可能包含纳什均衡</li></ol><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">囚徒困境</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">支付矩阵（囚徒A的收益，囚徒B的收益）：</p><p class="zen-paragraph">坦白    不坦白</p><p class="zen-paragraph">坦白      (-5,-5)  (0,-10)</p><p class="zen-paragraph">不坦白    (-10,0)  (-1,-1)</p><p class="zen-paragraph">分析：</p><ul class="content-list content-list"><li class="zen-list-item">纳什均衡：(坦白，坦白)</li><li class="zen-list-item">帕累托最优：(不坦白，不坦白)</li><li class="zen-list-item">困境：个体理性导致集体非理性</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">协调博弈</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">支付矩阵：</p><p class="zen-paragraph">策略A   策略B</p><p class="zen-paragraph">策略A     (2,2)   (0,0)</p><p class="zen-paragraph">策略B     (0,0)   (1,1)</p><p class="zen-paragraph">分析：</p><ul class="content-list content-list"><li class="zen-list-item">两个纳什均衡：(A,A)和(B,B)</li><li class="zen-list-item">协调问题：如何达成一致</li><li class="zen-list-item">解决方案：沟通、焦点解、先动优势</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section practice" data-section="section-5" id="section-5">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">06</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 交互练习（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">实践练习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 练习1：决策分析练习</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">用期望效用理论分析下面的决策：</p><p class="zen-paragraph"><strong class="zen-bold">情况</strong>：周末计划，可以选择：A.在家学习 B.和朋友出游 C.参加社团活动</p><p class="zen-paragraph"><strong class="zen-bold">天气预报</strong>：晴天概率60%，雨天概率40%</p><p class="zen-paragraph"><strong class="zen-bold">你的偏好评分</strong>（1-10分）：</p><ul class="content-list practice-list"><li class="zen-list-item">在家学习：晴天6分，雨天8分</li><li class="zen-list-item">和朋友出游：晴天9分，雨天4分</li><li class="zen-list-item">参加社团活动：晴天7分，雨天7分</li></ul><p class="zen-paragraph"><strong class="zen-bold">计算期望效用</strong>：</p><p class="zen-paragraph">A. 在家学习：_______</p><p class="zen-paragraph">B. 和朋友出游：_______</p><p class="zen-paragraph">C. 参加社团活动：_______</p><p class="zen-paragraph"><strong class="zen-bold">最优选择</strong>：_______</p>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 练习2：博弈分析练习</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">分析下面的博弈情况：</p><p class="zen-paragraph"><strong class="zen-bold">情况</strong>：两个同学决定是否在考试前一起复习</p><p class="zen-paragraph"><strong class="zen-bold">支付矩阵</strong>（你的收益，同学的收益）：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">一起复习  单独复习</p><p class="zen-paragraph">一起复习    (8,8)    (5,9)</p><p class="zen-paragraph">单独复习    (9,5)    (6,6)</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">分析任务</strong>：</p><ol class="content-list practice-list"><li class="zen-numbered-item">找出纳什均衡：_______</li><li class="zen-numbered-item">帕累托最优解：_______</li><li class="zen-numbered-item">这是什么类型的博弈：_______</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section test" data-section="section-6" id="section-6">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">07</div>
+                        <div class="section-info">
+                            <h2 class="section-title">技能确认测试（2分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">技能测试</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 快速测试</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">情况</strong>：两家相邻的小店都在考虑是否降价促销。如果都不降价，各赚100元；如果都降价，各赚50元；如果一家降价另一家不降价，降价的赚120元，不降价的赚20元。</p><p class="zen-paragraph"><strong class="zen-bold">问题</strong>：这个博弈的纳什均衡是什么？</p><p class="zen-paragraph">A. 都不降价</p><p class="zen-paragraph">B. 都降价</p><p class="zen-paragraph">C. 一家降价，一家不降价</p><p class="zen-paragraph">D. 没有纳什均衡</p><p class="zen-paragraph"><strong class="zen-bold">正确答案</strong>：B</p><p class="zen-paragraph"><strong class="zen-bold">解释</strong>：这是一个典型的囚徒困境博弈。分析每家店的最优反应：如果对方不降价，我降价能赚120元比不降价的100元更好；如果对方降价，我降价能赚50元比不降价的20元更好。所以无论对方怎么选择，降价都是最优策略。因此纳什均衡是(降价，降价)，虽然这个结果对双方都不是最好的。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section summary" data-section="section-7" id="section-7">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">08</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程小结</h2>
+                            <div class="section-meta">
+                                <span class="section-type">总结回顾</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph"><strong class="zen-bold">今天你学会了</strong>：</p><ul class="content-list summary-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解决策理论：期望效用理论、多属性决策分析等系统决策方法</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 掌握博弈论：纳什均衡、经典博弈模型等策略分析工具</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 学会策略思维：在互动环境中考虑他人行为的决策方法</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 运用理性分析：用科学方法分析和改进决策质量</li></ul><p class="zen-paragraph"><strong class="zen-bold">重要收获</strong>：</p><p class="zen-paragraph">策略性思维和理性决策能力。掌握决策理论和博弈论，你就能在复杂的策略环境中做出更明智的选择，理解和预测他人的行为。</p><p class="zen-paragraph"><strong class="zen-bold">下节课预告</strong>：</p><p class="zen-paragraph">下节课我们将学习"计算思维与算法设计进阶"——掌握用计算思维解决复杂问题的方法！</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section advanced" data-section="section-8" id="section-8">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">09</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 深度拓展：成人世界的决策与博弈智慧（8分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">拓展提升</span>
+                                <span class="section-duration">6 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 决策理论与博弈论在现代社会的核心应用</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">在成人世界里，决策理论和博弈论正在成为商业竞争、政策制定、国际关系和个人发展的核心思维工具：</p><p class="zen-paragraph"><strong class="zen-bold">智能手机市场的价格博弈</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">苹果、三星、华为等厂商的定价策略互动</li><li class="zen-list-item">每家公司的定价都会影响其他公司的销量和利润</li><li class="zen-list-item">需要考虑竞争对手的反应来制定最优策略</li></ul><p class="zen-paragraph"><strong class="zen-bold">苹果iPhone定价策略的博弈分析</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">第一阶段：市场结构分析</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">市场参与者：</p><ul class="content-list advanced-list"><li class="zen-list-item">苹果：高端市场领导者，品牌溢价能力强</li><li class="zen-list-item">三星：全产品线竞争者，技术实力强</li><li class="zen-list-item">华为：新兴挑战者，性价比优势</li><li class="zen-list-item">其他厂商：小米、OPPO等，主攻中低端市场</li></ul><p class="zen-paragraph">策略空间：</p><ul class="content-list advanced-list"><li class="zen-list-item">定价策略：高价、中价、低价</li><li class="zen-list-item">产品策略：创新领先、跟随模仿、差异化</li><li class="zen-list-item">营销策略：品牌营销、性能营销、价格营销</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">第二阶段：支付矩阵构建</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">苹果vs三星的定价博弈（单位：亿美元利润）</p><p class="zen-paragraph">苹果策略 \ 三星策略    高价    中价    低价</p><p class="zen-paragraph">高价                 (150,80) (120,100) (80,90)</p><p class="zen-paragraph">中价                 (140,70) (110,85)  (90,95)</p><p class="zen-paragraph">低价                 (100,60) (85,75)   (70,80)</p><p class="zen-paragraph">分析：</p><ul class="content-list advanced-list"><li class="zen-list-item">苹果的优势：品牌溢价，高价策略收益最大</li><li class="zen-list-item">三星的挑战：需要在价格和利润间平衡</li><li class="zen-list-item">纳什均衡：(高价，中价) - 苹果保持高价，三星选择中价竞争</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">第三阶段：动态博弈分析</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">多期博弈的策略演化：</p><p class="zen-paragraph">第1期：苹果创新领先，定高价</p><p class="zen-paragraph">→ 三星跟进创新，定中价竞争</p><p class="zen-paragraph">→ 华为进入市场，定低价抢份额</p><p class="zen-paragraph">第2期：苹果面临挑战，策略选择</p><p class="zen-paragraph">选择1：降价应对 → 利润下降，但保持份额</p><p class="zen-paragraph">选择2：继续创新 → 维持差异化，保持高价</p><p class="zen-paragraph">选择3：产品分层 → 推出中端产品线</p><p class="zen-paragraph">实际策略：苹果选择了产品分层策略</p><ul class="content-list advanced-list"><li class="zen-list-item">保持iPhone Pro系列的高端定位</li><li class="zen-list-item">推出iPhone SE等中端产品</li><li class="zen-list-item">通过产品组合覆盖不同价格段</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">第四阶段：策略效果评估</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">博弈结果分析：</p><p class="zen-paragraph">苹果收益：</p><ul class="content-list advanced-list"><li class="zen-list-item">维持了高端市场的主导地位</li><li class="zen-list-item">通过产品分层扩大了市场覆盖</li><li class="zen-list-item">总体利润保持稳定增长</li></ul><p class="zen-paragraph">三星收益：</p><ul class="content-list advanced-list"><li class="zen-list-item">在中高端市场获得稳定份额</li><li class="zen-list-item">通过技术创新建立差异化优势</li><li class="zen-list-item">利润率有所提升</li></ul><p class="zen-paragraph">市场整体效果：</p><ul class="content-list advanced-list"><li class="zen-list-item">消费者获得更多选择和更好产品</li><li class="zen-list-item">技术创新速度加快</li><li class="zen-list-item">市场竞争更加充分</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">5G频谱拍卖的机制设计</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">政府需要将有限的频谱资源分配给电信运营商</li><li class="zen-list-item">运营商对不同频段有不同的估值</li><li class="zen-list-item">需要设计机制实现收入最大化和效率最优化</li></ul><p class="zen-paragraph"><strong class="zen-bold">英国5G频谱拍卖的博弈设计</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">第一阶段：拍卖机制选择</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">可选机制：</p><ol class="content-list advanced-list"><li class="zen-numbered-item">英式拍卖：价格递增，最后出价者获胜</li><li class="zen-numbered-item">荷兰式拍卖：价格递减，第一个接受者获胜</li><li class="zen-numbered-item">密封投标拍卖：同时提交报价，最高价获胜</li><li class="zen-numbered-item">维克里拍卖：次高价拍卖，激励真实报价</li></ol><p class="zen-paragraph">选择结果：采用同时上升拍卖（SMRA）</p><ul class="content-list advanced-list"><li class="zen-list-item">多个频段同时拍卖</li><li class="zen-list-item">价格同时上升</li><li class="zen-list-item">投标者可以调整组合策略</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">第二阶段：投标策略分析</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">运营商的估值和策略：</p><p class="zen-paragraph">英国电信（BT）：</p><ul class="content-list advanced-list"><li class="zen-list-item">对低频段估值高（覆盖范围广）：50亿英镑</li><li class="zen-list-item">对高频段估值中等（容量大）：30亿英镑</li><li class="zen-list-item">策略：重点竞争低频段，适度参与高频段</li></ul><p class="zen-paragraph">沃达丰（Vodafone）：</p><ul class="content-list advanced-list"><li class="zen-list-item">对各频段估值均衡：40亿英镑</li><li class="zen-list-item">策略：分散投标，避免过度竞争</li></ul><p class="zen-paragraph">Three：</p><ul class="content-list advanced-list"><li class="zen-list-item">资金有限，对特定频段估值高：25亿英镑</li><li class="zen-list-item">策略：集中资源竞争关键频段</li></ul><p class="zen-paragraph">新进入者：</p><ul class="content-list advanced-list"><li class="zen-list-item">对获得频谱的战略价值高：35亿英镑</li><li class="zen-list-item">策略：激进投标，建立市场地位</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">第三阶段：拍卖过程博弈</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">拍卖轮次分析：</p><p class="zen-paragraph">第1-10轮：试探阶段</p><ul class="content-list advanced-list"><li class="zen-list-item">各方保守出价，观察对手策略</li><li class="zen-list-item">价格缓慢上升，接近估值下限</li></ul><p class="zen-paragraph">第11-25轮：竞争加剧</p><ul class="content-list advanced-list"><li class="zen-list-item">关键频段竞争激烈</li><li class="zen-list-item">部分运营商开始退出特定频段</li><li class="zen-list-item">价格快速上升</li></ul><p class="zen-paragraph">第26-40轮：策略调整</p><ul class="content-list advanced-list"><li class="zen-list-item">运营商根据对手行为调整组合</li><li class="zen-list-item">出现频段间的替代和互补效应</li><li class="zen-list-item">联盟和协调行为隐现</li></ul><p class="zen-paragraph">最终结果：</p><ul class="content-list advanced-list"><li class="zen-list-item">总成交额：13.4亿英镑</li><li class="zen-list-item">超出政府预期：原估计8-10亿英镑</li><li class="zen-list-item">频谱分配相对均衡，避免了垄断</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">拍卖机制的博弈价值</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">激励相容</strong>：鼓励投标者真实表达估值</li><li class="zen-list-item"><strong class="zen-bold">收入最大化</strong>：通过竞争实现政府收入最大化</li><li class="zen-list-item"><strong class="zen-bold">效率配置</strong>：将资源分配给估值最高的使用者</li><li class="zen-list-item"><strong class="zen-bold">公平透明</strong>：建立公开透明的分配机制</li></ul><p class="zen-paragraph"><strong class="zen-bold">中美贸易谈判的博弈分析</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">双方都有合作和竞争的动机</li><li class="zen-list-item">谈判结果影响两国经济和全球贸易格局</li><li class="zen-list-item">需要在多个议题上进行复杂的策略互动</li></ul><p class="zen-paragraph"><strong class="zen-bold">贸易谈判的多议题博弈</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">第一阶段：议题识别和优先级</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">中方关切议题：</p><ol class="content-list advanced-list"><li class="zen-numbered-item">关税减免：优先级高，直接影响出口</li><li class="zen-numbered-item">技术转让：优先级中，涉及长期发展</li><li class="zen-numbered-item">市场准入：优先级中，影响企业发展</li><li class="zen-numbered-item">汇率问题：优先级低，主权敏感</li></ol><p class="zen-paragraph">美方关切议题：</p><ol class="content-list advanced-list"><li class="zen-numbered-item">贸易逆差：优先级高，政治压力大</li><li class="zen-numbered-item">知识产权：优先级高，涉及核心利益</li><li class="zen-numbered-item">产业政策：优先级中，竞争力考虑</li><li class="zen-numbered-item">金融开放：优先级中，市场机会</li></ol><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">第二阶段：谈判策略设计</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">中方策略：</p><ul class="content-list advanced-list"><li class="zen-list-item">渐进式开放：分步骤、有条件的市场开放</li><li class="zen-list-item">对等原则：要求美方同等程度的开放</li><li class="zen-list-item">底线思维：在核心利益上不妥协</li><li class="zen-list-item">多边制衡：利用WTO等多边机制</li></ul><p class="zen-paragraph">美方策略：</p><ul class="content-list advanced-list"><li class="zen-list-item">压力施加：通过关税威胁增加谈判筹码</li><li class="zen-list-item">分而治之：在不同议题上分别施压</li><li class="zen-list-item">时间窗口：利用选举周期等时间压力</li><li class="zen-list-item">联盟策略：联合盟友增加谈判力量</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">第三阶段：博弈过程分析</strong></p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">谈判轮次：</p><p class="zen-paragraph">第一阶段：试探性接触</p><ul class="content-list advanced-list"><li class="zen-list-item">双方表达基本立场</li><li class="zen-list-item">识别可能的合作空间</li><li class="zen-list-item">建立谈判机制和规则</li></ul><p class="zen-paragraph">第二阶段：实质性谈判</p><ul class="content-list advanced-list"><li class="zen-list-item">在具体议题上深入讨论</li><li class="zen-list-item">进行利益交换和妥协</li><li class="zen-list-item">形成初步协议框架</li></ul><p class="zen-paragraph">第三阶段：协议达成</p><ul class="content-list advanced-list"><li class="zen-list-item">最终条款的确定</li><li class="zen-list-item">实施机制的设计</li><li class="zen-list-item">争端解决机制的建立</li></ul><p class="zen-paragraph">博弈结果：</p><ul class="content-list advanced-list"><li class="zen-list-item">第一阶段协议：在部分议题上达成共识</li><li class="zen-list-item">为后续谈判奠定基础</li><li class="zen-list-item">双方都获得了部分利益</li></ul><p class="zen-paragraph"><code class="zen-code"></code>`</p>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 决策与博弈思维的现代价值</h3>
+                            <div class="block-content">
+                                <ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">竞争分析</strong>：分析竞争对手的策略和反应</li><li class="zen-list-item"><strong class="zen-bold">市场进入</strong>：评估进入新市场的时机和策略</li><li class="zen-list-item"><strong class="zen-bold">定价策略</strong>：考虑竞争对手反应的动态定价</li><li class="zen-list-item"><strong class="zen-bold">激励机制设计</strong>：设计激励相容的薪酬体系</li><li class="zen-list-item"><strong class="zen-bold">团队协作</strong>：解决团队中的协调和合作问题</li><li class="zen-list-item"><strong class="zen-bold">资源配置</strong>：在不同部门间优化资源分配</li><li class="zen-list-item"><strong class="zen-bold">职业选择</strong>：在多个职业选项中做出最优决策</li><li class="zen-list-item"><strong class="zen-bold">技能投资</strong>：决定在哪些技能上投入时间和精力</li><li class="zen-list-item"><strong class="zen-bold">人际关系</strong>：理解和管理复杂的人际互动</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section application" data-section="section-9" id="section-9">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">10</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 生活应用提示</h2>
+                            <div class="section-meta">
+                                <span class="section-type">应用实战</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">今天就可以尝试：</h3>
+                            <div class="block-content">
+                                <ol class="content-list application-list"><li class="zen-numbered-item"><strong class="zen-bold">决策分析</strong>：用期望效用理论分析一个你面临的选择</li><li class="zen-numbered-item"><strong class="zen-bold">博弈识别</strong>：观察生活中的一个策略互动情况，分析各方的策略和收益</li><li class="zen-numbered-item"><strong class="zen-bold">机制思考</strong>：思考如何改进一个你参与的制度或规则</li></ol>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">明天的小挑战：</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">选择一个涉及多人互动的情况，用博弈论分析各方的策略选择，并提出改进建议。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 交互脚本 -->
+    <script src="assets/js/zen-course.js"></script>
+</body>
+</html>

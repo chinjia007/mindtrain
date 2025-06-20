@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第36课：原型制作与测试（让想法变成现实）</title>
+    <link rel="stylesheet" href="assets/css/clean-course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态禅意背景 -->
+    <div class="zen-background">
+        <canvas id="zenCanvas"></canvas>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- 禅意导航 -->
+    <nav class="zen-nav">
+        <div class="nav-essence">
+            <div class="course-spirit">
+                <h1 class="spirit-title">第36课：原型制作与测试（让想法变成现实）</h1>
+                <div class="journey-meta">
+                    <span class="time-flow">⏳ 20分钟</span>
+                    <span class="wisdom-level">🌱 4年级及以上</span>
+                </div>
+            </div>
+            <div class="progress-mandala">
+                开始
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容流 -->
+    <main class="wisdom-flow">
+        
+        <section class="course-header" data-section="header">
+            <div class="zen-container">
+                <div class="header-card">
+                    <div class="course-badge">第36课</div>
+                    <h1 class="course-main-title">原型制作与测试（让想法变成现实）</h1>
+                    <p class="course-subtitle">培养批判性思维，提升逻辑分析能力</p>
+                    
+            <div class="course-meta-info">
+                <div class="meta-item">
+                    <span class="meta-icon">📚</span>
+                    <span class="meta-text">设计思维入门</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <span class="meta-text">4年级及以上</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    <span class="meta-text">20分钟</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-of-contents">
+            <div class="zen-container">
+                <div class="toc-card">
+                    <h3 class="toc-title">📋 课程目录</h3>
+                    <div class="toc-list">
+                        
+                            <a href="#section-0" class="toc-item content">
+                                <span class="toc-number">01</span>
+                                <span class="toc-text">� 课程信息</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-1" class="toc-item content">
+                                <span class="toc-number">02</span>
+                                <span class="toc-text">� 学习目标</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-2" class="toc-item concept">
+                                <span class="toc-number">03</span>
+                                <span class="toc-text">� 概念导入（3分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-3" class="toc-item case">
+                                <span class="toc-number">04</span>
+                                <span class="toc-text">� 案例展示（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-4" class="toc-item content">
+                                <span class="toc-number">05</span>
+                                <span class="toc-text">🧠 核心内容（5分钟）</span>
+                                <span class="toc-duration">3分钟</span>
+                            </a>
+                        
+                            <a href="#section-5" class="toc-item practice">
+                                <span class="toc-number">06</span>
+                                <span class="toc-text">� 交互练习（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-6" class="toc-item test">
+                                <span class="toc-number">07</span>
+                                <span class="toc-text">技能确认测试（2分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-7" class="toc-item advanced">
+                                <span class="toc-number">08</span>
+                                <span class="toc-text">� 深度拓展：成人世界的原型制作智慧（8分钟）</span>
+                                <span class="toc-duration">5分钟</span>
+                            </a>
+                        
+                            <a href="#section-8" class="toc-item application">
+                                <span class="toc-number">09</span>
+                                <span class="toc-text">� 生活应用提示</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-9" class="toc-item summary">
+                                <span class="toc-number">10</span>
+                                <span class="toc-text">� 课程小结</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-0" id="section-0">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">01</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程信息</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">所属模块</strong>：设计思维入门</li><li class="zen-list-item"><strong class="zen-bold">适合年级</strong>：4年级及以上</li><li class="zen-list-item"><strong class="zen-bold">学习时长</strong>：23分钟（技能掌握15分钟 + 深度拓展8分钟）</li><li class="zen-list-item"><strong class="zen-bold">核心技能</strong>：学会快速制作原型，通过测试验证和改进想法</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-1" id="section-1">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">02</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 学习目标</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph">学完这节课，你将能够：</p><ul class="content-list content-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解原型的作用和不同类型</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 掌握快速制作简单原型的方法</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 学会设计有效的测试方案</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 运用测试结果改进原型和想法</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section concept" data-section="section-2" id="section-2">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">03</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 概念导入（3分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">概念学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 思考一下</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">想想这些有趣的现象：</p><ul class="content-list concept-list"><li class="zen-list-item">为什么建筑师要先做模型，再建真正的房子？</li><li class="zen-list-item">为什么厨师要先试做小份，再大量制作？</li><li class="zen-list-item">为什么游戏开发者要先做试玩版，再发布正式版？</li><li class="zen-list-item">为什么你买衣服前要先试穿？</li></ul><div class="exercise-box">这些都与<strong class="zen-bold">原型制作与测试</strong>有关！</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section case" data-section="section-3" id="section-3">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">04</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 案例展示（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">案例分析</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 场景1：班级图书角改进项目</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">问题</strong>：班级图书角很少有人使用，需要改进</p><p class="zen-paragraph"><strong class="zen-bold">原型制作过程</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">第一版：纸质原型</strong></p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">制作材料</strong>：纸板、彩笔、胶带</li><li class="zen-list-item"><strong class="zen-bold">制作时间</strong>：30分钟</li><li class="zen-list-item"><strong class="zen-bold">原型内容</strong>：</li><li class="zen-list-item">用纸板制作新的书架布局模型</li><li class="zen-list-item">画出不同的图书分类标签</li><li class="zen-list-item">设计舒适的阅读角落</li></ul><div class="exercise-box"><strong class="zen-bold">第一次测试</strong>：</div><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">测试方法</strong>：让5个同学看模型并提意见</li><li class="zen-list-item"><strong class="zen-bold">测试发现</strong>：</li><li class="zen-list-item">书架太高，矮同学够不到</li><li class="zen-list-item">分类标签不够清楚</li><li class="zen-list-item">阅读角落缺少靠垫</li></ul><p class="zen-paragraph"><strong class="zen-bold">第二版：改进原型</strong></p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">改进内容</strong>：</li><li class="zen-list-item">降低书架高度</li><li class="zen-list-item">用图片+文字做分类标签</li><li class="zen-list-item">增加靠垫和小桌子</li><li class="zen-list-item"><strong class="zen-bold">制作方法</strong>：修改纸板模型，用彩纸模拟靠垫</li></ul><div class="exercise-box"><strong class="zen-bold">第二次测试</strong>：</div><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">测试方法</strong>：在真实空间摆放纸板模型，让同学体验</li><li class="zen-list-item"><strong class="zen-bold">测试发现</strong>：</li><li class="zen-list-item">布局更合理了</li><li class="zen-list-item">但光线不够好</li><li class="zen-list-item">需要增加书籍推荐区</li></ul><p class="zen-paragraph"><strong class="zen-bold">第三版：实物原型</strong></p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">制作内容</strong>：</li><li class="zen-list-item">用真实材料搭建小型试验区</li><li class="zen-list-item">增加台灯改善光线</li><li class="zen-list-item">设置"本周推荐"展示板</li><li class="zen-list-item"><strong class="zen-bold">测试周期</strong>：试运行一周</li></ul><div class="exercise-box"><strong class="zen-bold">最终测试结果</strong>：</div><ul class="content-list case-list"><li class="zen-list-item">图书角使用率提高了300%</li><li class="zen-list-item">同学们给出了很多积极反馈</li><li class="zen-list-item">发现了一些小问题，继续优化</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 场景2：学习APP创意的原型验证</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">创意</strong>：设计一个"学习伙伴"APP，帮助同学互相监督学习</p><p class="zen-paragraph"><strong class="zen-bold">原型制作策略</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">第一阶段：纸质原型</strong></p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">制作工具</strong>：纸张、笔、剪刀</li><li class="zen-list-item"><strong class="zen-bold">原型内容</strong>：</li><li class="zen-list-item">画出APP的主要界面</li><li class="zen-list-item">设计用户操作流程</li><li class="zen-list-item">模拟主要功能</li></ul><div class="exercise-box"><strong class="zen-bold">纸质原型测试</strong>：</div><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">测试方式</strong>：让同学"操作"纸质界面</li><li class="zen-list-item"><strong class="zen-bold">测试发现</strong>：</li><li class="zen-list-item">界面太复杂，操作步骤太多</li><li class="zen-list-item">缺少激励机制</li><li class="zen-list-item">隐私保护不够</li></ul><p class="zen-paragraph"><strong class="zen-bold">第二阶段：数字原型</strong></p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">制作工具</strong>：简单的原型制作软件</li><li class="zen-list-item"><strong class="zen-bold">改进内容</strong>：</li><li class="zen-list-item">简化界面，减少操作步骤</li><li class="zen-list-item">增加积分和徽章系统</li><li class="zen-list-item">设置隐私保护选项</li></ul><div class="exercise-box"><strong class="zen-bold">数字原型测试</strong>：</div><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">测试方式</strong>：让同学在电脑上点击操作</li><li class="zen-list-item"><strong class="zen-bold">测试发现</strong>：</li><li class="zen-list-item">操作流程更顺畅了</li><li class="zen-list-item">激励系统很受欢迎</li><li class="zen-list-item">但缺少社交功能</li></ul><p class="zen-paragraph"><strong class="zen-bold">第三阶段：功能原型</strong></p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">制作方法</strong>：用简单编程制作基本功能</li><li class="zen-list-item"><strong class="zen-bold">新增功能</strong>：</li><li class="zen-list-item">学习小组功能</li><li class="zen-list-item">互相鼓励功能</li><li class="zen-list-item">学习成果分享</li></ul><div class="exercise-box"><strong class="zen-bold">功能原型测试</strong>：</div><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">测试方式</strong>：邀请10个同学试用一周</li><li class="zen-list-item"><strong class="zen-bold">测试结果</strong>：</li><li class="zen-list-item">大部分功能受到好评</li><li class="zen-list-item">发现了一些技术问题</li><li class="zen-list-item">收集到很多改进建议</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-4" id="section-4">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">05</div>
+                        <div class="section-info">
+                            <h2 class="section-title">🧠 核心内容（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">3 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 原型制作的基本原则</h3>
+                            <div class="block-content">
+                                <ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">核心理念</strong>：用最短时间制作出可测试的版本</li><li class="zen-list-item"><strong class="zen-bold">具体做法</strong>：</li><li class="zen-list-item">设定时间限制（如1小时内完成）</li><li class="zen-list-item">使用简单易得的材料</li><li class="zen-list-item">专注于核心功能，忽略细节</li><li class="zen-list-item">接受不完美，重视速度</li><li class="zen-list-item"><strong class="zen-bold">核心理念</strong>：用最少资源验证最重要的假设</li><li class="zen-list-item"><strong class="zen-bold">具体做法</strong>：</li><li class="zen-list-item">使用免费或便宜的材料</li><li class="zen-list-item">重复利用现有资源</li><li class="zen-list-item">数字工具优先选择免费版本</li><li class="zen-list-item">人力成本最小化</li><li class="zen-list-item"><strong class="zen-bold">核心理念</strong>：原型的目的是学习，不是展示</li><li class="zen-list-item"><strong class="zen-bold">具体做法</strong>：</li><li class="zen-list-item">明确要验证的假设</li><li class="zen-list-item">设计能够获得反馈的测试</li><li class="zen-list-item">记录学习到的内容</li><li class="zen-list-item">准备根据学习结果调整</li><li class="zen-list-item"><strong class="zen-bold">核心理念</strong>：原型要能让用户真实体验</li><li class="zen-list-item"><strong class="zen-bold">具体做法</strong>：</li><li class="zen-list-item">让真实用户参与测试</li><li class="zen-list-item">观察用户的真实行为</li><li class="zen-list-item">收集用户的真实反馈</li><li class="zen-list-item">关注用户体验而非技术完美</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 原型的类型与选择</h3>
+                            <div class="block-content">
+                                <ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">低保真原型</strong>：</li></ol><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">特点</strong>：粗糙、简单、快速制作</li><li class="zen-list-item"><strong class="zen-bold">适用</strong>：早期概念验证、基本流程测试</li><li class="zen-list-item"><strong class="zen-bold">例子</strong>：纸质草图、简单模型、角色扮演</li><li class="zen-list-item"><strong class="zen-bold">优势</strong>：成本低、修改容易、专注概念</li></ul><ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">中保真原型</strong>：</li></ol><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">特点</strong>：部分功能可用，外观较真实</li><li class="zen-list-item"><strong class="zen-bold">适用</strong>：用户体验测试、功能验证</li><li class="zen-list-item"><strong class="zen-bold">例子</strong>：可点击的界面、简单的互动模型</li><li class="zen-list-item"><strong class="zen-bold">优势</strong>：平衡成本和真实性</li></ul><ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">高保真原型</strong>：</li></ol><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">特点</strong>：接近最终产品，功能完整</li><li class="zen-list-item"><strong class="zen-bold">适用</strong>：最终验证、展示演示</li><li class="zen-list-item"><strong class="zen-bold">例子</strong>：完整功能的软件、精细的物理模型</li><li class="zen-list-item"><strong class="zen-bold">优势</strong>：测试结果最可靠</li></ul><ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">纸质原型</strong>：</li></ol><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">工具</strong>：纸张、笔、剪刀、胶带</li><li class="zen-list-item"><strong class="zen-bold">适用</strong>：界面设计、流程设计、空间布局</li><li class="zen-list-item"><strong class="zen-bold">优势</strong>：制作快速、修改容易、成本极低</li></ul><ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">数字原型</strong>：</li></ol><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">工具</strong>：原型制作软件、在线工具</li><li class="zen-list-item"><strong class="zen-bold">适用</strong>：APP界面、网站设计、交互设计</li><li class="zen-list-item"><strong class="zen-bold">优势</strong>：可以模拟真实交互、易于分享</li></ul><ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">物理原型</strong>：</li></ol><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">工具</strong>：纸板、积木、粘土、3D打印</li><li class="zen-list-item"><strong class="zen-bold">适用</strong>：产品设计、空间设计、物理交互</li><li class="zen-list-item"><strong class="zen-bold">优势</strong>：可以真实触摸和操作</li></ul><ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">体验原型</strong>：</li></ol><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">工具</strong>：角色扮演、情景模拟、服务蓝图</li><li class="zen-list-item"><strong class="zen-bold">适用</strong>：服务设计、流程设计、体验设计</li><li class="zen-list-item"><strong class="zen-bold">优势</strong>：可以体验完整的用户旅程</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">� 测试设计的关键要素</h3>
+                            <div class="block-content">
+                                <ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">明确假设</strong>：要验证什么假设？</li><li class="zen-list-item"><strong class="zen-bold">关键问题</strong>：最想了解什么问题？</li><li class="zen-list-item"><strong class="zen-bold">成功标准</strong>：什么样的结果算成功？</li><li class="zen-list-item"><strong class="zen-bold">失败标准</strong>：什么样的结果需要重新设计？</li><li class="zen-list-item"><strong class="zen-bold">用户选择</strong>：谁是目标用户？</li><li class="zen-list-item"><strong class="zen-bold">用户数量</strong>：需要多少用户参与？</li><li class="zen-list-item"><strong class="zen-bold">用户多样性</strong>：是否需要不同类型的用户？</li><li class="zen-list-item"><strong class="zen-bold">用户招募</strong>：如何找到合适的测试用户？</li><li class="zen-list-item"><strong class="zen-bold">环境选择</strong>：在哪里进行测试？</li><li class="zen-list-item"><strong class="zen-bold">环境真实性</strong>：是否接近真实使用环境？</li><li class="zen-list-item"><strong class="zen-bold">环境控制</strong>：如何控制环境变量？</li><li class="zen-list-item"><strong class="zen-bold">环境记录</strong>：如何记录测试过程？</li><li class="zen-list-item"><strong class="zen-bold">观察法</strong>：观察用户的自然行为</li><li class="zen-list-item"><strong class="zen-bold">访谈法</strong>：询问用户的想法和感受</li><li class="zen-list-item"><strong class="zen-bold">任务法</strong>：让用户完成特定任务</li><li class="zen-list-item"><strong class="zen-bold">比较法</strong>：比较不同版本的效果</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="3">
+                            <h3 class="block-title">⚠️ 原型制作的常见误区</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">表现</strong>：花太多时间完善细节</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：专注核心功能，接受不完美</p><p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">表现</strong>：想要在原型中包含所有功能</p><div class="exercise-box"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：每个原型只测试1-3个核心功能</div><p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">表现</strong>：在原型上投入太多时间和资源</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：保持低成本，快速迭代</p><div class="exercise-box"><span class="zen-emoji">❌</span> <strong class="zen-bold">表现</strong>：制作了原型但不进行测试</div><div class="exercise-box"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：制作和测试同等重要</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section practice" data-section="section-5" id="section-5">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">06</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 交互练习（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">实践练习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 练习1：快速纸质原型制作</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">为下面的挑战制作一个纸质原型：</p><p class="zen-paragraph"><strong class="zen-bold">挑战</strong>：设计一个帮助同学整理书包的工具</p><p class="zen-paragraph"><strong class="zen-bold">制作要求</strong>：</p><ul class="content-list practice-list"><li class="zen-list-item">时间限制：15分钟</li><li class="zen-list-item">材料：纸张、笔、剪刀、胶带</li><li class="zen-list-item">重点：功能性，不追求美观</li></ul><p class="zen-paragraph"><strong class="zen-bold">制作步骤</strong>：</p><ol class="content-list practice-list"><li class="zen-numbered-item"><strong class="zen-bold">概念草图</strong>：画出基本想法（5分钟）</li><li class="zen-numbered-item"><strong class="zen-bold">制作模型</strong>：用纸制作简单模型（8分钟）</li><li class="zen-numbered-item"><strong class="zen-bold">功能演示</strong>：演示如何使用（2分钟）</li></ol><div class="exercise-box"><strong class="zen-bold">测试计划</strong>：</div><ul class="content-list practice-list"><li class="zen-list-item"><strong class="zen-bold">测试用户</strong>：_______</li><li class="zen-list-item"><strong class="zen-bold">测试方法</strong>：_______</li><li class="zen-list-item"><strong class="zen-bold">测试问题</strong>：_______</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 练习2：测试方案设计</h3>
+                            <div class="block-content">
+                                <div class="exercise-box">为下面的原型设计测试方案：</div><p class="zen-paragraph"><strong class="zen-bold">原型</strong>：一个"学习提醒"手机APP的界面原型</p><div class="exercise-box"><strong class="zen-bold">测试方案设计</strong>：</div><ul class="content-list practice-list"><li class="zen-list-item"><strong class="zen-bold">测试目标</strong>：_______</li><li class="zen-list-item"><strong class="zen-bold">要验证的假设</strong>：_______</li><li class="zen-list-item"><strong class="zen-bold">测试用户</strong>：_______ (选择标准：_______)</li><li class="zen-list-item"><strong class="zen-bold">测试任务</strong>：</li></ul><ol class="content-list practice-list"><li class="zen-numbered-item">_______</li><li class="zen-numbered-item">_______</li><li class="zen-numbered-item">_______</li></ol><ul class="content-list practice-list"><li class="zen-list-item"><strong class="zen-bold">观察重点</strong>：_______</li><li class="zen-list-item"><strong class="zen-bold">测试问题</strong>：</li></ul><ol class="content-list practice-list"><li class="zen-numbered-item">_______</li><li class="zen-numbered-item">_______</li><li class="zen-numbered-item">_______</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section test" data-section="section-6" id="section-6">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">07</div>
+                        <div class="section-info">
+                            <h2 class="section-title">技能确认测试（2分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">技能测试</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 快速测试</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">情况</strong>：小张设计了一个"智能作业提醒器"，花了两周时间制作了一个功能完整、外观精美的原型。但当他给同学们试用时，发现大家都觉得操作太复杂，不愿意使用。</p><p class="zen-paragraph"><strong class="zen-bold">问题</strong>：小张在原型制作过程中犯了什么错误？</p><p class="zen-paragraph">A. 原型制作时间太短，应该花更多时间完善</p><div class="exercise-box">B. 没有在早期阶段进行简单测试，过度投入制作</div><p class="zen-paragraph">C. 原型功能太少，应该增加更多功能</p><div class="exercise-box">D. 测试用户选择不当，应该选择更专业的用户</div><p class="zen-paragraph"><strong class="zen-bold">正确答案</strong>：B</p><div class="exercise-box"><strong class="zen-bold">解释</strong>：小张违反了原型制作的基本原则。他应该先制作简单的低保真原型进行早期测试，发现用户需求和使用习惯，然后再逐步改进。过度投入时间和精力制作高保真原型，却没有验证基本的用户体验，导致了资源浪费。正确的做法是快速制作、早期测试、持续迭代。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section advanced" data-section="section-7" id="section-7">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">08</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 深度拓展：成人世界的原型制作智慧（8分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">拓展提升</span>
+                                <span class="section-duration">5 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 科技产品的原型革命</h3>
+                            <div class="block-content">
+                                <div class="exercise-box">在成人世界里，原型制作与测试是产品成功的关键因素：</div><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：苹果如何通过原型制作创造革命性产品</p><p class="zen-paragraph"><strong class="zen-bold">iPhone的原型历程</strong>：</p><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">概念原型阶段（2004-2005）</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">纸质原型</strong>：最初的iPhone概念只是纸上的草图</li><li class="zen-list-item"><strong class="zen-bold">功能原型</strong>：用现有iPod改装，测试触屏交互</li><li class="zen-list-item"><strong class="zen-bold">外观原型</strong>：用泡沫和塑料制作不同的外形方案</li><li class="zen-list-item"><strong class="zen-bold">测试发现</strong>：触屏操作比物理键盘更直观</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">交互原型阶段（2005-2006）</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">软件原型</strong>：在电脑上模拟iPhone界面</li><li class="zen-list-item"><strong class="zen-bold">硬件原型</strong>：制作可以真实操作的设备</li><li class="zen-list-item"><strong class="zen-bold">用户测试</strong>：内部员工试用，收集反馈</li><li class="zen-list-item"><strong class="zen-bold">迭代改进</strong>：根据测试结果调整界面和交互</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">工程原型阶段（2006-2007）</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">功能完整原型</strong>：所有核心功能都能正常工作</li><li class="zen-list-item"><strong class="zen-bold">耐用性测试</strong>：测试设备的可靠性和耐用性</li><li class="zen-list-item"><strong class="zen-bold">生产原型</strong>：验证大规模生产的可行性</li><li class="zen-list-item"><strong class="zen-bold">最终优化</strong>：在保持功能的前提下优化成本</li></ul><p class="zen-paragraph"><strong class="zen-bold">苹果原型制作的特点</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">保密性</strong>：严格的保密措施保护创新想法</li><li class="zen-list-item"><strong class="zen-bold">完美主义</strong>：不断迭代直到达到最高标准</li><li class="zen-list-item"><strong class="zen-bold">用户中心</strong>：始终以用户体验为核心</li><li class="zen-list-item"><strong class="zen-bold">跨团队协作</strong>：设计、工程、营销团队紧密合作</li></ul><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：Airbnb如何通过原型验证共享住宿的商业模式</p><p class="zen-paragraph"><strong class="zen-bold">早期原型验证</strong>：</p><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">最小可行产品（MVP）</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">简单网站</strong>：只有基本的房源发布和预订功能</li><li class="zen-list-item"><strong class="zen-bold">手工操作</strong>：创始人亲自处理每个订单</li><li class="zen-list-item"><strong class="zen-bold">本地测试</strong>：只在旧金山地区提供服务</li><li class="zen-list-item"><strong class="zen-bold">验证假设</strong>：人们是否愿意住在陌生人家里？</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">用户体验原型</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">房东体验</strong>：创始人亲自当房东，体验整个流程</li><li class="zen-list-item"><strong class="zen-bold">房客体验</strong>：团队成员作为房客使用服务</li><li class="zen-list-item"><strong class="zen-bold">痛点发现</strong>：支付不便、信任缺失、沟通困难</li><li class="zen-list-item"><strong class="zen-bold">解决方案</strong>：在线支付、评价系统、即时通讯</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">信任机制原型</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">身份验证</strong>：测试不同的身份验证方法</li><li class="zen-list-item"><strong class="zen-bold">保险保障</strong>：试验不同的保险方案</li><li class="zen-list-item"><strong class="zen-bold">评价系统</strong>：测试双向评价的效果</li><li class="zen-list-item"><strong class="zen-bold">客服支持</strong>：建立24小时客服体系</li></ul><p class="zen-paragraph"><strong class="zen-bold">服务原型的特点</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">体验导向</strong>：关注用户的完整体验旅程</li><li class="zen-list-item"><strong class="zen-bold">信任建设</strong>：通过原型建立用户信任</li><li class="zen-list-item"><strong class="zen-bold">社区文化</strong>：培养共享和互助的社区文化</li><li class="zen-list-item"><strong class="zen-bold">持续优化</strong>：基于用户反馈不断改进服务</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 创业公司的精益原型</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">场景</strong>：Dropbox如何用简单视频验证产品概念</p><p class="zen-paragraph"><strong class="zen-bold">挑战背景</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">技术复杂</strong>：文件同步技术开发成本高、周期长</li><li class="zen-list-item"><strong class="zen-bold">市场不确定</strong>：不确定用户是否需要这样的服务</li><li class="zen-list-item"><strong class="zen-bold">资源有限</strong>：创业团队资源有限，不能承担失败风险</li></ul><p class="zen-paragraph"><strong class="zen-bold">视频原型策略</strong>：</p><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">概念视频制作</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">制作成本</strong>：几乎为零，只需要录屏软件</li><li class="zen-list-item"><strong class="zen-bold">制作时间</strong>：一天内完成</li><li class="zen-list-item"><strong class="zen-bold">视频内容</strong>：演示文件在不同设备间自动同步</li><li class="zen-list-item"><strong class="zen-bold">技术实现</strong>：实际上是手工操作，模拟自动同步</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">市场验证测试</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">发布平台</strong>：上传到视频网站和技术论坛</li><li class="zen-list-item"><strong class="zen-bold">用户反应</strong>：大量用户表示强烈兴趣</li><li class="zen-list-item"><strong class="zen-bold">注册转化</strong>：视频带来了大量的预注册用户</li><li class="zen-list-item"><strong class="zen-bold">投资吸引</strong>：视频帮助获得了投资人的关注</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">产品开发指导</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">需求确认</strong>：确认了市场对产品的真实需求</li><li class="zen-list-item"><strong class="zen-bold">功能优先级</strong>：了解了用户最关心的功能</li><li class="zen-list-item"><strong class="zen-bold">用户期望</strong>：明确了用户对产品的期望</li><li class="zen-list-item"><strong class="zen-bold">商业模式</strong>：验证了付费用户的可能性</li></ul><p class="zen-paragraph"><strong class="zen-bold">视频原型的价值</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">极低成本</strong>：用最小投入验证最大假设</li><li class="zen-list-item"><strong class="zen-bold">快速验证</strong>：在产品开发前就验证市场需求</li><li class="zen-list-item"><strong class="zen-bold">风险降低</strong>：避免了开发无人需要的产品</li><li class="zen-list-item"><strong class="zen-bold">资源聚焦</strong>：将有限资源投入到确定有需求的产品</li></ul><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：Buffer如何用简单网页验证社交媒体管理工具的需求</p><p class="zen-paragraph"><strong class="zen-bold">原型策略</strong>：</p><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">最简登陆页</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">页面内容</strong>：只有产品描述和"感兴趣"按钮</li><li class="zen-list-item"><strong class="zen-bold">制作时间</strong>：几小时内完成</li><li class="zen-list-item"><strong class="zen-bold">功能</strong>：收集用户邮箱，表示对产品的兴趣</li><li class="zen-list-item"><strong class="zen-bold">成本</strong>：几乎为零</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">需求验证测试</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">流量获取</strong>：通过社交媒体和博客推广</li><li class="zen-list-item"><strong class="zen-bold">转化率测试</strong>：测试有多少人点击"感兴趣"</li><li class="zen-list-item"><strong class="zen-bold">用户调研</strong>：向感兴趣的用户发送问卷</li><li class="zen-list-item"><strong class="zen-bold">需求确认</strong>：确认用户的真实需求和付费意愿</li></ul><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">功能原型迭代</strong>：</li></ol><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">第二版</strong>：增加了价格页面，测试付费意愿</li><li class="zen-list-item"><strong class="zen-bold">第三版</strong>：增加了简单的功能演示</li><li class="zen-list-item"><strong class="zen-bold">第四版</strong>：开发了基本的可用产品</li><li class="zen-list-item"><strong class="zen-bold">持续优化</strong>：基于用户反馈不断改进</li></ul><p class="zen-paragraph"><strong class="zen-bold">精益原型的智慧</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">假设驱动</strong>：每个原型都在验证特定假设</li><li class="zen-list-item"><strong class="zen-bold">数据导向</strong>：用真实数据指导产品决策</li><li class="zen-list-item"><strong class="zen-bold">快速迭代</strong>：快速制作、测试、学习、改进</li><li class="zen-list-item"><strong class="zen-bold">用户参与</strong>：让用户参与产品开发过程</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">� 高级原型制作技巧</h3>
+                            <div class="block-content">
+                                <ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">渐进式提升</strong>：从低保真逐步提升到高保真</li><li class="zen-list-item"><strong class="zen-bold">功能分离</strong>：不同功能用不同保真度的原型</li><li class="zen-list-item"><strong class="zen-bold">成本控制</strong>：在合适的阶段投入合适的成本</li><li class="zen-list-item"><strong class="zen-bold">风险管理</strong>：用低保真原型降低早期风险</li><li class="zen-list-item"><strong class="zen-bold">定性+定量</strong>：结合观察和数据分析</li><li class="zen-list-item"><strong class="zen-bold">内部+外部</strong>：团队内测试和用户测试结合</li><li class="zen-list-item"><strong class="zen-bold">正式+非正式</strong>：结构化测试和日常观察</li><li class="zen-list-item"><strong class="zen-bold">短期+长期</strong>：即时反馈和长期使用效果</li><li class="zen-list-item"><strong class="zen-bold">多设备适配</strong>：考虑不同设备的使用场景</li><li class="zen-list-item"><strong class="zen-bold">多渠道整合</strong>：线上线下体验的一致性</li><li class="zen-list-item"><strong class="zen-bold">多用户角色</strong>：不同用户角色的原型需求</li><li class="zen-list-item"><strong class="zen-bold">多场景应用</strong>：不同使用场景的原型验证</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section application" data-section="section-8" id="section-8">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">09</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 生活应用提示</h2>
+                            <div class="section-meta">
+                                <span class="section-type">应用实战</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">今天就可以尝试：</h3>
+                            <div class="block-content">
+                                <ol class="content-list application-list"><li class="zen-numbered-item"><strong class="zen-bold">简单原型</strong>：选择一个你的创意想法，用纸张制作一个15分钟的快速原型</li><li class="zen-numbered-item"><strong class="zen-bold">测试体验</strong>：让家人或朋友试用你的原型，观察他们的反应和建议</li><li class="zen-numbered-item"><strong class="zen-bold">改进思考</strong>：根据测试反馈，思考如何改进你的想法</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section summary" data-section="section-9" id="section-9">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">10</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程小结</h2>
+                            <div class="section-meta">
+                                <span class="section-type">总结回顾</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph"><strong class="zen-bold">今天你学会了</strong>：</p><ul class="content-list summary-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解原型的作用和不同类型（低保真、中保真、高保真）</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 掌握快速制作原型的四大原则（快速、低成本、学习导向、用户中心）</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 学会设计有效测试方案的关键要素</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 运用测试结果改进原型和想法的方法</li></ul><p class="zen-paragraph"><strong class="zen-bold">重要收获</strong>：</p><div class="exercise-box">让想法变成现实。掌握原型制作与测试，你就能快速验证想法的可行性，在实践中学习和改进，避免在错误的方向上浪费时间和资源。这是设计思维的验证引擎，也是创新成功的关键技能。</div><p class="zen-paragraph"><strong class="zen-bold">下节课预告</strong>：</p><p class="zen-paragraph">下节课我们将学习"迭代与改进"——学会在反馈中持续优化解决方案！</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 交互脚本 -->
+    <script src="assets/js/zen-course.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第01课 - 区分事实与观点 | 神奇喵喵思维训练实验室</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- AIGC神经网络背景 -->
+    <div class="generative-background">
+        <canvas class="neural-art" id="neuralCanvas"></canvas>
+    </div>
+    
+    <!-- 课程导航 -->
+    <nav class="course-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <h1 class="brand-title">神奇喵喵</h1>
+                    <p class="brand-subtitle">思维训练实验室</p>
+                </a>
+            </div>
+            <div class="course-info">
+                <span class="course-module">批判性思维 · 入门</span>
+                <span class="course-title">第01课 - 区分事实与观点</span>
+            </div>
+            <div class="course-controls">
+                <button class="control-btn" id="prevCourse">
+                    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+                    上一课
+                </button>
+                <button class="control-btn primary" id="nextCourse">
+                    下一课
+                    <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 课程内容 -->
+    <main class="course-main">
+        <div class="course-container">
+            <!-- 课程头部 -->
+            <header class="course-header">
+                <div class="course-header-content">
+                    <h1 class="course-main-title">区分事实与观点</h1>
+                    <p class="course-subtitle">批判性思维的第一步：学会识别信息的本质属性</p>
+                </div>
+            </header>
+            
+            <!-- 学习目标 -->
+            <section class="learning-objectives">
+                <h2 class="section-title">🎯 学习目标</h2>
+                <div class="objectives-grid">
+                    <div class="objective-item">
+                        <div class="objective-icon">🎯</div>
+                        <div class="objective-content">
+                            <h3>核心目标</h3>
+                            <p>学会准确区分事实与观点，为批判性思维打下基础</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 概念导入 -->
+            <section class="concept-introduction">
+                <h2 class="section-title">📖 概念导入（3分钟）</h2>
+                <div class="concept-content">
+                    <div class="concept-intro-text">
+                        <h3>🎯 开场小测试</h3>
+                        <p>小明收到了三条消息：</p>
+                        <ol>
+                            <li>"今天下雨了"</li>
+                            <li>"雨天真讨厌"</li>
+                            <li>"明天可能还会下雨"</li>
+                        </ol>
+                        <p><strong>🤔 暂停思考30秒</strong>：这三句话有什么不同？</p>
+                    </div>
+
+                    <div class="concept-insight">
+                        <h4>💡 引出概念</h4>
+                        <p>你刚才可能发现了，这三句话给人的感觉不一样：</p>
+                        <ul>
+                            <li>第一句让你觉得"确实如此"</li>
+                            <li>第二句让你觉得"这是他的想法"</li>
+                            <li>第三句让你觉得"不一定准确"</li>
+                        </ul>
+                        <p>今天我们要学习一个超级重要的技能：<strong>区分事实与观点</strong>。这个技能就像给你的大脑装上了一副"特殊眼镜"，能让你看清楚哪些信息更可靠！</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 案例展示 -->
+                <!-- 案例展示 -->
+            <section class="case-study">
+                <h2 class="section-title">🎬 案例展示（5分钟）</h2>
+                <div class="case-container">
+                    <div class="case-scenario">
+                        <h3>📱 真实场景：朋友圈的消息</h3>
+                        <p><strong>场景设定</strong>：你在朋友圈看到了这些消息...</p>
+
+                        <div class="message-examples">
+                            <div class="message-item">
+                                <strong>消息1</strong>：
+                                <blockquote>"我们学校今天举办了运动会，有500名学生参加。"</blockquote>
+                            </div>
+
+                            <div class="message-item">
+                                <strong>消息2</strong>：
+                                <blockquote>"我们学校的运动会太棒了！是全市最好的运动会！"</blockquote>
+                            </div>
+
+                            <div class="message-item">
+                                <strong>消息3</strong>：
+                                <blockquote>"听说隔壁学校的运动会没我们办得好。"</blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-analysis">
+                        <h4>🔍 一起分析</h4>
+
+                        <div class="analysis-item">
+                            <h5><strong>消息1分析</strong>：</h5>
+                            <ul>
+                                <li>这是在描述具体发生的事情</li>
+                                <li>可以通过查看、计数来验证</li>
+                                <li>这是<strong>事实</strong>（如果信息准确的话）</li>
+                            </ul>
+                        </div>
+
+                        <div class="analysis-item">
+                            <h5><strong>消息2分析</strong>：</h5>
+                            <ul>
+                                <li>这是在表达个人的感受和评价</li>
+                                <li>不同的人可能有不同的看法</li>
+                                <li>这是<strong>观点</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="analysis-item">
+                            <h5><strong>消息3分析</strong>：</h5>
+                            <ul>
+                                <li>这是基于传言的比较和判断</li>
+                                <li>缺乏具体的证据支持</li>
+                                <li>这也是<strong>观点</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="analysis-insight">
+                            <h5>💭 小发现</h5>
+                            <p>你发现了吗？</p>
+                            <ul>
+                                <li><strong>事实</strong>通常可以被验证，有具体的信息</li>
+                                <li><strong>观点</strong>通常包含个人的感受、评价或判断</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 核心内容 -->
+            <section class="core-content">
+                <h2 class="section-title">🧠 核心内容（5分钟）</h2>
+                <div class="content-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="facts">什么是事实</button>
+                        <button class="tab-btn" data-tab="opinions">什么是观点</button>
+                        <button class="tab-btn" data-tab="tips">识别技巧</button>
+                    </div>
+
+                    <div class="tab-content active" id="facts">
+                        <h3>📚 什么是事实？</h3>
+                        <p><strong>事实</strong>是客观存在的、可以被验证的信息。</p>
+
+                        <h4><strong>事实的特点</strong>：</h4>
+                        <ul>
+                            <li>✅ 可以通过观察、测量、查证来验证</li>
+                            <li>✅ 不因个人喜好而改变</li>
+                            <li>✅ 通常包含具体的数据、时间、地点</li>
+                        </ul>
+
+                        <h4><strong>事实的例子</strong>：</h4>
+                        <ul>
+                            <li>"今天是星期三"</li>
+                            <li>"这本书有200页"</li>
+                            <li>"小明的身高是150厘米"</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="opinions">
+                        <h3>💭 什么是观点？</h3>
+                        <p><strong>观点</strong>是个人的看法、感受、评价或判断。</p>
+
+                        <h4><strong>观点的特点</strong>：</h4>
+                        <ul>
+                            <li>✅ 反映个人的想法和感受</li>
+                            <li>✅ 不同的人可能有不同的观点</li>
+                            <li>✅ 通常包含评价性的词汇</li>
+                        </ul>
+
+                        <h4><strong>观点的例子</strong>：</h4>
+                        <ul>
+                            <li>"今天的天气很舒服"</li>
+                            <li>"这本书很有趣"</li>
+                            <li>"小明很聪明"</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="tips">
+                        <h3>🔍 识别小技巧</h3>
+
+                        <h4><strong>寻找关键词</strong>：</h4>
+                        <div class="signal-words">
+                            <div class="word-category fact-words">
+                                <h5>事实常用词</h5>
+                                <div class="word-tags">
+                                    <span class="word-tag">是</span>
+                                    <span class="word-tag">有</span>
+                                    <span class="word-tag">发生了</span>
+                                    <span class="word-tag">测量到</span>
+                                    <span class="word-tag">记录显示</span>
+                                </div>
+                            </div>
+                            <div class="word-category opinion-words">
+                                <h5>观点常用词</h5>
+                                <div class="word-tags">
+                                    <span class="word-tag">我觉得</span>
+                                    <span class="word-tag">很</span>
+                                    <span class="word-tag">最</span>
+                                    <span class="word-tag">应该</span>
+                                    <span class="word-tag">可能</span>
+                                    <span class="word-tag">据说</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4><strong>提问验证法</strong>：</h4>
+                        <ul>
+                            <li>这个信息可以被证实吗？</li>
+                            <li>不同的人会有不同的看法吗？</li>
+                            <li>这里面包含个人感受吗？</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+                <!-- 核心内容 -->
+                <section class="core-content">
+                    <h2 class="section-title">🧠 核心内容</h2>
+                    <div class="content-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="method">识别方法</button>
+                            <button class="tab-btn" data-tab="signals">信号词汇</button>
+                            <button class="tab-btn" data-tab="practice">练习技巧</button>
+                        </div>
+
+                        <div class="tab-content active" id="method">
+                            <h3>事实观点识别法</h3>
+                            <div class="method-steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>问自己：这个信息可以验证吗？</h4>
+                                        <p>如果可以通过查证、测量或观察来确认，很可能是事实。</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>寻找主观性词汇</h4>
+                                        <p>注意"我觉得"、"很棒"、"应该"等表达个人判断的词汇。</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>考虑普遍性</h4>
+                                        <p>事实对所有人都一样，观点可能因人而异。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="signals">
+                            <h3>识别信号词汇</h3>
+                            <div class="signal-words">
+                                <div class="word-category fact-words">
+                                    <h4>事实信号词</h4>
+                                    <div class="word-tags">
+                                        <span class="word-tag">数据显示</span>
+                                        <span class="word-tag">研究表明</span>
+                                        <span class="word-tag">根据统计</span>
+                                        <span class="word-tag">测量结果</span>
+                                        <span class="word-tag">官方公布</span>
+                                    </div>
+                                </div>
+                                <div class="word-category opinion-words">
+                                    <h4>观点信号词</h4>
+                                    <div class="word-tags">
+                                        <span class="word-tag">我认为</span>
+                                        <span class="word-tag">应该</span>
+                                        <span class="word-tag">最好的</span>
+                                        <span class="word-tag">令人</span>
+                                        <span class="word-tag">值得</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="practice">
+                            <h3>日常练习技巧</h3>
+                            <div class="practice-tips">
+                                <div class="tip-item">
+                                    <div class="tip-icon">📱</div>
+                                    <h4>社交媒体练习</h4>
+                                    <p>每天选择3-5条朋友圈或微博内容，练习区分其中的事实和观点。</p>
+                                </div>
+                                <div class="tip-item">
+                                    <div class="tip-icon">📰</div>
+                                    <h4>新闻阅读练习</h4>
+                                    <p>阅读新闻时，区分报道的事实部分和评论分析部分。</p>
+                                </div>
+                                <div class="tip-item">
+                                    <div class="tip-icon">💬</div>
+                                    <h4>对话练习</h4>
+                                    <p>在日常对话中，注意识别对方表达的是事实还是个人观点。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+            <!-- 交互练习 -->
+            <section class="interactive-practice">
+                <h2 class="section-title">🎮 交互练习</h2>
+                <div class="practice-question">
+                    <h3>快速判断：下面哪些是事实，哪些是观点？</h3>
+                    <div class="question-items">
+                        <div class="question-item" data-type="fact">
+                            <span class="item-text">"这部电影时长120分钟"</span>
+                            <div class="item-buttons">
+                                <button class="choice-btn" data-choice="fact">事实</button>
+                                <button class="choice-btn" data-choice="opinion">观点</button>
+                            </div>
+                            <div class="feedback hidden"></div>
+                        </div>
+                        <div class="question-item" data-type="opinion">
+                            <span class="item-text">"这部电影非常精彩"</span>
+                            <div class="item-buttons">
+                                <button class="choice-btn" data-choice="fact">事实</button>
+                                <button class="choice-btn" data-choice="opinion">观点</button>
+                            </div>
+                            <div class="feedback hidden"></div>
+                        </div>
+                        <div class="question-item" data-type="fact">
+                            <span class="item-text">"今天股价上涨了3.2%"</span>
+                            <div class="item-buttons">
+                                <button class="choice-btn" data-choice="fact">事实</button>
+                                <button class="choice-btn" data-choice="opinion">观点</button>
+                            </div>
+                            <div class="feedback hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="simple-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 神奇喵喵思维训练实验室. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/neural-art.js"></script>
+    <script src="assets/js/course.js"></script>
+</body>
+</html>

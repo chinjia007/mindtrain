@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第59课：概率与统计的初步（生活中的可能性）</title>
+    <link rel="stylesheet" href="assets/css/clean-course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态禅意背景 -->
+    <div class="zen-background">
+        <canvas id="zenCanvas"></canvas>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- 禅意导航 -->
+    <nav class="zen-nav">
+        <div class="nav-essence">
+            <div class="course-spirit">
+                <h1 class="spirit-title">第59课：概率与统计的初步（生活中的可能性）</h1>
+                <div class="journey-meta">
+                    <span class="time-flow">⏳ 20分钟</span>
+                    <span class="wisdom-level">🌱 4年级及以上（已完成入门阶段学习）</span>
+                </div>
+            </div>
+            <div class="progress-mandala">
+                开始
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容流 -->
+    <main class="wisdom-flow">
+        
+        <section class="course-header" data-section="header">
+            <div class="zen-container">
+                <div class="header-card">
+                    <div class="course-badge">第59课</div>
+                    <h1 class="course-main-title">概率与统计的初步（生活中的可能性）</h1>
+                    <p class="course-subtitle">培养批判性思维，提升逻辑分析能力</p>
+                    
+            <div class="course-meta-info">
+                <div class="meta-item">
+                    <span class="meta-icon">📚</span>
+                    <span class="meta-text">逻辑思维基础</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <span class="meta-text">4年级及以上（已完成入门阶段学习）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    <span class="meta-text">20分钟</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-of-contents">
+            <div class="zen-container">
+                <div class="toc-card">
+                    <h3 class="toc-title">📋 课程目录</h3>
+                    <div class="toc-list">
+                        
+                            <a href="#section-0" class="toc-item content">
+                                <span class="toc-number">01</span>
+                                <span class="toc-text">� 课程信息</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-1" class="toc-item content">
+                                <span class="toc-number">02</span>
+                                <span class="toc-text">� 学习目标</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-2" class="toc-item concept">
+                                <span class="toc-number">03</span>
+                                <span class="toc-text">� 概念导入（3分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-3" class="toc-item case">
+                                <span class="toc-number">04</span>
+                                <span class="toc-text">� 案例展示（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-4" class="toc-item content">
+                                <span class="toc-number">05</span>
+                                <span class="toc-text">🧠 核心内容（5分钟）</span>
+                                <span class="toc-duration">3分钟</span>
+                            </a>
+                        
+                            <a href="#section-5" class="toc-item practice">
+                                <span class="toc-number">06</span>
+                                <span class="toc-text">� 交互练习（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-6" class="toc-item test">
+                                <span class="toc-number">07</span>
+                                <span class="toc-text">技能确认测试（2分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-7" class="toc-item advanced">
+                                <span class="toc-number">08</span>
+                                <span class="toc-text">� 深度拓展：成人世界的概率统计智慧（8分钟）</span>
+                                <span class="toc-duration">6分钟</span>
+                            </a>
+                        
+                            <a href="#section-8" class="toc-item application">
+                                <span class="toc-number">09</span>
+                                <span class="toc-text">� 生活应用提示</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-9" class="toc-item summary">
+                                <span class="toc-number">10</span>
+                                <span class="toc-text">� 课程小结</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-0" id="section-0">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">01</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程信息</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">所属模块</strong>：逻辑思维基础</li><li class="zen-list-item"><strong class="zen-bold">适合年级</strong>：4年级及以上（已完成入门阶段学习）</li><li class="zen-list-item"><strong class="zen-bold">学习时长</strong>：23分钟（技能掌握15分钟 + 深度拓展8分钟）</li><li class="zen-list-item"><strong class="zen-bold">核心技能</strong>：理解概率概念，掌握简单统计分析，识别数据误读陷阱</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-1" id="section-1">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">02</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 学习目标</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph">学完这节课，你将能够：</p><ul class="content-list content-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解概率的基本概念和表达方式</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 区分必然事件、不可能事件和随机事件</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 进行简单的概率计算</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解统计数据的含义和局限性</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section concept" data-section="section-2" id="section-2">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">03</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 概念导入（3分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">概念学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 思考一下</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">在日常生活中，我们经常会遇到各种不确定的情况：</p><p class="zen-paragraph"><strong class="zen-bold">天气预报说</strong>：</p><ul class="content-list concept-list"><li class="zen-list-item">"明天降雨概率70%"</li><li class="zen-list-item">"今天最高温度25°C"</li></ul><p class="zen-paragraph"><strong class="zen-bold">生活中的选择</strong>：</p><ul class="content-list concept-list"><li class="zen-list-item">"这次考试我能考90分以上吗？"</li><li class="zen-list-item">"抽奖活动我能中奖吗？"</li><li class="zen-list-item">"这个路口现在会堵车吗？"</li></ul><p class="zen-paragraph"><strong class="zen-bold">统计数据告诉我们</strong>：</p><ul class="content-list concept-list"><li class="zen-list-item">"我们班平均身高150cm"</li><li class="zen-list-item">"这个游戏的胜率是60%"</li><li class="zen-list-item">"这种方法的成功率是80%"</li></ul><p class="zen-paragraph">你有没有想过：这些数字到底意味着什么？我们应该如何理解和使用这些信息？</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section case" data-section="section-3" id="section-3">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">04</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 案例展示（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">案例分析</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 案例1：掷骰子的概率计算</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">背景</strong>：理解基本概率计算</p><p class="zen-paragraph"><strong class="zen-bold">问题</strong>：用一个标准六面骰子，各种结果的概率是多少？</p><p class="zen-paragraph"><strong class="zen-bold">分析过程</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">基本信息</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">骰子有6个面：1, 2, 3, 4, 5, 6</li><li class="zen-list-item">每个面出现的可能性相等</li><li class="zen-list-item">总的可能结果数：6种</li></ul><p class="zen-paragraph"><strong class="zen-bold">具体计算</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">单一结果的概率</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">掷出"3"的概率 = 1/6 ≈ 0.167 ≈ 16.7%</li><li class="zen-list-item">掷出任意指定数字的概率都是1/6</li></ul><p class="zen-paragraph"><strong class="zen-bold">复合事件的概率</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">掷出偶数（2, 4, 6）的概率 = 3/6 = 1/2 = 50%</li><li class="zen-list-item">掷出大于4的数（5, 6）的概率 = 2/6 = 1/3 ≈ 33.3%</li><li class="zen-list-item">掷出小于等于2的数（1, 2）的概率 = 2/6 = 1/3 ≈ 33.3%</li></ul><p class="zen-paragraph"><strong class="zen-bold">实际验证</strong>：</p><p class="zen-paragraph">如果我们掷骰子60次，理论上：</p><ul class="content-list case-list"><li class="zen-list-item">每个数字应该出现约10次</li><li class="zen-list-item">偶数应该出现约30次</li><li class="zen-list-item">大于4的数应该出现约20次</li></ul><p class="zen-paragraph"><strong class="zen-bold">重要理解</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">概率是长期趋势，不是短期保证</li><li class="zen-list-item">掷10次可能不会每个数字都出现</li><li class="zen-list-item">掷1000次会更接近理论概率</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 案例2：天气预报的概率解读</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">背景</strong>：理解现实生活中的概率应用</p><p class="zen-paragraph"><strong class="zen-bold">天气预报说</strong>："明天降雨概率70%"</p><p class="zen-paragraph"><strong class="zen-bold">这个数字的含义</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">正确理解</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">在类似的天气条件下，100次中大约有70次会下雨</li><li class="zen-list-item">这是基于历史数据和气象模型的预测</li><li class="zen-list-item">仍然有30%的可能不下雨</li></ul><p class="zen-paragraph"><strong class="zen-bold">错误理解</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><span class="zen-emoji">❌</span> 明天70%的时间会下雨</li><li class="zen-list-item"><span class="zen-emoji">❌</span> 明天70%的地区会下雨</li><li class="zen-list-item"><span class="zen-emoji">❌</span> 雨量会是正常雨量的70%</li></ul><p class="zen-paragraph"><strong class="zen-bold">实际应用</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">70%降雨概率</strong>：建议带伞，做下雨的准备</li><li class="zen-list-item"><strong class="zen-bold">30%降雨概率</strong>：可以不带伞，但要关注天气变化</li><li class="zen-list-item"><strong class="zen-bold">90%降雨概率</strong>：几乎肯定下雨，必须做好准备</li></ul><p class="zen-paragraph"><strong class="zen-bold">概率与决策</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">概率帮助我们做更好的决策</li><li class="zen-list-item">不是绝对的预测，而是风险评估</li><li class="zen-list-item">需要结合个人情况和风险承受能力</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-4" id="section-4">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">05</div>
+                        <div class="section-info">
+                            <h2 class="section-title">🧠 核心内容（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">3 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 概率计算的基本方法</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">基本公式</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">概率 = 有利结果数 / 总的可能结果数</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">计算步骤</strong>：</p><ol class="content-list content-list"><li class="zen-numbered-item"><strong class="zen-bold">确定总的可能结果数</strong></li><li class="zen-numbered-item"><strong class="zen-bold">确定有利结果数</strong></li><li class="zen-numbered-item"><strong class="zen-bold">计算比值</strong></li><li class="zen-numbered-item"><strong class="zen-bold">转换为合适的表达形式</strong></li></ol><p class="zen-paragraph"><strong class="zen-bold">例子1：抽卡片</strong></p><ul class="content-list content-list"><li class="zen-list-item">从52张扑克牌中抽一张</li><li class="zen-list-item">抽到红桃的概率 = 13/52 = 1/4 = 25%</li><li class="zen-list-item">抽到K的概率 = 4/52 = 1/13 ≈ 7.7%</li></ul><p class="zen-paragraph"><strong class="zen-bold">例子2：选择题</strong></p><ul class="content-list content-list"><li class="zen-list-item">4选1的单选题，随机猜测</li><li class="zen-list-item">猜对的概率 = 1/4 = 25%</li><li class="zen-list-item">猜错的概率 = 3/4 = 75%</li></ul><p class="zen-paragraph"><strong class="zen-bold">1. 概率的范围</strong></p><ul class="content-list content-list"><li class="zen-list-item">任何事件的概率都在0到1之间</li><li class="zen-list-item">0 ≤ P(事件) ≤ 1</li></ul><p class="zen-paragraph"><strong class="zen-bold">2. 所有可能结果的概率之和为1</strong></p><ul class="content-list content-list"><li class="zen-list-item">P(所有可能结果) = 1</li><li class="zen-list-item">例如：P(正面) + P(反面) = 0.5 + 0.5 = 1</li></ul><p class="zen-paragraph"><strong class="zen-bold">3. 对立事件的概率</strong></p><ul class="content-list content-list"><li class="zen-list-item">P(事件发生) + P(事件不发生) = 1</li><li class="zen-list-item">P(事件不发生) = 1 - P(事件发生)</li></ul><p class="zen-paragraph"><strong class="zen-bold">风险评估</strong>：</p><ul class="content-list content-list"><li class="zen-list-item">了解某种风险发生的可能性</li><li class="zen-list-item">制定相应的预防措施</li><li class="zen-list-item">做出更明智的决策</li></ul><p class="zen-paragraph"><strong class="zen-bold">游戏和娱乐</strong>：</p><ul class="content-list content-list"><li class="zen-list-item">理解游戏规则的公平性</li><li class="zen-list-item">评估获胜的可能性</li><li class="zen-list-item">避免赌博陷阱</li></ul><p class="zen-paragraph"><strong class="zen-bold">日常决策</strong>：</p><ul class="content-list content-list"><li class="zen-list-item">根据天气预报决定是否带伞</li><li class="zen-list-item">根据交通状况选择出行路线</li><li class="zen-list-item">根据成功概率决定是否尝试</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 统计分析的基本方法</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">1. 代表性</strong></p><ul class="content-list content-list"><li class="zen-list-item">样本要能代表总体</li><li class="zen-list-item">避免选择偏差</li><li class="zen-list-item">确保样本足够大</li></ul><p class="zen-paragraph"><strong class="zen-bold">2. 随机性</strong></p><ul class="content-list content-list"><li class="zen-list-item">随机选择样本</li><li class="zen-list-item">避免主观偏见</li><li class="zen-list-item">保证每个个体被选中的机会相等</li></ul><p class="zen-paragraph"><strong class="zen-bold">3. 完整性</strong></p><ul class="content-list content-list"><li class="zen-list-item">收集完整的数据</li><li class="zen-list-item">避免遗漏重要信息</li><li class="zen-list-item">记录数据收集的条件</li></ul><p class="zen-paragraph"><strong class="zen-bold">平均数（均值）</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">计算方法</strong>：(x₁ + x₂ + ... + xₙ) ÷ n</li><li class="zen-list-item"><strong class="zen-bold">适用情况</strong>：数据分布比较均匀</li><li class="zen-list-item"><strong class="zen-bold">优点</strong>：计算简单，包含所有数据信息</li><li class="zen-list-item"><strong class="zen-bold">缺点</strong>：容易受极端值影响</li></ul><p class="zen-paragraph"><strong class="zen-bold">中位数</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">计算方法</strong>：将数据排序后取中间值</li><li class="zen-list-item"><strong class="zen-bold">适用情况</strong>：数据有极端值或分布不均匀</li><li class="zen-list-item"><strong class="zen-bold">优点</strong>：不受极端值影响</li><li class="zen-list-item"><strong class="zen-bold">缺点</strong>：不能充分利用所有数据信息</li></ul><p class="zen-paragraph"><strong class="zen-bold">众数</strong>：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">计算方法</strong>：出现次数最多的数值</li><li class="zen-list-item"><strong class="zen-bold">适用情况</strong>：了解最常见的情况</li><li class="zen-list-item"><strong class="zen-bold">优点</strong>：直观易懂</li><li class="zen-list-item"><strong class="zen-bold">缺点</strong>：可能不存在或有多个</li></ul><p class="zen-paragraph"><strong class="zen-bold">陷阱1：平均数掩盖差异</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">例子</strong>：某公司平均工资8000元</li><li class="zen-list-item"><strong class="zen-bold">可能情况</strong>：老板50000元，9个员工各3000元</li><li class="zen-list-item"><strong class="zen-bold">正确做法</strong>：同时看平均数、中位数和分布</li></ul><p class="zen-paragraph"><strong class="zen-bold">陷阱2：样本不代表总体</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">例子</strong>：在网吧调查学生上网时间</li><li class="zen-list-item"><strong class="zen-bold">问题</strong>：样本有偏，不能代表所有学生</li><li class="zen-list-item"><strong class="zen-bold">正确做法</strong>：确保样本的代表性</li></ul><p class="zen-paragraph"><strong class="zen-bold">陷阱3：相关性不等于因果性</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">例子</strong>：冰淇淋销量与溺水人数都在夏天增加</li><li class="zen-list-item"><strong class="zen-bold">错误结论</strong>：冰淇淋导致溺水</li><li class="zen-list-item"><strong class="zen-bold">正确理解</strong>：都与天气炎热有关</li></ul><p class="zen-paragraph"><strong class="zen-bold">陷阱4：忽略样本大小</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">例子</strong>：某药物在3个人中有效率100%</li><li class="zen-list-item"><strong class="zen-bold">问题</strong>：样本太小，结论不可靠</li><li class="zen-list-item"><strong class="zen-bold">正确做法</strong>：考虑样本大小的影响</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section practice" data-section="section-5" id="section-5">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">06</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 交互练习（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">实践练习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 练习1：概率计算</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">计算下面情况的概率：</p><p class="zen-paragraph"><strong class="zen-bold">情况A：抽奖活动</strong></p><ul class="content-list practice-list"><li class="zen-list-item">奖箱里有100个球，其中5个是奖球</li><li class="zen-list-item">抽中奖球的概率是多少？</li><li class="zen-list-item">用三种方式表达这个概率</li></ul><p class="zen-paragraph"><strong class="zen-bold">你的计算</strong>：</p><ul class="content-list practice-list"><li class="zen-list-item">有利结果数：_______</li><li class="zen-list-item">总结果数：_______</li><li class="zen-list-item">概率 = _______ / _______ = _______</li><li class="zen-list-item">分数形式：_______</li><li class="zen-list-item">百分比形式：_______%</li><li class="zen-list-item">语言描述：_______</li></ul><p class="zen-paragraph"><strong class="zen-bold">情况B：考试选择题</strong></p><ul class="content-list practice-list"><li class="zen-list-item">5道4选1的单选题，完全随机猜测</li><li class="zen-list-item">全部猜对的概率是多少？</li><li class="zen-list-item">至少猜对3道的概率大概是多少？</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 练习2：统计分析</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">分析下面的数据：</p><p class="zen-paragraph"><strong class="zen-bold">数据</strong>：某班10名学生的考试成绩</p><p class="zen-paragraph">85, 92, 78, 95, 88, 76, 90, 82, 94, 89</p><p class="zen-paragraph"><strong class="zen-bold">分析任务</strong>：</p><ul class="content-list practice-list"><li class="zen-list-item">平均分：_______</li><li class="zen-list-item">中位数：_______</li><li class="zen-list-item">最高分：_______</li><li class="zen-list-item">最低分：_______</li><li class="zen-list-item">成绩范围：_______</li><li class="zen-list-item">大部分学生的成绩水平：_______</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section test" data-section="section-6" id="section-6">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">07</div>
+                        <div class="section-info">
+                            <h2 class="section-title">技能确认测试（2分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">技能测试</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 快速测试</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">情况</strong>：某学校食堂有3个窗口，小明观察了一周的排队情况：</p><ul class="content-list test-list"><li class="zen-list-item">窗口A：平均排队15人，等待时间8分钟</li><li class="zen-list-item">窗口B：平均排队12人，等待时间10分钟</li><li class="zen-list-item">窗口C：平均排队18人，等待时间6分钟</li></ul><p class="zen-paragraph">小明得出结论："窗口A最好，因为等待时间最短。"</p><p class="zen-paragraph"><strong class="zen-bold">问题</strong>：这个结论有什么问题？</p><p class="zen-paragraph">A. 没有考虑排队人数的影响</p><p class="zen-paragraph">B. 观察时间太短，数据不可靠</p><p class="zen-paragraph">C. 没有考虑菜品质量的差异</p><p class="zen-paragraph">D. 平均数可能掩盖了时间差异</p><p class="zen-paragraph"><strong class="zen-bold">正确答案</strong>：D</p><p class="zen-paragraph"><strong class="zen-bold">解释</strong>：小明的结论主要问题是只看平均等待时间，没有考虑时间的变化范围。窗口A虽然平均8分钟，但可能有时候2分钟，有时候15分钟，变化很大。而窗口C虽然平均6分钟，但可能比较稳定，都在5-7分钟之间。另外，也应该考虑排队人数（A选项也有道理），但题目重点考查的是对平均数局限性的理解。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section advanced" data-section="section-7" id="section-7">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">08</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 深度拓展：成人世界的概率统计智慧（8分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">拓展提升</span>
+                                <span class="section-duration">6 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 商业决策中的概率统计</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">在成人世界里，概率统计是商业分析、风险管理、市场研究等领域的核心工具：</p><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：某电商平台分析用户购买行为</p><p class="zen-paragraph"><strong class="zen-bold">数据收集</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">用户访问数据</strong>：每日100万访问量</li><li class="zen-list-item"><strong class="zen-bold">转化率数据</strong>：整体转化率2.5%</li><li class="zen-list-item"><strong class="zen-bold">用户行为数据</strong>：浏览时长、点击路径、购买偏好</li></ul><p class="zen-paragraph"><strong class="zen-bold">概率分析应用</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">转化率预测</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">当前转化率</strong>：2.5%（每100个访客中有2.5个购买）</li><li class="zen-list-item"><strong class="zen-bold">新功能测试</strong>：A/B测试显示新界面转化率3.1%</li><li class="zen-list-item"><strong class="zen-bold">提升概率</strong>：新界面提升转化率的概率为85%（基于统计检验）</li></ul><p class="zen-paragraph"><strong class="zen-bold">风险评估</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">库存风险</strong>：某商品滞销概率15%，需要调整进货策略</li><li class="zen-list-item"><strong class="zen-bold">季节性风险</strong>：夏季服装在秋季的销售概率低于5%</li><li class="zen-list-item"><strong class="zen-bold">价格风险</strong>：降价10%后销量增加50%的概率为70%</li></ul><p class="zen-paragraph"><strong class="zen-bold">用户分群分析</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">高价值用户</strong>：占总用户5%，贡献30%的收入</li><li class="zen-list-item"><strong class="zen-bold">流失风险用户</strong>：30天未购买的用户，流失概率60%</li><li class="zen-list-item"><strong class="zen-bold">新用户转化</strong>：首次访问用户的购买概率仅0.8%</li></ul><p class="zen-paragraph"><strong class="zen-bold">决策应用</strong>：</p><p class="zen-paragraph">基于概率统计分析制定策略：</p><ol class="content-list advanced-list"><li class="zen-numbered-item"><strong class="zen-bold">界面优化</strong>：全面推广新界面（转化率提升概率85%）</li><li class="zen-numbered-item"><strong class="zen-bold">库存管理</strong>：减少滞销风险高的商品进货</li><li class="zen-numbered-item"><strong class="zen-bold">用户运营</strong>：重点维护高价值用户，挽回流失风险用户</li><li class="zen-numbered-item"><strong class="zen-bold">营销策略</strong>：针对新用户设计特殊的转化策略</li></ol><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：汽车保险公司制定保费标准</p><p class="zen-paragraph"><strong class="zen-bold">统计数据分析</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">事故概率统计</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">年龄因素</strong>：</li><li class="zen-list-item">18-25岁：事故概率8.5%</li><li class="zen-list-item">26-35岁：事故概率4.2%</li><li class="zen-list-item">36-50岁：事故概率3.1%</li><li class="zen-list-item">50岁以上：事故概率4.8%</li></ul><p class="zen-paragraph"><strong class="zen-bold">驾驶经验影响</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">新手司机</strong>（1年以下）：事故概率12%</li><li class="zen-list-item"><strong class="zen-bold">经验司机</strong>（5年以上）：事故概率3.5%</li><li class="zen-list-item"><strong class="zen-bold">老司机</strong>（15年以上）：事故概率2.8%</li></ul><p class="zen-paragraph"><strong class="zen-bold">车型风险分析</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">跑车</strong>：事故概率7.2%，平均赔付额15万</li><li class="zen-list-item"><strong class="zen-bold">SUV</strong>：事故概率4.1%，平均赔付额8万</li><li class="zen-list-item"><strong class="zen-bold">家用轿车</strong>：事故概率3.8%，平均赔付额6万</li></ul><p class="zen-paragraph"><strong class="zen-bold">保费计算模型</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">基础保费 = 基准费率 × 年龄系数 × 经验系数 × 车型系数</p><p class="zen-paragraph">风险调整 = 基础保费 × (1 + 事故概率 × 平均赔付倍数)</p><p class="zen-paragraph">最终保费 = 风险调整 + 运营成本 + 利润空间</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph"><strong class="zen-bold">实际应用</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">个性化定价</strong>：根据个人风险特征制定差异化保费</li><li class="zen-list-item"><strong class="zen-bold">风险控制</strong>：拒绝承保高风险客户或提高保费</li><li class="zen-list-item"><strong class="zen-bold">产品设计</strong>：开发针对低风险群体的优惠产品</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 投资理财中的概率统计</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">场景</strong>：个人投资者进行股票投资决策</p><p class="zen-paragraph"><strong class="zen-bold">历史数据分析</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">市场整体表现</strong>（过去20年）：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">上涨年份</strong>：14年（概率70%）</li><li class="zen-list-item"><strong class="zen-bold">下跌年份</strong>：6年（概率30%）</li><li class="zen-list-item"><strong class="zen-bold">平均年收益率</strong>：8.5%</li><li class="zen-list-item"><strong class="zen-bold">最大年涨幅</strong>：45%</li><li class="zen-list-item"><strong class="zen-bold">最大年跌幅</strong>：-38%</li></ul><p class="zen-paragraph"><strong class="zen-bold">不同投资策略的概率分析</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">策略A：长期持有指数基金</strong></p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">5年盈利概率</strong>：85%</li><li class="zen-list-item"><strong class="zen-bold">10年盈利概率</strong>：95%</li><li class="zen-list-item"><strong class="zen-bold">年化收益率分布</strong>：</li><li class="zen-list-item">10%以上：概率30%</li><li class="zen-list-item">5%-10%：概率40%</li><li class="zen-list-item">0%-5%：概率20%</li><li class="zen-list-item">负收益：概率10%</li></ul><p class="zen-paragraph"><strong class="zen-bold">策略B：短期交易</strong></p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">单次交易盈利概率</strong>：45%</li><li class="zen-list-item"><strong class="zen-bold">一年内整体盈利概率</strong>：25%</li><li class="zen-list-item"><strong class="zen-bold">交易成本影响</strong>：平均降低收益率2%</li></ul><p class="zen-paragraph"><strong class="zen-bold">策略C：定投策略</strong></p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">任意时点开始定投3年后盈利概率</strong>：78%</li><li class="zen-list-item"><strong class="zen-bold">定投5年后盈利概率</strong>：92%</li><li class="zen-list-item"><strong class="zen-bold">平均年化收益率</strong>：7.2%</li></ul><p class="zen-paragraph"><strong class="zen-bold">风险管理应用</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">资产配置</strong>：根据风险承受能力分配投资比例</li><li class="zen-list-item"><strong class="zen-bold">止损策略</strong>：设定亏损20%时止损（控制最大损失）</li><li class="zen-list-item"><strong class="zen-bold">分散投资</strong>：降低单一投资的风险影响</li></ul><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：评估房地产投资的可行性</p><p class="zen-paragraph"><strong class="zen-bold">市场数据分析</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">房价走势统计</strong>（某城市过去10年）：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">年均涨幅</strong>：6.8%</li><li class="zen-list-item"><strong class="zen-bold">涨幅分布</strong>：</li><li class="zen-list-item">10%以上：3年</li><li class="zen-list-item">5%-10%：4年</li><li class="zen-list-item">0%-5%：2年</li><li class="zen-list-item">负增长：1年</li></ul><p class="zen-paragraph"><strong class="zen-bold">区域差异分析</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">核心区域</strong>：年均涨幅8.2%，波动性较小</li><li class="zen-list-item"><strong class="zen-bold">新兴区域</strong>：年均涨幅12.5%，波动性较大</li><li class="zen-list-item"><strong class="zen-bold">远郊区域</strong>：年均涨幅4.1%，增长稳定</li></ul><p class="zen-paragraph"><strong class="zen-bold">投资回报分析</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">租金收益率</strong>：2.5%-4.2%</li><li class="zen-list-item"><strong class="zen-bold">空置风险</strong>：核心区域5%，新兴区域15%</li><li class="zen-list-item"><strong class="zen-bold">总投资回报</strong>：租金收益 + 房价增值 - 持有成本</li></ul><p class="zen-paragraph"><strong class="zen-bold">决策模型</strong>：</p><p class="zen-paragraph"><code class="zen-code"></code>`</p><p class="zen-paragraph">预期年化收益率 = 租金收益率 × (1-空置率) + 房价增值率 - 持有成本率</p><p class="zen-paragraph">投资风险评级 = 价格波动性 × 0.4 + 空置风险 × 0.3 + 政策风险 × 0.3</p><p class="zen-paragraph"><code class="zen-code"></code>`</p>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">� 医疗健康中的概率统计</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">场景</strong>：理解医学检查结果的概率含义</p><p class="zen-paragraph"><strong class="zen-bold">检查准确性分析</strong>：</p><div class="exercise-box"><strong class="zen-bold">某疾病筛查测试</strong>：</div><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">敏感性</strong>：95%（有病的人中95%能检出）</li><li class="zen-list-item"><strong class="zen-bold">特异性</strong>：90%（没病的人中90%检查正常）</li><li class="zen-list-item"><strong class="zen-bold">疾病患病率</strong>：人群中1%的人患此病</li></ul><p class="zen-paragraph"><strong class="zen-bold">检查结果的概率解读</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">阳性结果的意义</strong>：</p><p class="zen-paragraph">如果检查结果为阳性，实际患病的概率是多少？</p><p class="zen-paragraph"><strong class="zen-bold">计算过程</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">假设检查1000人</li><li class="zen-list-item">真正患病：10人（1%）</li><li class="zen-list-item">真正健康：990人（99%）</li><li class="zen-list-item">检出患病：10 × 95% = 9.5人</li><li class="zen-list-item">误诊为患病：990 × 10% = 99人</li><li class="zen-list-item">总阳性结果：9.5 + 99 = 108.5人</li><li class="zen-list-item"><strong class="zen-bold">实际患病概率</strong>：9.5/108.5 ≈ 8.8%</li></ul><p class="zen-paragraph"><strong class="zen-bold">重要启示</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">即使检查阳性，实际患病概率仍然较低</li><li class="zen-list-item">需要进一步检查确认</li><li class="zen-list-item">不要因为阳性结果过度恐慌</li></ul><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：基于统计数据制定健康计划</p><p class="zen-paragraph"><strong class="zen-bold">运动与健康的统计关系</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">心血管疾病风险</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">不运动人群</strong>：发病率8.5%</li><li class="zen-list-item"><strong class="zen-bold">轻度运动</strong>（每周2-3次）：发病率5.2%</li><li class="zen-list-item"><strong class="zen-bold">中度运动</strong>（每周4-5次）：发病率3.1%</li><li class="zen-list-item"><strong class="zen-bold">高强度运动</strong>（每周6次以上）：发病率2.8%</li></ul><p class="zen-paragraph"><strong class="zen-bold">寿命影响统计</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">规律运动</strong>：平均寿命延长3.4年</li><li class="zen-list-item"><strong class="zen-bold">健康饮食</strong>：平均寿命延长2.8年</li><li class="zen-list-item"><strong class="zen-bold">不吸烟</strong>：平均寿命延长10年</li><li class="zen-list-item"><strong class="zen-bold">适量饮酒</strong>：平均寿命延长1.2年</li></ul><p class="zen-paragraph"><strong class="zen-bold">生活方式组合效应</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">健康生活方式组合</strong>：运动+饮食+不吸烟</li><li class="zen-list-item"><strong class="zen-bold">综合效应</strong>：平均寿命延长14.2年</li><li class="zen-list-item"><strong class="zen-bold">疾病风险降低</strong>：心血管疾病风险降低76%</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="3">
+                            <h3 class="block-title">� 概率统计的高级应用</h3>
+                            <div class="block-content">
+                                <ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">海量数据处理</strong>：从TB级数据中提取有价值信息</li><li class="zen-list-item"><strong class="zen-bold">实时统计</strong>：动态更新的概率模型</li><li class="zen-list-item"><strong class="zen-bold">机器学习</strong>：基于概率的预测算法</li><li class="zen-list-item"><strong class="zen-bold">贝叶斯推理</strong>：基于先验概率更新后验概率</li><li class="zen-list-item"><strong class="zen-bold">随机算法</strong>：利用随机性解决复杂问题</li><li class="zen-list-item"><strong class="zen-bold">不确定性处理</strong>：在不完全信息下做决策</li><li class="zen-list-item"><strong class="zen-bold">民意调查</strong>：基于样本推断总体意见</li><li class="zen-list-item"><strong class="zen-bold">社会实验</strong>：评估政策效果的统计方法</li><li class="zen-list-item"><strong class="zen-bold">行为预测</strong>：基于历史数据预测行为模式</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section application" data-section="section-8" id="section-8">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">09</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 生活应用提示</h2>
+                            <div class="section-meta">
+                                <span class="section-type">应用实战</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">今天就可以尝试：</h3>
+                            <div class="block-content">
+                                <ol class="content-list application-list"><li class="zen-numbered-item"><strong class="zen-bold">概率思维</strong>：在做决策时，尝试估算各种结果的概率</li><li class="zen-numbered-item"><strong class="zen-bold">数据观察</strong>：关注生活中遇到的统计数据，思考其含义</li><li class="zen-numbered-item"><strong class="zen-bold">误读识别</strong>：看到统计结论时，想想可能存在的问题</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section summary" data-section="section-9" id="section-9">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">10</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程小结</h2>
+                            <div class="section-meta">
+                                <span class="section-type">总结回顾</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph"><strong class="zen-bold">今天你学会了</strong>：</p><ul class="content-list summary-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解概率概念：必然事件、不可能事件、随机事件</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 掌握概率计算：等可能事件的概率计算方法</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解统计量：平均数、中位数、众数的含义和局限性</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 识别误读陷阱：平均数掩盖差异、样本偏差、相关非因果等</li></ul><p class="zen-paragraph"><strong class="zen-bold">重要收获</strong>：</p><p class="zen-paragraph">生活中的可能性思维。掌握概率统计的基础知识，你就能更好地理解不确定性，在面对风险时做出更明智的决策，避免被误导性的数据所欺骗。</p><p class="zen-paragraph"><strong class="zen-bold">下节课预告</strong>：</p><p class="zen-paragraph">下节课我们将学习"逻辑在问题解决中的应用"——用系统化的逻辑方法解决复杂问题！</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 交互脚本 -->
+    <script src="assets/js/zen-course.js"></script>
+</body>
+</html>

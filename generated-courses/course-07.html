@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第07课：识别信息中的相似点与不同点</title>
+    <link rel="stylesheet" href="assets/css/clean-course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态禅意背景 -->
+    <div class="zen-background">
+        <canvas id="zenCanvas"></canvas>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- 禅意导航 -->
+    <nav class="zen-nav">
+        <div class="nav-essence">
+            <div class="course-spirit">
+                <h1 class="spirit-title">第07课：识别信息中的相似点与不同点</h1>
+                <div class="journey-meta">
+                    <span class="time-flow">⏳ 20分钟</span>
+                    <span class="wisdom-level">🌱 4年级及以上</span>
+                </div>
+            </div>
+            <div class="progress-mandala">
+                开始
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容流 -->
+    <main class="wisdom-flow">
+        
+        <section class="course-header" data-section="header">
+            <div class="zen-container">
+                <div class="header-card">
+                    <div class="course-badge">第07课</div>
+                    <h1 class="course-main-title">识别信息中的相似点与不同点</h1>
+                    <p class="course-subtitle">培养批判性思维，提升逻辑分析能力</p>
+                    
+            <div class="course-meta-info">
+                <div class="meta-item">
+                    <span class="meta-icon">📚</span>
+                    <span class="meta-text">批判性思维入门</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <span class="meta-text">4年级及以上</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    <span class="meta-text">20分钟</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-of-contents">
+            <div class="zen-container">
+                <div class="toc-card">
+                    <h3 class="toc-title">📋 课程目录</h3>
+                    <div class="toc-list">
+                        
+                            <a href="#section-0" class="toc-item content">
+                                <span class="toc-number">01</span>
+                                <span class="toc-text">� 课程信息</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-1" class="toc-item content">
+                                <span class="toc-number">02</span>
+                                <span class="toc-text">� 学习目标</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-2" class="toc-item concept">
+                                <span class="toc-number">03</span>
+                                <span class="toc-text">� 概念导入（3分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-3" class="toc-item case">
+                                <span class="toc-number">04</span>
+                                <span class="toc-text">� 案例展示（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-4" class="toc-item content">
+                                <span class="toc-number">05</span>
+                                <span class="toc-text">🧠 核心内容（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-5" class="toc-item practice">
+                                <span class="toc-number">06</span>
+                                <span class="toc-text">� 交互练习（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-6" class="toc-item test">
+                                <span class="toc-number">07</span>
+                                <span class="toc-text">技能确认测试（2分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-7" class="toc-item advanced">
+                                <span class="toc-number">08</span>
+                                <span class="toc-text">� 深度拓展：成人世界的比较智慧（8分钟）</span>
+                                <span class="toc-duration">3分钟</span>
+                            </a>
+                        
+                            <a href="#section-8" class="toc-item application">
+                                <span class="toc-number">09</span>
+                                <span class="toc-text">� 生活应用提示</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-9" class="toc-item summary">
+                                <span class="toc-number">10</span>
+                                <span class="toc-text">� 课程小结</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-0" id="section-0">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">01</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程信息</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">所属模块</strong>：批判性思维入门</li><li class="zen-list-item"><strong class="zen-bold">适合年级</strong>：4年级及以上</li><li class="zen-list-item"><strong class="zen-bold">学习时长</strong>：23分钟（技能掌握15分钟 + 深度拓展8分钟）</li><li class="zen-list-item"><strong class="zen-bold">核心技能</strong>：比较分析能力，识别事物间的共同特征和差异</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-1" id="section-1">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">02</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 学习目标</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph">学完这节课，你将能够：</p><ul class="content-list content-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 系统地找出事物间的相似点和不同点</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 从多个维度进行比较分析</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 运用比较分析做出更好的选择和判断</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 避免表面比较，深入理解事物本质</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section concept" data-section="section-2" id="section-2">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">03</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 概念导入（3分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">概念学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 思考一下</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">你在选择以下物品时会考虑什么？</p><ul class="content-list concept-list"><li class="zen-list-item">选择一本课外书：内容、价格、厚度、作者...</li><li class="zen-list-item">选择一个朋友：性格、兴趣、品德、能力...</li><li class="zen-list-item">选择一种交通工具：速度、价格、舒适度、环保性...</li></ul><p class="zen-paragraph">你发现了吗？我们每天都在比较，找相似点和不同点！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section case" data-section="section-3" id="section-3">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">04</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 案例展示（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">案例分析</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 场景1：选择交通工具</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">爸爸的决策</strong>：</p><blockquote class="zen-quote">爸爸要带小明去公园，可以选择骑自行车或坐公交车。他们来比较一下这两种方式。</blockquote><p class="zen-paragraph"><strong class="zen-bold">系统比较分析</strong>：</p><p class="zen-paragraph">| 比较维度 | 骑自行车 | 坐公交车 |</p><p class="zen-paragraph">|---------|---------|---------|</p><p class="zen-paragraph">| <strong class="zen-bold">速度</strong> | 中等速度 | 较快（不堵车时） |</p><p class="zen-paragraph">| <strong class="zen-bold">费用</strong> | 免费 | 需要买票 |</p><p class="zen-paragraph">| <strong class="zen-bold">灵活性</strong> | 随时停靠 | 固定站点 |</p><p class="zen-paragraph">| <strong class="zen-bold">锻炼效果</strong> | 有锻炼 | 无锻炼 |</p><p class="zen-paragraph">| <strong class="zen-bold">天气影响</strong> | 受天气影响大 | 受天气影响小 |</p><p class="zen-paragraph">| <strong class="zen-bold">载物能力</strong> | 有限 | 较大 |</p><p class="zen-paragraph"><strong class="zen-bold">相似点</strong>：都能到达目的地，都是环保的交通方式</p><p class="zen-paragraph"><strong class="zen-bold">关键不同点</strong>：费用、锻炼效果、灵活性</p><p class="zen-paragraph"><strong class="zen-bold"><span class="zen-emoji">🔍</span> 思考</strong>：根据这个比较，在什么情况下选择自行车更好？什么情况下选择公交车更好？</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-4" id="section-4">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">05</div>
+                        <div class="section-info">
+                            <h2 class="section-title">🧠 核心内容（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 比较分析的系统方法</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">选择合适的比较标准：</p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">外观特征</strong>：颜色、形状、大小</li><li class="zen-list-item"><strong class="zen-bold">功能用途</strong>：能做什么、怎么用</li><li class="zen-list-item"><strong class="zen-bold">性能指标</strong>：速度、效率、质量</li><li class="zen-list-item"><strong class="zen-bold">成本效益</strong>：价格、性价比、维护成本</li><li class="zen-list-item"><strong class="zen-bold">适用场景</strong>：什么时候用、什么人用</li><li class="zen-list-item">避免模糊描述，寻求具体数据</li><li class="zen-list-item">从可靠来源获取信息</li><li class="zen-list-item">注意信息的时效性和准确性</li><li class="zen-list-item"><strong class="zen-bold">共同点</strong>：都具备的特征</li><li class="zen-list-item"><strong class="zen-bold">独有特点</strong>：只有一方具备的特征</li><li class="zen-list-item"><strong class="zen-bold">程度差异</strong>：都有但程度不同的特征</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 比较分析的层次</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">只看显而易见的特征：</p><ul class="content-list content-list"><li class="zen-list-item">颜色、大小、价格等直观特征</li><li class="zen-list-item">容易观察但可能不够深入</li></ul><p class="zen-paragraph">关注用途和性能：</p><ul class="content-list content-list"><li class="zen-list-item">能做什么、效果如何</li><li class="zen-list-item">更实用但需要一定了解</li></ul><p class="zen-paragraph">深入理解核心差异：</p><ul class="content-list content-list"><li class="zen-list-item">设计理念、价值观、长远影响</li><li class="zen-list-item">最有价值但需要深度思考</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">⚠️ 比较分析的常见错误</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">错误做法</strong>：只比较价格，不看质量</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：综合考虑性价比</p><p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">错误做法</strong>：只从一个角度比较</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：多维度系统比较</p><p class="zen-paragraph"><span class="zen-emoji">❌</span> <strong class="zen-bold">错误做法</strong>：不考虑具体需求</p><p class="zen-paragraph"><span class="zen-emoji">✅</span> <strong class="zen-bold">正确做法</strong>：结合实际使用情况</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section practice" data-section="section-5" id="section-5">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">06</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 交互练习（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">实践练习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 练习1：找茬升级版</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">比较下面两种学习方法，找出相似点和不同点：</p><p class="zen-paragraph"><strong class="zen-bold">方法A：课堂学习</strong></p><p class="zen-paragraph"><strong class="zen-bold">方法B：在线学习</strong></p><p class="zen-paragraph">请从以下维度比较：</p><ol class="content-list practice-list"><li class="zen-numbered-item"><strong class="zen-bold">时间安排</strong>：</li></ol><ul class="content-list practice-list"><li class="zen-list-item">相似点：________________</li><li class="zen-list-item">不同点：________________</li></ul><ol class="content-list practice-list"><li class="zen-numbered-item"><strong class="zen-bold">互动方式</strong>：</li></ol><ul class="content-list practice-list"><li class="zen-list-item">相似点：________________</li><li class="zen-list-item">不同点：________________</li></ul><ol class="content-list practice-list"><li class="zen-numbered-item"><strong class="zen-bold">学习效果</strong>：</li></ol><ul class="content-list practice-list"><li class="zen-list-item">相似点：________________</li><li class="zen-list-item">不同点：________________</li></ul><p class="zen-paragraph"><strong class="zen-bold">参考答案</strong>：</p><ol class="content-list practice-list"><li class="zen-numbered-item">时间安排 - 相似点：都需要固定时间学习；不同点：课堂时间固定，在线时间灵活</li><li class="zen-numbered-item">互动方式 - 相似点：都可以提问和讨论；不同点：课堂面对面，在线通过屏幕</li><li class="zen-numbered-item">学习效果 - 相似点：都能获得知识；不同点：课堂氛围更好，在线可以重复观看</li></ol>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 练习2：产品比较</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">假设你要买一个书包，有两个选择：</p><p class="zen-paragraph"><strong class="zen-bold">书包A</strong>：价格100元，容量大，重量轻，颜色单一</p><p class="zen-paragraph"><strong class="zen-bold">书包B</strong>：价格150元，容量中等，重量适中，颜色丰富，有特殊功能</p><p class="zen-paragraph">请制作比较表格：</p><p class="zen-paragraph">| 维度 | 书包A | 书包B | 我的评价 |</p><p class="zen-paragraph">|------|-------|-------|----------|</p><p class="zen-paragraph">| 价格 | | | |</p><p class="zen-paragraph">| 容量 | | | |</p><p class="zen-paragraph">| 重量 | | | |</p><p class="zen-paragraph">| 外观 | | | |</p><p class="zen-paragraph">| 功能 | | | |</p><p class="zen-paragraph"><strong class="zen-bold">你会选择哪个？为什么？</strong>________________</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section test" data-section="section-6" id="section-6">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">07</div>
+                        <div class="section-info">
+                            <h2 class="section-title">技能确认测试（2分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">技能测试</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 快速测试</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">情况</strong>：小华要选择一个兴趣班，在绘画班和音乐班之间犹豫</p><p class="zen-paragraph">下面哪些是有效的比较维度？（可多选）</p><ul class="content-list test-list"><li class="zen-list-item">A. 上课时间是否方便</li><li class="zen-list-item">B. 老师的教学水平</li><li class="zen-list-item">C. 班级里男生女生的比例</li><li class="zen-list-item">D. 学费和材料费</li><li class="zen-list-item">E. 自己的兴趣和天赋</li><li class="zen-list-item">F. 对未来发展的帮助</li></ul><p class="zen-paragraph"><strong class="zen-bold">正确答案</strong>：A、B、D、E、F</p><p class="zen-paragraph"><strong class="zen-bold">解释</strong>：C（性别比例）与选择兴趣班的目标关系不大，其他都是重要的比较维度。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section advanced" data-section="section-7" id="section-7">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">08</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 深度拓展：成人世界的比较智慧（8分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">拓展提升</span>
+                                <span class="section-duration">3 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 商业决策中的比较分析</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">在成人世界里，比较分析是所有重要决策的基础：</p><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：大学毕业生在两个工作机会间选择</p><p class="zen-paragraph"><strong class="zen-bold">传统比较</strong>（只看表面）：</p><ul class="content-list advanced-list"><li class="zen-list-item">公司A：月薪8000元，大公司</li><li class="zen-list-item">公司B：月薪7000元，小公司</li><li class="zen-list-item">简单结论：选择A</li></ul><p class="zen-paragraph"><strong class="zen-bold">深度比较</strong>（多维分析）：</p><p class="zen-paragraph">| 维度 | 公司A（大公司） | 公司B（创业公司） |</p><p class="zen-paragraph">|------|----------------|------------------|</p><p class="zen-paragraph">| <strong class="zen-bold">短期收入</strong> | 8000元/月 | 7000元/月 |</p><p class="zen-paragraph">| <strong class="zen-bold">成长机会</strong> | 晋升路径清晰但缓慢 | 快速成长，责任大 |</p><p class="zen-paragraph">| <strong class="zen-bold">工作内容</strong> | 分工细化，专业深度 | 工作多样，技能全面 |</p><p class="zen-paragraph">| <strong class="zen-bold">工作稳定性</strong> | 高稳定性 | 风险较高 |</p><p class="zen-paragraph">| <strong class="zen-bold">长期发展</strong> | 稳定但可能受限 | 潜力大但不确定 |</p><p class="zen-paragraph">| <strong class="zen-bold">学习环境</strong> | 规范流程，导师制 | 实战学习，自主性强 |</p><p class="zen-paragraph">| <strong class="zen-bold">工作压力</strong> | 相对较小 | 压力较大 |</p><p class="zen-paragraph"><strong class="zen-bold">🧠 成人智慧</strong>：最好的选择不是表面上最好的，而是最适合自己的。</p><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：投资者在股票和基金间选择</p><p class="zen-paragraph"><strong class="zen-bold">表面比较</strong>：只看收益率</p><p class="zen-paragraph"><strong class="zen-bold">深度比较</strong>：</p><p class="zen-paragraph">| 维度 | 股票投资 | 基金投资 |</p><p class="zen-paragraph">|------|----------|----------|</p><p class="zen-paragraph">| <strong class="zen-bold">收益潜力</strong> | 高（可能翻倍） | 中等（年化10-15%） |</p><p class="zen-paragraph">| <strong class="zen-bold">风险程度</strong> | 高（可能亏损50%+） | 中等（相对稳定） |</p><p class="zen-paragraph">| <strong class="zen-bold">时间投入</strong> | 需要大量研究时间 | 相对省时 |</p><p class="zen-paragraph">| <strong class="zen-bold">专业要求</strong> | 需要专业知识 | 门槛较低 |</p><p class="zen-paragraph">| <strong class="zen-bold">心理压力</strong> | 压力大，情绪波动 | 相对轻松 |</p><p class="zen-paragraph">| <strong class="zen-bold">流动性</strong> | 高（随时买卖） | 中等（有赎回期） |</p>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 人性中的比较偏见</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">第一印象影响后续比较：</p><ul class="content-list advanced-list"><li class="zen-list-item">先看到高价商品，再看中价商品会觉得便宜</li><li class="zen-list-item">解决方法：多收集信息，避免被第一印象绑架</li></ul><p class="zen-paragraph">只关注支持自己倾向的比较维度：</p><ul class="content-list advanced-list"><li class="zen-list-item">想买某样东西时，只看它的优点</li><li class="zen-list-item">解决方法：主动寻找反面信息</li></ul><p class="zen-paragraph">把所有事情都要比较，导致选择困难：</p><ul class="content-list advanced-list"><li class="zen-list-item">在餐厅看菜单半小时还决定不了</li><li class="zen-list-item">解决方法：设定"足够好"的标准</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">�️ 成人世界的比较策略</h3>
+                            <div class="block-content">
+                                <ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">供应商选择</strong>：不只看价格，还要看质量、服务、信誉</li><li class="zen-list-item"><strong class="zen-bold">市场分析</strong>：比较竞争对手的优劣势，找到自己的定位</li><li class="zen-list-item"><strong class="zen-bold">产品开发</strong>：分析用户需求，比较不同解决方案</li><li class="zen-list-item"><strong class="zen-bold">购房选择</strong>：地段、价格、户型、配套、升值潜力</li><li class="zen-list-item"><strong class="zen-bold">教育投资</strong>：成本、时间、效果、适合度</li><li class="zen-list-item"><strong class="zen-bold">健康管理</strong>：不同治疗方案的效果、副作用、成本</li><li class="zen-list-item"><strong class="zen-bold">避免比较陷阱</strong>：不要总是比较自己和别人</li><li class="zen-list-item"><strong class="zen-bold">理解差异价值</strong>：每个人都有独特的优势</li><li class="zen-list-item"><strong class="zen-bold">欣赏多样性</strong>：差异是丰富性，不是优劣性</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="3">
+                            <h3 class="block-title">� 比较分析的高级技巧</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">不同维度的重要性不同：</p><ul class="content-list advanced-list"><li class="zen-list-item">根据个人需求设定权重</li><li class="zen-list-item">重要维度占更大比重</li></ul><p class="zen-paragraph">考虑不同情况下的表现：</p><ul class="content-list advanced-list"><li class="zen-list-item">最好情况、最坏情况、最可能情况</li><li class="zen-list-item">动态比较而非静态比较</li></ul><p class="zen-paragraph">同时考虑短期和长期影响：</p><ul class="content-list advanced-list"><li class="zen-list-item">短期成本 vs 长期收益</li><li class="zen-list-item">当前适合 vs 未来发展</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section application" data-section="section-8" id="section-8">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">09</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 生活应用提示</h2>
+                            <div class="section-meta">
+                                <span class="section-type">应用实战</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">今天就可以尝试：</h3>
+                            <div class="block-content">
+                                <ol class="content-list application-list"><li class="zen-numbered-item"><strong class="zen-bold">购物时</strong>：用比较表格分析不同商品的优劣</li><li class="zen-numbered-item"><strong class="zen-bold">做选择时</strong>：列出相似点和不同点，理性决策</li><li class="zen-numbered-item"><strong class="zen-bold">学习时</strong>：比较不同学习方法的效果</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section summary" data-section="section-9" id="section-9">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">10</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程小结</h2>
+                            <div class="section-meta">
+                                <span class="section-type">总结回顾</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph"><strong class="zen-bold">今天你学会了</strong>：</p><ul class="content-list summary-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 系统地识别事物间的相似点和不同点</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 运用多维度比较分析做决策</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 避免比较分析中的常见偏见和陷阱</li></ul><p class="zen-paragraph"><strong class="zen-bold">下节课预告</strong>：</p><p class="zen-paragraph">我们将学习"对信息进行简单排序或分类"，掌握信息整理的技能，让你的思维更加有条理！</p><p class="zen-paragraph"><strong class="zen-bold">学习成就解锁</strong> <span class="zen-emoji">🏆</span>：</p><p class="zen-paragraph"><span class="zen-emoji">🔍</span> 比较分析专家 - 你已经能够全面客观地分析事物的异同了！</p><p class="zen-paragraph"><em class="zen-italic">记住：好的比较不是为了分出高低，而是为了更好地理解和选择。</em></p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 交互脚本 -->
+    <script src="assets/js/zen-course.js"></script>
+</body>
+</html>

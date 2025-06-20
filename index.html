@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神奇喵喵 | 思维训练实验室</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- AIGC神经网络背景 -->
+    <div class="generative-background">
+        <canvas class="neural-art" id="neuralCanvas"></canvas>
+    </div>
+    
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 class="brand-title">神奇喵喵</h1>
+                <p class="brand-subtitle">思维训练实验室</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#modules" class="nav-link">学习模块</a></li>
+                <li><a href="#practice" class="nav-link">训练场</a></li>
+                <li><a href="#community" class="nav-link">艺术家社区</a></li>
+                <li><a href="#profile" class="nav-link">个人档案</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="hero-container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">系统化思维训练</span>
+                </div>
+                <h2 class="hero-title">
+                    <span class="title-line">既有智慧又有温度的</span>
+                    <span class="title-highlight">思维训练</span>
+                </h2>
+                <p class="hero-description">
+                    通过科学的方法和系统的训练，<br>
+                    培养具备批判性思维、逻辑思维、系统思维和设计思维的新一代
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="137">0</span>
+                        <span class="stat-label">精品课程</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="600">0</span>
+                        <span class="stat-label">训练题目</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">思维模块</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 模块展示 -->
+    <section class="modules-section" id="modules">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">六大思维训练模块</h2>
+                <p class="section-subtitle">系统化的思维能力提升，从入门到精通</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card critical-thinking" data-module="critical">
+                    <div class="card-background"></div>
+                    <div class="card-content">
+                        <div class="card-icon">🔍</div>
+                        <h3 class="card-title">批判性思维</h3>
+                        <p class="card-description">解构信息迷雾，重构真相本质</p>
+                        <div class="card-stats">
+                            <span class="stat">30课程</span>
+                            <span class="stat">入门→进阶</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">未开始</span>
+                        </div>
+                        <button class="journey-button" data-module="critical">
+                            <span>进入思维之旅</span>
+                            <svg class="journey-icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="module-card logical-thinking" data-module="logical">
+                    <div class="card-background"></div>
+                    <div class="card-content">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">逻辑思维</h3>
+                        <p class="card-description">构建理性框架，驾驭推理艺术</p>
+                        <div class="card-stats">
+                            <span class="stat">32课程</span>
+                            <span class="stat">入门→进阶</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">未开始</span>
+                        </div>
+                        <button class="journey-button" data-module="logical">
+                            <span>进入思维之旅</span>
+                            <svg class="journey-icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="module-card system-thinking" data-module="system">
+                    <div class="card-background"></div>
+                    <div class="card-content">
+                        <div class="card-icon">🌐</div>
+                        <h3 class="card-title">系统思维</h3>
+                        <p class="card-description">洞察整体关联，掌控复杂网络</p>
+                        <div class="card-stats">
+                            <span class="stat">30课程</span>
+                            <span class="stat">入门→进阶</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">未开始</span>
+                        </div>
+                        <button class="journey-button" data-module="system">
+                            <span>进入思维之旅</span>
+                            <svg class="journey-icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="module-card design-thinking" data-module="design">
+                    <div class="card-background"></div>
+                    <div class="card-content">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">设计思维</h3>
+                        <p class="card-description">激发创意思维，解决复杂问题</p>
+                        <div class="card-stats">
+                            <span class="stat">30课程</span>
+                            <span class="stat">入门→进阶</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">未开始</span>
+                        </div>
+                        <button class="journey-button" data-module="design">
+                            <span>进入思维之旅</span>
+                            <svg class="journey-icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="module-card trap-detection" data-module="trap">
+                    <div class="card-background"></div>
+                    <div class="card-content">
+                        <div class="card-icon">👁️</div>
+                        <h3 class="card-title">一叶知秋</h3>
+                        <p class="card-description">识破语言陷阱，守护思维清明</p>
+                        <div class="card-stats">
+                            <span class="stat">8课程</span>
+                            <span class="stat">防御思维</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">未开始</span>
+                        </div>
+                        <button class="journey-button" data-module="trap">
+                            <span>进入思维之旅</span>
+                            <svg class="journey-icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="module-card personality-analysis" data-module="personality">
+                    <div class="card-background"></div>
+                    <div class="card-content">
+                        <div class="card-icon">🎭</div>
+                        <h3 class="card-title">识人辨言</h3>
+                        <p class="card-description">解读人格密码，掌握人际智慧</p>
+                        <div class="card-stats">
+                            <span class="stat">7课程</span>
+                            <span class="stat">人际智慧</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">未开始</span>
+                        </div>
+                        <button class="journey-button" data-module="personality">
+                            <span>进入思维之旅</span>
+                            <svg class="journey-icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色功能 -->
+    <section class="features-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">专业的思维训练体验</h2>
+                <p class="section-subtitle">科学的方法，系统的训练，全面的提升</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>系统化课程</h3>
+                    <p>137节精品课程，循序渐进的学习路径</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>实战训练</h3>
+                    <p>600道精心设计的题目，巩固学习成果</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>能力测评</h3>
+                    <p>多维度评估，精准定位能力水平</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>进度跟踪</h3>
+                    <p>可视化学习进度，见证思维能力提升</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="simple-footer">
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">课程体系</a>
+                <a href="#" class="footer-link">训练题库</a>
+                <a href="#" class="footer-link">学习进度</a>
+                <a href="#" class="footer-link">帮助中心</a>
+                <a href="#" class="footer-link">关于我们</a>
+            </nav>
+            <p>&copy; 2025 神奇喵喵思维训练实验室. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/neural-art.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

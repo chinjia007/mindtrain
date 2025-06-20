@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第68课：非线性与涌现性（复杂系统的神奇特征）</title>
+    <link rel="stylesheet" href="assets/css/clean-course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态禅意背景 -->
+    <div class="zen-background">
+        <canvas id="zenCanvas"></canvas>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- 禅意导航 -->
+    <nav class="zen-nav">
+        <div class="nav-essence">
+            <div class="course-spirit">
+                <h1 class="spirit-title">第68课：非线性与涌现性（复杂系统的神奇特征）</h1>
+                <div class="journey-meta">
+                    <span class="time-flow">⏳ 20分钟</span>
+                    <span class="wisdom-level">🌱 4年级及以上（已完成入门阶段学习）</span>
+                </div>
+            </div>
+            <div class="progress-mandala">
+                开始
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容流 -->
+    <main class="wisdom-flow">
+        
+        <section class="course-header" data-section="header">
+            <div class="zen-container">
+                <div class="header-card">
+                    <div class="course-badge">第68课</div>
+                    <h1 class="course-main-title">非线性与涌现性（复杂系统的神奇特征）</h1>
+                    <p class="course-subtitle">培养批判性思维，提升逻辑分析能力</p>
+                    
+            <div class="course-meta-info">
+                <div class="meta-item">
+                    <span class="meta-icon">📚</span>
+                    <span class="meta-text">系统思维基础</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <span class="meta-text">4年级及以上（已完成入门阶段学习）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    <span class="meta-text">20分钟</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-of-contents">
+            <div class="zen-container">
+                <div class="toc-card">
+                    <h3 class="toc-title">📋 课程目录</h3>
+                    <div class="toc-list">
+                        
+                            <a href="#section-0" class="toc-item content">
+                                <span class="toc-number">01</span>
+                                <span class="toc-text">� 课程信息</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-1" class="toc-item content">
+                                <span class="toc-number">02</span>
+                                <span class="toc-text">� 学习目标</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-2" class="toc-item concept">
+                                <span class="toc-number">03</span>
+                                <span class="toc-text">� 概念导入（3分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-3" class="toc-item case">
+                                <span class="toc-number">04</span>
+                                <span class="toc-text">� 案例展示（5分钟）</span>
+                                <span class="toc-duration">4分钟</span>
+                            </a>
+                        
+                            <a href="#section-4" class="toc-item content">
+                                <span class="toc-number">05</span>
+                                <span class="toc-text">🧠 核心内容（5分钟）</span>
+                                <span class="toc-duration">3分钟</span>
+                            </a>
+                        
+                            <a href="#section-5" class="toc-item practice">
+                                <span class="toc-number">06</span>
+                                <span class="toc-text">� 交互练习（5分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-6" class="toc-item test">
+                                <span class="toc-number">07</span>
+                                <span class="toc-text">技能确认测试（2分钟）</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-7" class="toc-item advanced">
+                                <span class="toc-number">08</span>
+                                <span class="toc-text">� 深度拓展：成人世界的复杂性智慧（8分钟）</span>
+                                <span class="toc-duration">5分钟</span>
+                            </a>
+                        
+                            <a href="#section-8" class="toc-item application">
+                                <span class="toc-number">09</span>
+                                <span class="toc-text">� 生活应用提示</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                            <a href="#section-9" class="toc-item summary">
+                                <span class="toc-number">10</span>
+                                <span class="toc-text">� 课程小结</span>
+                                <span class="toc-duration">2分钟</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-0" id="section-0">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">01</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程信息</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">所属模块</strong>：系统思维基础</li><li class="zen-list-item"><strong class="zen-bold">适合年级</strong>：4年级及以上（已完成入门阶段学习）</li><li class="zen-list-item"><strong class="zen-bold">学习时长</strong>：23分钟（技能掌握15分钟 + 深度拓展8分钟）</li><li class="zen-list-item"><strong class="zen-bold">核心技能</strong>：理解非线性关系和涌现性现象，识别复杂系统的基本特征</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-1" id="section-1">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">02</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 学习目标</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph">学完这节课，你将能够：</p><ul class="content-list content-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 区分线性关系和非线性关系</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解"蝴蝶效应"的基本含义</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 识别涌现性现象的特征</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 发现生活中的非线性和涌现现象</li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section concept" data-section="section-2" id="section-2">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">03</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 概念导入（3分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">概念学习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 思考一下</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">在日常生活中，我们经常遇到一些"意想不到"的现象：</p><p class="zen-paragraph"><strong class="zen-bold">小变化，大影响</strong>：</p><ul class="content-list concept-list"><li class="zen-list-item">一个小谣言在班级里传播，最后变成了轰动全校的大事件</li><li class="zen-list-item">一个人在地铁里突然停下，结果后面排起了长长的队伍</li><li class="zen-list-item">一只蝴蝶在巴西扇动翅膀，可能在美国引起一场龙卷风</li></ul><p class="zen-paragraph"><strong class="zen-bold">简单组合，复杂行为</strong>：</p><ul class="content-list concept-list"><li class="zen-list-item">每只蚂蚁都很简单，但蚁群能建造复杂的蚁穴，找到最短路径</li><li class="zen-list-item">每个水分子都一样，但大量水分子聚在一起就有了"湿润"的感觉</li><li class="zen-list-item">每个学生都是个体，但整个班级会形成独特的"班级氛围"</li></ul><p class="zen-paragraph"><strong class="zen-bold">努力与结果不成正比</strong>：</p><ul class="content-list concept-list"><li class="zen-list-item">学习时间增加一倍，成绩不一定增加一倍</li><li class="zen-list-item">运动量增加一点点，体重可能大幅下降</li><li class="zen-list-item">练习钢琴很久没进步，突然某一天就"开窍"了</li></ul><p class="zen-paragraph">你有没有发现：有些时候，小的变化会带来大的结果；有些时候，简单的东西组合在一起会产生神奇的效果？</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section case" data-section="section-3" id="section-3">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">04</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 案例展示（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">案例分析</span>
+                                <span class="section-duration">4 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 案例1：交通堵塞的非线性特征</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">背景</strong>：分析城市交通系统中的非线性现象</p><p class="zen-paragraph"><strong class="zen-bold">线性思维的预期</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">车辆数量增加10%，通行时间增加10%</li><li class="zen-list-item">道路容量增加一倍，通行能力增加一倍</li><li class="zen-list-item">每个司机的行为对整体影响很小</li></ul><p class="zen-paragraph"><strong class="zen-bold">实际的非线性现象</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">临界点效应</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">正常状态</strong>：车辆数量在道路容量的70%以下时，交通流畅</li><li class="zen-list-item"><strong class="zen-bold">临界点</strong>：当车辆数量达到道路容量的80%时</li><li class="zen-list-item"><strong class="zen-bold">突变现象</strong>：车辆数量再增加5%，通行时间可能增加200%</li><li class="zen-list-item"><strong class="zen-bold">堵塞状态</strong>：一旦堵塞形成，即使车辆减少也难以快速恢复</li></ul><p class="zen-paragraph"><strong class="zen-bold">蝴蝶效应实例</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">微小起因</strong>：一个司机突然刹车或变道</li><li class="zen-list-item"><strong class="zen-bold">连锁反应</strong>：后面的司机依次刹车，形成"刹车波"</li><li class="zen-list-item"><strong class="zen-bold">放大效应</strong>：刹车波向后传播，影响越来越大</li><li class="zen-list-item"><strong class="zen-bold">巨大后果</strong>：可能导致几公里的堵塞，持续数小时</li></ul><p class="zen-paragraph"><strong class="zen-bold">涌现性表现</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">个体行为</strong>：每个司机都想快速到达目的地</li><li class="zen-list-item"><strong class="zen-bold">集体结果</strong>：所有人都被困在堵塞中，谁都到不了</li><li class="zen-list-item"><strong class="zen-bold">系统特性</strong>：交通流表现出波动、相变等复杂特性</li><li class="zen-list-item"><strong class="zen-bold">自组织现象</strong>：在没有中央控制的情况下形成复杂的交通模式</li></ul><p class="zen-paragraph"><strong class="zen-bold">非线性解决方案</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">传统线性思维</strong>：修更多路，加更多车道</li><li class="zen-list-item"><strong class="zen-bold">非线性思维</strong>：</li><li class="zen-list-item">错峰出行：分散交通流量</li><li class="zen-list-item">智能信号灯：动态调节交通流</li><li class="zen-list-item">拥堵收费：用经济手段调节需求</li><li class="zen-list-item">公共交通：改变出行方式</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 案例2：蚁群的涌现智慧</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">背景</strong>：观察蚂蚁群体如何表现出个体所没有的智慧</p><p class="zen-paragraph"><strong class="zen-bold">个体层面的简单性</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">单个蚂蚁</strong>：没有地图，不知道全局路径</li><li class="zen-list-item"><strong class="zen-bold">简单规则</strong>：</li><li class="zen-list-item">随机搜索食物</li><li class="zen-list-item">找到食物后留下信息素轨迹</li><li class="zen-list-item">跟随信息素浓度高的路径</li><li class="zen-list-item">信息素会随时间挥发</li></ul><p class="zen-paragraph"><strong class="zen-bold">群体层面的涌现智慧</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">路径优化能力</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">初期</strong>：蚂蚁随机搜索，走各种路径</li><li class="zen-list-item"><strong class="zen-bold">反馈机制</strong>：走短路径的蚂蚁来回次数多，留下更多信息素</li><li class="zen-list-item"><strong class="zen-bold">自我强化</strong>：信息素浓度高的路径吸引更多蚂蚁</li><li class="zen-list-item"><strong class="zen-bold">最终结果</strong>：群体自动找到最短路径</li></ul><p class="zen-paragraph"><strong class="zen-bold">适应性调整</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">环境变化</strong>：如果最短路径被阻断</li><li class="zen-list-item"><strong class="zen-bold">重新搜索</strong>：蚂蚁开始探索新路径</li><li class="zen-list-item"><strong class="zen-bold">信息更新</strong>：旧路径信息素挥发，新路径信息素积累</li><li class="zen-list-item"><strong class="zen-bold">路径切换</strong>：群体自动切换到新的最优路径</li></ul><p class="zen-paragraph"><strong class="zen-bold">分工协作</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">工蚁分工</strong>：搜索蚁、运输蚁、守卫蚁等不同角色</li><li class="zen-list-item"><strong class="zen-bold">任务分配</strong>：根据需要自动调整各种角色的数量</li><li class="zen-list-item"><strong class="zen-bold">协调机制</strong>：通过信息素和简单交互实现协调</li><li class="zen-list-item"><strong class="zen-bold">整体效率</strong>：实现高效的资源收集和利用</li></ul><p class="zen-paragraph"><strong class="zen-bold">涌现特性总结</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">个体</strong>：简单的蚂蚁，遵循简单规则</li><li class="zen-list-item"><strong class="zen-bold">整体</strong>：智能的蚁群，能够解决复杂的优化问题</li><li class="zen-list-item"><strong class="zen-bold">新特性</strong>：路径优化、任务分配、适应性调整</li><li class="zen-list-item"><strong class="zen-bold">无中央控制</strong>：没有"指挥官"，完全自组织</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">� 案例3：学习过程中的非线性现象</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">背景</strong>：分析个人学习过程中的非线性特征</p><p class="zen-paragraph"><strong class="zen-bold">线性学习期望</strong>：</p><ul class="content-list case-list"><li class="zen-list-item">学习时间越长，掌握越多</li><li class="zen-list-item">努力程度与成绩成正比</li><li class="zen-list-item">学习进度稳定持续</li></ul><p class="zen-paragraph"><strong class="zen-bold">实际的非线性学习</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">学习曲线的非线性</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">初期缓慢</strong>：刚开始学习时进步很慢</li><li class="zen-list-item"><strong class="zen-bold">加速期</strong>：掌握基础后进步加快</li><li class="zen-list-item"><strong class="zen-bold">平台期</strong>：达到一定水平后进步停滞</li><li class="zen-list-item"><strong class="zen-bold">突破期</strong>：突然"开窍"，水平大幅提升</li></ul><p class="zen-paragraph"><strong class="zen-bold">临界点现象</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">量变积累</strong>：大量练习和思考的积累</li><li class="zen-list-item"><strong class="zen-bold">质变时刻</strong>：在某个时刻突然理解</li><li class="zen-list-item"><strong class="zen-bold">顿悟体验</strong>："原来如此"的瞬间</li><li class="zen-list-item"><strong class="zen-bold">能力跃升</strong>：理解水平发生质的飞跃</li></ul><p class="zen-paragraph"><strong class="zen-bold">蝴蝶效应在学习中</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">微小改变</strong>：调整学习方法或思维角度</li><li class="zen-list-item"><strong class="zen-bold">连锁反应</strong>：影响对其他知识的理解</li><li class="zen-list-item"><strong class="zen-bold">放大效应</strong>：一个概念的理解带动整个学科的进步</li><li class="zen-list-item"><strong class="zen-bold">深远影响</strong>：可能改变整个学习轨迹</li></ul><p class="zen-paragraph"><strong class="zen-bold">学习的涌现性</strong>：</p><ul class="content-list case-list"><li class="zen-list-item"><strong class="zen-bold">知识点</strong>：单个知识点相对独立</li><li class="zen-list-item"><strong class="zen-bold">知识网络</strong>：多个知识点连接形成理解网络</li><li class="zen-list-item"><strong class="zen-bold">涌现理解</strong>：整体理解超越单个知识点的简单相加</li><li class="zen-list-item"><strong class="zen-bold">创新思维</strong>：在知识网络基础上产生新的见解</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section content" data-section="section-4" id="section-4">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">05</div>
+                        <div class="section-info">
+                            <h2 class="section-title">🧠 核心内容（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">内容学习</span>
+                                <span class="section-duration">3 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 识别非线性关系的方法</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">1. 临界点现象</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">定义</strong>：在某个特定点上发生突然的质变</li><li class="zen-list-item"><strong class="zen-bold">识别方法</strong>：观察是否存在"突然改变"的点</li><li class="zen-list-item"><strong class="zen-bold">例子</strong>：水在100°C突然变成水蒸气</li></ul><p class="zen-paragraph"><strong class="zen-bold">识别问题</strong>：</p><ul class="content-list content-list"><li class="zen-list-item">这个系统是否存在"临界值"？</li><li class="zen-list-item">超过某个点后，行为是否发生根本改变？</li><li class="zen-list-item">是否存在"不可逆转"的变化点？</li></ul><p class="zen-paragraph"><strong class="zen-bold">2. 敏感性依赖</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">定义</strong>：对初始条件极其敏感</li><li class="zen-list-item"><strong class="zen-bold">识别方法</strong>：观察微小变化是否带来巨大差异</li><li class="zen-list-item"><strong class="zen-bold">例子</strong>：天气预报的准确性随时间快速下降</li></ul><p class="zen-paragraph"><strong class="zen-bold">识别问题</strong>：</p><ul class="content-list content-list"><li class="zen-list-item">微小的变化是否会带来巨大的不同结果？</li><li class="zen-list-item">系统是否难以精确预测？</li><li class="zen-list-item">是否存在"蝴蝶效应"？</li></ul><p class="zen-paragraph"><strong class="zen-bold">3. 反馈循环</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">定义</strong>：输出会影响输入，形成循环</li><li class="zen-list-item"><strong class="zen-bold">识别方法</strong>：寻找自我强化或自我调节的循环</li><li class="zen-list-item"><strong class="zen-bold">例子</strong>：恐慌性抛售导致股价下跌，进一步引发抛售</li></ul><p class="zen-paragraph"><strong class="zen-bold">识别问题</strong>：</p><ul class="content-list content-list"><li class="zen-list-item">结果是否会反过来影响原因？</li><li class="zen-list-item">是否存在自我强化的循环？</li><li class="zen-list-item">系统是否会"失控"或"自我调节"？</li></ul><p class="zen-paragraph"><strong class="zen-bold">1. 整体特性检查</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">对比分析</strong>：比较整体特性与部分特性</li><li class="zen-list-item"><strong class="zen-bold">新特性识别</strong>：寻找部分所没有的整体特性</li><li class="zen-list-item"><strong class="zen-bold">不可还原性</strong>：检查是否能从部分推导出整体特性</li></ul><p class="zen-paragraph"><strong class="zen-bold">识别步骤</strong>：</p><ol class="content-list content-list"><li class="zen-numbered-item">列出系统各部分的特性</li><li class="zen-numbered-item">观察整体系统的表现</li><li class="zen-numbered-item">找出整体独有的特性</li><li class="zen-numbered-item">验证这些特性是否无法从部分推导</li></ol><p class="zen-paragraph"><strong class="zen-bold">2. 自组织现象观察</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">无中央控制</strong>：检查是否存在中央控制机制</li><li class="zen-list-item"><strong class="zen-bold">自发秩序</strong>：观察秩序是否自发产生</li><li class="zen-list-item"><strong class="zen-bold">适应性行为</strong>：检查系统是否能自我调整</li></ul><p class="zen-paragraph"><strong class="zen-bold">观察要点</strong>：</p><ul class="content-list content-list"><li class="zen-list-item">谁在"指挥"这个系统？</li><li class="zen-list-item">秩序是如何产生的？</li><li class="zen-list-item">系统如何应对变化？</li></ul><p class="zen-paragraph"><strong class="zen-bold">3. 层次性分析</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">多层次结构</strong>：识别系统的不同层次</li><li class="zen-list-item"><strong class="zen-bold">层次间关系</strong>：分析不同层次间的相互作用</li><li class="zen-list-item"><strong class="zen-bold">跨层次涌现</strong>：观察跨层次的新特性</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 应对非线性和涌现性的策略</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">1. 接受不确定性</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">心理准备</strong>：接受无法精确预测的现实</li><li class="zen-list-item"><strong class="zen-bold">多种方案</strong>：准备多个备选方案</li><li class="zen-list-item"><strong class="zen-bold">灵活调整</strong>：根据实际情况灵活调整策略</li></ul><p class="zen-paragraph"><strong class="zen-bold">2. 关注临界点</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">临界点识别</strong>：努力识别系统的临界点</li><li class="zen-list-item"><strong class="zen-bold">早期预警</strong>：建立早期预警机制</li><li class="zen-list-item"><strong class="zen-bold">及时干预</strong>：在临界点前进行干预</li></ul><p class="zen-paragraph"><strong class="zen-bold">3. 小步试错</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">小规模实验</strong>：先进行小规模试验</li><li class="zen-list-item"><strong class="zen-bold">快速反馈</strong>：建立快速反馈机制</li><li class="zen-list-item"><strong class="zen-bold">迭代改进</strong>：根据反馈不断改进</li></ul><p class="zen-paragraph"><strong class="zen-bold">1. 创造条件</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">多样性</strong>：保持系统的多样性</li><li class="zen-list-item"><strong class="zen-bold">连接性</strong>：促进各部分之间的连接</li><li class="zen-list-item"><strong class="zen-bold">自由度</strong>：给各部分一定的自由度</li></ul><p class="zen-paragraph"><strong class="zen-bold">2. 引导而非控制</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">设定规则</strong>：设定简单而有效的规则</li><li class="zen-list-item"><strong class="zen-bold">提供激励</strong>：通过激励引导行为</li><li class="zen-list-item"><strong class="zen-bold">营造环境</strong>：创造有利于涌现的环境</li></ul><p class="zen-paragraph"><strong class="zen-bold">3. 观察和学习</strong></p><ul class="content-list content-list"><li class="zen-list-item"><strong class="zen-bold">持续观察</strong>：持续观察涌现现象</li><li class="zen-list-item"><strong class="zen-bold">模式识别</strong>：识别涌现的模式和规律</li><li class="zen-list-item"><strong class="zen-bold">经验总结</strong>：总结利用涌现性的经验</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section practice" data-section="section-5" id="section-5">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">06</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 交互练习（5分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">实践练习</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 练习1：线性与非线性关系判断</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">判断下面的关系是线性还是非线性：</p><p class="zen-paragraph"><strong class="zen-bold">关系A：学习时间与考试成绩</strong></p><ul class="content-list practice-list"><li class="zen-list-item">学习1小时，成绩60分</li><li class="zen-list-item">学习2小时，成绩65分</li><li class="zen-list-item">学习4小时，成绩75分</li><li class="zen-list-item">学习8小时，成绩90分</li></ul><p class="zen-paragraph"><strong class="zen-bold">分析</strong>：□线性 □非线性</p><p class="zen-paragraph"><strong class="zen-bold">理由</strong>：_______</p><div class="exercise-box"><strong class="zen-bold">关系B：练习次数与技能熟练度</strong></div><ul class="content-list practice-list"><li class="zen-list-item">练习100次，熟练度20%</li><li class="zen-list-item">练习200次，熟练度40%</li><li class="zen-list-item">练习400次，熟练度80%</li><li class="zen-list-item">练习800次，熟练度95%</li></ul><p class="zen-paragraph"><strong class="zen-bold">分析</strong>：□线性 □非线性</p><p class="zen-paragraph"><strong class="zen-bold">理由</strong>：_______</p>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 练习2：涌现性现象识别</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">分析下面现象是否具有涌现性：</p><p class="zen-paragraph"><strong class="zen-bold">现象A：班级学习氛围</strong></p><ul class="content-list practice-list"><li class="zen-list-item">个体：每个学生都有自己的学习习惯</li><li class="zen-list-item">整体：班级形成了浓厚的学习氛围</li><li class="zen-list-item">特征：学习氛围影响每个学生的表现</li></ul><p class="zen-paragraph"><strong class="zen-bold">是否涌现性</strong>：□是 □否</p><p class="zen-paragraph"><strong class="zen-bold">理由</strong>：_______</p><p class="zen-paragraph"><strong class="zen-bold">现象B：合唱团的和声效果</strong></p><ul class="content-list practice-list"><li class="zen-list-item">个体：每个人唱自己的声部</li><li class="zen-list-item">整体：产生美妙的和声效果</li><li class="zen-list-item">特征：和声效果是单个声音无法产生的</li></ul><p class="zen-paragraph"><strong class="zen-bold">是否涌现性</strong>：□是 □否</p><p class="zen-paragraph"><strong class="zen-bold">理由</strong>：_______</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section test" data-section="section-6" id="section-6">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">07</div>
+                        <div class="section-info">
+                            <h2 class="section-title">技能确认测试（2分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">技能测试</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 快速测试</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">情况</strong>：某个网络游戏中，开发者稍微调整了一个角色的攻击力（从100增加到105），结果这个角色在游戏中的使用率从5%暴增到60%，完全改变了游戏的平衡性。</p><p class="zen-paragraph"><strong class="zen-bold">问题</strong>：这个现象主要体现了什么特征？</p><p class="zen-paragraph">A. 这是典型的线性关系，攻击力增加导致使用率增加</p><p class="zen-paragraph">B. 这体现了非线性特征，微小变化导致巨大影响</p><p class="zen-paragraph">C. 这是涌现性现象，整体效果超过部分之和</p><p class="zen-paragraph">D. 这只是偶然现象，没有特殊的系统特征</p><p class="zen-paragraph"><strong class="zen-bold">正确答案</strong>：B</p><p class="zen-paragraph"><strong class="zen-bold">解释</strong>：这是典型的非线性现象，特别是临界点效应的体现。攻击力从100增加到105，只是5%的微小变化，但使用率从5%增加到60%，是1200%的巨大变化，完全不成比例。这说明在游戏平衡中存在一个临界点，当攻击力超过某个临界值时，这个角色的实用性发生质的飞跃，从而引发使用率的爆炸性增长。这种微小变化导致巨大后果的现象正是非线性系统的典型特征。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section advanced" data-section="section-7" id="section-7">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">08</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 深度拓展：成人世界的复杂性智慧（8分钟）</h2>
+                            <div class="section-meta">
+                                <span class="section-type">拓展提升</span>
+                                <span class="section-duration">5 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">� 商业世界的非线性现象</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph">在成人世界里，非线性和涌现性是商业成功、市场变化、组织发展的核心规律：</p><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：某短视频平台上的爆款内容传播机制</p><p class="zen-paragraph"><strong class="zen-bold">传统线性营销思维</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">投入广告费用与曝光量成正比</li><li class="zen-list-item">内容质量与传播效果成正比</li><li class="zen-list-item">可以通过增加投入来线性提升效果</li></ul><p class="zen-paragraph"><strong class="zen-bold">实际的非线性传播</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">临界点突破</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">初期缓慢</strong>：前1000个观看，传播很慢</li><li class="zen-list-item"><strong class="zen-bold">临界点</strong>：达到某个临界点（如10万观看）</li><li class="zen-list-item"><strong class="zen-bold">爆发增长</strong>：24小时内观看量暴增到1000万</li><li class="zen-list-item"><strong class="zen-bold">平台推荐</strong>：算法识别热门内容，大量推荐</li></ul><p class="zen-paragraph"><strong class="zen-bold">蝴蝶效应机制</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">微小起因</strong>：一个有趣的创意或巧合</li><li class="zen-list-item"><strong class="zen-bold">初期传播</strong>：少数用户分享给朋友</li><li class="zen-list-item"><strong class="zen-bold">社交放大</strong>：朋友再分享给更多朋友</li><li class="zen-list-item"><strong class="zen-bold">媒体关注</strong>：传统媒体开始报道</li><li class="zen-list-item"><strong class="zen-bold">全民现象</strong>：成为全社会讨论的话题</li></ul><p class="zen-paragraph"><strong class="zen-bold">涌现性特征</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">个体行为</strong>：每个用户只是简单地点赞、分享</li><li class="zen-list-item"><strong class="zen-bold">集体智慧</strong>：平台算法通过用户行为识别优质内容</li><li class="zen-list-item"><strong class="zen-bold">文化现象</strong>：内容超越娱乐，成为文化符号</li><li class="zen-list-item"><strong class="zen-bold">商业价值</strong>：产生远超预期的商业价值</li></ul><p class="zen-paragraph"><strong class="zen-bold">非线性营销策略</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">种子用户</strong>：找到关键的种子用户群体</li><li class="zen-list-item"><strong class="zen-bold">内容引爆点</strong>：设计具有传播潜力的内容元素</li><li class="zen-list-item"><strong class="zen-bold">社交机制</strong>：利用社交网络的放大效应</li><li class="zen-list-item"><strong class="zen-bold">时机把握</strong>：在合适的时机投放内容</li></ul><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：股票市场的非线性波动特征</p><p class="zen-paragraph"><strong class="zen-bold">线性思维的局限</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">认为好消息导致股价上涨，坏消息导致股价下跌</li><li class="zen-list-item">相信基本面分析可以准确预测股价</li><li class="zen-list-item">假设市场参与者都是理性的</li></ul><p class="zen-paragraph"><strong class="zen-bold">市场的非线性现象</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">羊群效应的涌现</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">个体理性</strong>：每个投资者都想获得最大收益</li><li class="zen-list-item"><strong class="zen-bold">信息不对称</strong>：投资者信息获取能力不同</li><li class="zen-list-item"><strong class="zen-bold">模仿行为</strong>：看到别人买入，自己也跟着买入</li><li class="zen-list-item"><strong class="zen-bold">集体非理性</strong>：理性个体组成非理性群体</li></ul><p class="zen-paragraph"><strong class="zen-bold">市场情绪的临界点</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">恐慌阈值</strong>：市场下跌到某个程度触发恐慌</li><li class="zen-list-item"><strong class="zen-bold">连锁反应</strong>：恐慌性抛售引发更大恐慌</li><li class="zen-list-item"><strong class="zen-bold">流动性危机</strong>：大量抛售导致流动性枯竭</li><li class="zen-list-item"><strong class="zen-bold">系统性风险</strong>：局部问题演变为系统性危机</li></ul><p class="zen-paragraph"><strong class="zen-bold">黑天鹅事件</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">小概率事件</strong>：发生概率极低但影响巨大</li><li class="zen-list-item"><strong class="zen-bold">不可预测性</strong>：事前几乎无法预测</li><li class="zen-list-item"><strong class="zen-bold">非线性冲击</strong>：微小事件引发巨大市场波动</li><li class="zen-list-item"><strong class="zen-bold">系统重构</strong>：可能改变整个市场结构</li></ul><p class="zen-paragraph"><strong class="zen-bold">复杂性投资策略</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">分散投资</strong>：通过多样化降低非线性风险</li><li class="zen-list-item"><strong class="zen-bold">反脆弱性</strong>：构建能从波动中获益的投资组合</li><li class="zen-list-item"><strong class="zen-bold">趋势跟踪</strong>：利用市场的非线性特征</li><li class="zen-list-item"><strong class="zen-bold">风险管理</strong>：设置止损机制防范黑天鹅事件</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="1">
+                            <h3 class="block-title">� 组织管理中的涌现性设计</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">场景</strong>：某科技公司的创新管理实践</p><p class="zen-paragraph"><strong class="zen-bold">传统创新管理</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">设立专门的研发部门</li><li class="zen-list-item">制定详细的创新计划</li><li class="zen-list-item">通过流程管控确保创新产出</li></ul><p class="zen-paragraph"><strong class="zen-bold">涌现式创新管理</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">自组织创新团队</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">20%时间</strong>：员工可以用20%时间做自己感兴趣的项目</li><li class="zen-list-item"><strong class="zen-bold">跨部门协作</strong>：不同部门员工自由组合</li><li class="zen-list-item"><strong class="zen-bold">内部创业</strong>：支持员工内部创业</li><li class="zen-list-item"><strong class="zen-bold">失败容忍</strong>：允许失败，从失败中学习</li></ul><p class="zen-paragraph"><strong class="zen-bold">创新生态系统</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">多样性</strong>：不同背景、专业的员工</li><li class="zen-list-item"><strong class="zen-bold">连接性</strong>：开放的沟通和协作平台</li><li class="zen-list-item"><strong class="zen-bold">自由度</strong>：给员工充分的创新自由</li><li class="zen-list-item"><strong class="zen-bold">资源支持</strong>：提供必要的资源和工具</li></ul><p class="zen-paragraph"><strong class="zen-bold">涌现的创新成果</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">意外发现</strong>：在解决一个问题时意外发现新机会</li><li class="zen-list-item"><strong class="zen-bold">跨界融合</strong>：不同领域知识的碰撞产生新想法</li><li class="zen-list-item"><strong class="zen-bold">用户驱动</strong>：用户反馈引发的产品创新</li><li class="zen-list-item"><strong class="zen-bold">技术突破</strong>：技术积累达到临界点的突破</li></ul><p class="zen-paragraph"><strong class="zen-bold">管理策略</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">环境营造</strong>：创造有利于创新的文化环境</li><li class="zen-list-item"><strong class="zen-bold">平台建设</strong>：建设支持协作的技术平台</li><li class="zen-list-item"><strong class="zen-bold">激励机制</strong>：设计鼓励创新的激励机制</li><li class="zen-list-item"><strong class="zen-bold">学习机制</strong>：建立从失败中学习的机制</li></ul><p class="zen-paragraph"><strong class="zen-bold">场景</strong>：某项目团队的高效协作机制</p><p class="zen-paragraph"><strong class="zen-bold">个体能力</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">每个成员都有专业技能</li><li class="zen-list-item">个人工作效率相对固定</li><li class="zen-list-item">单独工作时产出可预测</li></ul><p class="zen-paragraph"><strong class="zen-bold">团队涌现效应</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">协同智慧</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">知识互补</strong>：不同专业背景的知识互补</li><li class="zen-list-item"><strong class="zen-bold">思维碰撞</strong>：不同思维方式的碰撞</li><li class="zen-list-item"><strong class="zen-bold">创意激发</strong>：一个想法激发另一个想法</li><li class="zen-list-item"><strong class="zen-bold">集体智慧</strong>：团队智慧超过个人智慧之和</li></ul><p class="zen-paragraph"><strong class="zen-bold">自组织协调</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">角色分工</strong>：根据任务需要自然分工</li><li class="zen-list-item"><strong class="zen-bold">信息共享</strong>：重要信息自动传播到需要的人</li><li class="zen-list-item"><strong class="zen-bold">问题解决</strong>：复杂问题通过集体智慧解决</li><li class="zen-list-item"><strong class="zen-bold">质量控制</strong>：通过同伴评议保证质量</li></ul><p class="zen-paragraph"><strong class="zen-bold">团队文化涌现</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">信任关系</strong>：成员间建立深度信任</li><li class="zen-list-item"><strong class="zen-bold">共同目标</strong>：形成强烈的共同目标感</li><li class="zen-list-item"><strong class="zen-bold">学习氛围</strong>：营造持续学习的氛围</li><li class="zen-list-item"><strong class="zen-bold">创新精神</strong>：培养勇于创新的团队精神</li></ul><p class="zen-paragraph"><strong class="zen-bold">管理启示</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">多样性价值</strong>：团队多样性是创新的源泉</li><li class="zen-list-item"><strong class="zen-bold">连接重要性</strong>：促进成员间的深度连接</li><li class="zen-list-item"><strong class="zen-bold">文化建设</strong>：重视团队文化的自然涌现</li><li class="zen-list-item"><strong class="zen-bold">环境支持</strong>：提供支持涌现的环境条件</li></ul>
+                            </div>
+                        </div>
+                        <div class="content-block" data-block="2">
+                            <h3 class="block-title">� 个人发展中的非线性成长</h3>
+                            <div class="block-content">
+                                <p class="zen-paragraph"><strong class="zen-bold">场景</strong>：某专业人士的技能发展历程</p><p class="zen-paragraph"><strong class="zen-bold">线性成长期望</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item">学习时间与技能水平成正比</li><li class="zen-list-item">努力程度决定进步速度</li><li class="zen-list-item">成长过程平稳持续</li></ul><p class="zen-paragraph"><strong class="zen-bold">实际的非线性成长</strong>：</p><p class="zen-paragraph"><strong class="zen-bold">技能发展阶段</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">新手期</strong>：大量时间投入，进步缓慢</li><li class="zen-list-item"><strong class="zen-bold">胜任期</strong>：掌握基础后进步加速</li><li class="zen-list-item"><strong class="zen-bold">专家期</strong>：达到高水平后进步放缓</li><li class="zen-list-item"><strong class="zen-bold">大师期</strong>：突破瓶颈后质的飞跃</li></ul><p class="zen-paragraph"><strong class="zen-bold">临界点突破</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">量变积累</strong>：大量练习和思考的积累</li><li class="zen-list-item"><strong class="zen-bold">顿悟时刻</strong>：某个瞬间突然"开窍"</li><li class="zen-list-item"><strong class="zen-bold">能力跃升</strong>：技能水平发生质的飞跃</li><li class="zen-list-item"><strong class="zen-bold">新视野开启</strong>：看到之前看不到的可能性</li></ul><p class="zen-paragraph"><strong class="zen-bold">学习的涌现效应</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">知识网络</strong>：零散知识点连接成知识网络</li><li class="zen-list-item"><strong class="zen-bold">迁移能力</strong>：一个领域的技能迁移到其他领域</li><li class="zen-list-item"><strong class="zen-bold">创新能力</strong>：在知识网络基础上产生创新</li><li class="zen-list-item"><strong class="zen-bold">智慧涌现</strong>：从知识到智慧的质的转变</li></ul><p class="zen-paragraph"><strong class="zen-bold">非线性学习策略</strong>：</p><ul class="content-list advanced-list"><li class="zen-list-item"><strong class="zen-bold">刻意练习</strong>：专注于突破关键瓶颈</li><li class="zen-list-item"><strong class="zen-bold">跨界学习</strong>：从其他领域获得启发</li><li class="zen-list-item"><strong class="zen-bold">反思总结</strong>：定期反思和总结经验</li><li class="zen-list-item"><strong class="zen-bold">寻找导师</strong>：从高手那里获得关键指导</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section application" data-section="section-8" id="section-8">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">09</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 生活应用提示</h2>
+                            <div class="section-meta">
+                                <span class="section-type">应用实战</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <div class="content-block" data-block="0">
+                            <h3 class="block-title">今天就可以尝试：</h3>
+                            <div class="block-content">
+                                <ol class="content-list application-list"><li class="zen-numbered-item"><strong class="zen-bold">非线性观察</strong>：观察生活中的非线性现象，思考其背后的机制</li><li class="zen-numbered-item"><strong class="zen-bold">涌现性发现</strong>：找一个团队或群体活动，观察其涌现特性</li><li class="zen-numbered-item"><strong class="zen-bold">临界点识别</strong>：思考你正在做的某件事是否接近临界点</li></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section summary" data-section="section-9" id="section-9">
+            <div class="zen-container">
+                <div class="section-wrapper">
+                    <div class="section-header">
+                        <div class="section-number">10</div>
+                        <div class="section-info">
+                            <h2 class="section-title">� 课程小结</h2>
+                            <div class="section-meta">
+                                <span class="section-type">总结回顾</span>
+                                <span class="section-duration">2 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-body"><div class="main-content"><p class="zen-paragraph"><strong class="zen-bold">今天你学会了</strong>：</p><ul class="content-list summary-list"><li class="zen-list-item"><span class="zen-emoji">✅</span> 区分线性与非线性：理解输入输出的不同关系类型</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 理解蝴蝶效应：微小变化可能导致巨大后果</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 识别涌现性：整体表现出部分所没有的新特性</li><li class="zen-list-item"><span class="zen-emoji">✅</span> 应对复杂性：用复杂性思维理解和应对复杂现象</li></ul><p class="zen-paragraph"><strong class="zen-bold">重要收获</strong>：</p><p class="zen-paragraph">复杂世界的基本认知。理解非线性和涌现性，你就能更好地理解为什么世界如此复杂多变，学会在不确定性中寻找机会，在复杂性中创造价值。</p><p class="zen-paragraph"><strong class="zen-bold">下节课预告</strong>：</p><p class="zen-paragraph">下节课我们将学习"系统原型与常见陷阱"——识别反复出现的系统行为模式！</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 交互脚本 -->
+    <script src="assets/js/zen-course.js"></script>
+</body>
+</html>

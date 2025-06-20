@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>训练场 - 批判性思维题库 | 神奇喵喵思维训练实验室</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- AIGC神经网络背景 -->
+    <div class="generative-background">
+        <canvas class="neural-art" id="neuralCanvas"></canvas>
+    </div>
+    
+    <!-- 题库导航 -->
+    <nav class="quiz-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <h1 class="brand-title">神奇喵喵</h1>
+                    <p class="brand-subtitle">训练场</p>
+                </a>
+            </div>
+            <div class="quiz-info">
+                <span class="quiz-module">批判性思维题库</span>
+                <span class="quiz-progress">第 <span id="currentQuestion">1</span> 题 / 共 <span id="totalQuestions">10</span> 题</span>
+            </div>
+            <div class="quiz-controls">
+                <button class="control-btn" id="pauseQuiz">
+                    <svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                    暂停
+                </button>
+                <button class="control-btn danger" id="exitQuiz">
+                    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    退出
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 答题主体 -->
+    <main class="quiz-main">
+        <div class="quiz-container">
+            <!-- 进度指示器 -->
+            <div class="progress-indicator">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-stats">
+                    <span class="stat-item">
+                        <span class="stat-icon">⚡</span>
+                        <span class="stat-value" id="streakCount">0</span>
+                        <span class="stat-label">连击</span>
+                    </span>
+                    <span class="stat-item">
+                        <span class="stat-icon">🎯</span>
+                        <span class="stat-value" id="accuracy">0%</span>
+                        <span class="stat-label">正确率</span>
+                    </span>
+                    <span class="stat-item">
+                        <span class="stat-icon">⏱️</span>
+                        <span class="stat-value" id="timeLeft">60</span>
+                        <span class="stat-label">秒</span>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- 题目卡片 -->
+            <div class="question-card" id="questionCard">
+                <div class="question-header">
+                    <div class="question-meta">
+                        <span class="question-type">信息分析题</span>
+                        <span class="question-difficulty">⭐⭐ 进阶级</span>
+                        <span class="question-scene">微信健康分享</span>
+                    </div>
+                </div>
+                
+                <div class="question-content">
+                    <div class="scenario-tag">
+                        <span class="tag-icon">📱</span>
+                        <span class="tag-text">场景：微信健康分享</span>
+                    </div>
+                    
+                    <div class="scenario-description">
+                        <p>家庭群里有人分享："权威医学专家发现，每天喝柠檬水的人，癌症发病率降低73.2%！我邻居坚持半年，很少感冒了！全世界已有200万人在坚持，医生都推荐！"</p>
+                    </div>
+                    
+                    <div class="question-text">
+                        <h3>这条信息中包含哪些问题？（不定项选择）</h3>
+                    </div>
+                    
+                    <div class="answer-options">
+                        <div class="option-item" data-option="A">
+                            <div class="option-letter">A</div>
+                            <div class="option-text">虚假精确</div>
+                            <div class="option-effect"></div>
+                        </div>
+                        <div class="option-item" data-option="B">
+                            <div class="option-letter">B</div>
+                            <div class="option-text">诉诸权威</div>
+                            <div class="option-effect"></div>
+                        </div>
+                        <div class="option-item" data-option="C">
+                            <div class="option-letter">C</div>
+                            <div class="option-text">以偏概全</div>
+                            <div class="option-effect"></div>
+                        </div>
+                        <div class="option-item" data-option="D">
+                            <div class="option-letter">D</div>
+                            <div class="option-text">诉诸多数</div>
+                            <div class="option-effect"></div>
+                        </div>
+                        <div class="option-item" data-option="E">
+                            <div class="option-letter">E</div>
+                            <div class="option-text">选择性披露</div>
+                            <div class="option-effect"></div>
+                        </div>
+                        <div class="option-item" data-option="F">
+                            <div class="option-letter">F</div>
+                            <div class="option-text">恐惧诉求</div>
+                            <div class="option-effect"></div>
+                        </div>
+                        <div class="option-item" data-option="G">
+                            <div class="option-letter">G</div>
+                            <div class="option-text">时间压力</div>
+                            <div class="option-effect"></div>
+                        </div>
+                        <div class="option-item" data-option="H">
+                            <div class="option-letter">H</div>
+                            <div class="option-text">情感勒索</div>
+                            <div class="option-effect"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-actions">
+                    <button class="action-btn secondary" id="skipQuestion">
+                        <span>跳过此题</span>
+                        <svg viewBox="0 0 24 24"><path d="M5 4l10 8-10 8V4zM19 5v14h-2V5h2z"/></svg>
+                    </button>
+                    <button class="action-btn primary" id="submitAnswer" disabled>
+                        <span>提交答案</span>
+                        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 答案反馈 -->
+            <div class="answer-feedback hidden" id="answerFeedback">
+                <div class="feedback-header">
+                    <div class="feedback-icon">✅</div>
+                    <h3 class="feedback-title">回答正确！</h3>
+                    <div class="feedback-score">+10 分</div>
+                </div>
+                
+                <div class="feedback-content">
+                    <div class="correct-answers">
+                        <h4>正确答案：A、B、C</h4>
+                        <div class="answer-explanations">
+                            <div class="explanation-item correct">
+                                <span class="exp-label">A正确-虚假精确</span>
+                                <span class="exp-text">73.2%这个精确数字没有研究来源支撑，缺乏可验证性</span>
+                            </div>
+                            <div class="explanation-item correct">
+                                <span class="exp-label">B正确-诉诸权威</span>
+                                <span class="exp-text">"权威医学专家"身份模糊，无具体信息和资质证明</span>
+                            </div>
+                            <div class="explanation-item correct">
+                                <span class="exp-label">C正确-以偏概全</span>
+                                <span class="exp-text">用邻居一个个人案例证明普遍有效性，样本不足</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="learning-points">
+                        <h4>💡 学习要点</h4>
+                        <ul>
+                            <li>精确数字需要可靠的研究来源和数据支撑</li>
+                            <li>模糊的权威身份往往缺乏可信度</li>
+                            <li>个人案例不能证明普遍规律和因果关系</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feedback-actions">
+                    <button class="action-btn primary" id="nextQuestion">
+                        <span>下一题</span>
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 结果页面 -->
+    <div class="quiz-results hidden" id="quizResults">
+        <div class="results-container">
+            <div class="results-header">
+                <h2>🎉 训练完成！</h2>
+                <div class="final-score">
+                    <div class="score-circle">
+                        <span class="score-number">85</span>
+                        <span class="score-unit">分</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value">8/10</div>
+                    <div class="stat-label">答对题数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">最高连击</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-value">8:32</div>
+                    <div class="stat-label">用时</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-value">A-</div>
+                    <div class="stat-label">等级</div>
+                </div>
+            </div>
+            
+            <div class="results-analysis">
+                <h3>📊 能力分析</h3>
+                <div class="skill-radar">
+                    <div class="skill-item">
+                        <span class="skill-name">信息分析</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-score">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">证据评估</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-score">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">论证分析</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="skill-score">75%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">谬误识别</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                        <span class="skill-score">80%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-actions">
+                <button class="action-btn secondary" onclick="location.href='index.html'">
+                    <span>返回首页</span>
+                </button>
+                <button class="action-btn primary" onclick="location.reload()">
+                    <span>再次挑战</span>
+                </button>
+                <button class="action-btn primary" onclick="alert('功能开发中...')">
+                    <span>查看错题</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="simple-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 神奇喵喵思维训练实验室. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/neural-art.js"></script>
+    <script src="assets/js/quiz.js"></script>
+</body>
+</html>

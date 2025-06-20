@@ -1,0 +1,15 @@
+{
+  "name": "course-converter",
+  "version": "1.0.0",
+  "description": "自动转换课程MD文件为HTML页面",
+  "main": "convert-courses.js",
+  "scripts": {
+    "convert": "node convert-courses.js",
+    "start": "node convert-courses.js"
+  },
+  "keywords": ["course", "converter", "markdown", "html"],
+  "author": "神奇喵喵",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,1161 @@
+/* ===== 课程页面专用样式 ===== */
+
+/* 课程导航 */
+.course-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(155, 89, 182, 0.2);
+    transition: var(--transition-medium);
+}
+
+.course-nav .nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    height: 70px;
+    gap: var(--spacing-lg);
+}
+
+.brand-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.course-info {
+    text-align: center;
+}
+
+.course-module {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--neural-purple);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
+}
+
+.course-info .course-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.course-controls {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: flex-end;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 1px solid var(--neural-purple);
+    background: transparent;
+    color: var(--neural-purple);
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.control-btn:hover {
+    background: var(--neural-purple);
+    color: white;
+}
+
+.control-btn.primary {
+    background: var(--neural-purple);
+    color: white;
+}
+
+.control-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+}
+
+/* 课程主体 - 重新设计清晰布局 */
+.course-main {
+    padding-top: 90px;
+    min-height: 100vh;
+}
+
+.course-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* 课程头部 - 极简设计 */
+.course-header {
+    text-align: center;
+    padding: 40px 32px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 28px;
+    backdrop-filter: blur(40px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08),
+        0 8px 25px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.course-header-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+.course-main-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', var(--font-display);
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.course-subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #86868b;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+}
+
+
+
+.progress-track {
+    flex: 1;
+    height: 8px;
+    background: rgba(155, 89, 182, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-track .progress-fill {
+    height: 100%;
+    background: var(--gradient-neural);
+    border-radius: 4px;
+    transition: var(--transition-medium);
+}
+
+.progress-text {
+    font-size: 0.9rem;
+    color: var(--neural-purple);
+    font-weight: 600;
+}
+
+/* 学习目标 - 紧凑高效布局 */
+.learning-objectives {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 24px 32px;
+    backdrop-filter: blur(40px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06),
+        0 3px 10px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.objectives-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.objective-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    min-width: 220px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.objective-item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.objective-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.objective-content {
+    flex: 1;
+    text-align: left;
+}
+
+.objective-item h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.01em;
+}
+
+.objective-item p {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    color: #86868b;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+/* 概念导入 - 优化排版 */
+.concept-introduction {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 32px;
+    backdrop-filter: blur(40px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06),
+        0 3px 10px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.concept-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.concept-intro-text {
+    margin-bottom: 0;
+}
+
+.concept-intro-text h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.concept-intro-text p {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
+
+.concept-intro-text ol {
+    background: rgba(248, 248, 248, 0.8);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+    border-left: 4px solid #007AFF;
+}
+
+.concept-intro-text ol li {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 8px;
+}
+
+.concept-intro-text ol li:last-child {
+    margin-bottom: 0;
+}
+
+.concept-intro-text blockquote {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 4px 0;
+    border-left: 3px solid #34C759;
+    font-style: italic;
+    color: #2d2d2d;
+}
+
+.concept-intro-text strong {
+    color: #007AFF;
+    font-weight: 600;
+}
+
+.concept-insight {
+    background: rgba(255, 249, 235, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 4px solid #FF9500;
+}
+
+.concept-insight h4 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.concept-insight p {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+}
+
+.concept-insight ul {
+    margin: 12px 0;
+    padding-left: 20px;
+}
+
+.concept-insight ul li {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.concept-definitions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.concept-text {
+    background: rgba(255, 255, 255, 0.9);
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.concept-text h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: var(--spacing-md);
+}
+
+.definition-box {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md);
+    border-radius: 15px;
+    border-left: 4px solid;
+}
+
+.definition-box.fact {
+    background: rgba(52, 152, 219, 0.05);
+    border-left-color: var(--neural-blue);
+}
+
+.definition-box.opinion {
+    background: rgba(155, 89, 182, 0.05);
+    border-left-color: var(--neural-purple);
+}
+
+.definition-box h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.definition-box .example {
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.concept-visual {
+    background: rgba(255, 255, 255, 0.9);
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.visual-diagram {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.diagram-item {
+    flex: 1;
+    text-align: center;
+    padding: var(--spacing-lg);
+    border-radius: 15px;
+    transition: var(--transition-medium);
+}
+
+.fact-item {
+    background: rgba(52, 152, 219, 0.1);
+}
+
+.opinion-item {
+    background: rgba(155, 89, 182, 0.1);
+}
+
+.diagram-item:hover {
+    transform: scale(1.05);
+}
+
+.item-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.diagram-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.diagram-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.diagram-item li {
+    padding: var(--spacing-xs) 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.vs-divider {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--neural-orange);
+    padding: var(--spacing-md);
+    background: rgba(231, 126, 34, 0.1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 案例展示 - 优化排版 */
+.case-study {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 32px;
+    backdrop-filter: blur(40px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06),
+        0 3px 10px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.case-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.case-scenario {
+    background: rgba(248, 248, 248, 0.6);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.case-scenario h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.case-scenario p {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
+
+.message-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.message-item {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.message-item strong {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #007AFF;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.message-item blockquote {
+    background: rgba(248, 248, 248, 0.8);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 0;
+    border-left: 3px solid #34C759;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    font-style: normal;
+}
+
+.social-post {
+    background: #fff;
+    border-radius: 15px;
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: var(--spacing-xl);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-neural);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.username {
+    font-weight: 600;
+    color: #333;
+}
+
+.post-time {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.post-content p {
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.post-image {
+    background: #f0f0f0;
+    padding: var(--spacing-lg);
+    border-radius: 10px;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+.case-analysis {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.case-analysis h4 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.analysis-item {
+    background: rgba(248, 248, 248, 0.6);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-left: 4px solid #007AFF;
+}
+
+.analysis-item:last-child {
+    margin-bottom: 0;
+}
+
+.analysis-item h5 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0 0 8px 0;
+}
+
+.analysis-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.analysis-item li {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 0.95rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin-bottom: 4px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.analysis-item li:last-child {
+    margin-bottom: 0;
+}
+
+.analysis-item li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007AFF;
+    font-weight: bold;
+}
+
+.analysis-insight {
+    background: rgba(255, 249, 235, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 4px solid #FF9500;
+    margin-top: 20px;
+}
+
+.analysis-insight h5 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.analysis-insight p {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+}
+
+.analysis-insight ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.analysis-insight ul li {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-body);
+    font-size: 1rem;
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 0;
+}
+
+.analysis-insight ul li::before {
+    display: none;
+}
+
+/* 通用区域样式 */
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .concept-definitions {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .course-nav .nav-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+        height: auto;
+        padding: var(--spacing-md);
+    }
+
+    .course-info {
+        order: -1;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .course-main {
+        padding-top: 120px;
+    }
+
+    .course-main-title {
+        font-size: 1.8rem;
+    }
+
+    .objectives-grid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .objective-item {
+        max-width: none;
+        min-width: auto;
+    }
+
+    .course-meta {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .control-btn {
+        font-size: 0.8rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .course-container {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+
+
+    .concept-definitions {
+        grid-template-columns: 1fr;
+    }
+
+    .visual-diagram {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .vs-divider {
+        transform: rotate(90deg);
+    }
+
+    .analysis-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 核心内容 - 独立清晰布局 */
+.core-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 28px;
+    backdrop-filter: blur(40px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08),
+        0 8px 25px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+}
+
+.content-tabs {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.tab-buttons {
+    display: flex;
+    background: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: none;
+    background: transparent;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+.tab-btn.active {
+    color: var(--neural-purple);
+    background: rgba(155, 89, 182, 0.05);
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--neural-purple);
+    transform: scaleX(0);
+    transition: var(--transition-medium);
+}
+
+.tab-btn.active::after {
+    transform: scaleX(1);
+}
+
+.tab-content {
+    display: none;
+    padding: var(--spacing-xl);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* 方法步骤 */
+.method-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.step {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-neural);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: var(--spacing-xs);
+}
+
+.step-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 信号词汇 */
+.signal-words {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.word-category h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.fact-words h4 {
+    color: var(--neural-blue);
+}
+
+.opinion-words h4 {
+    color: var(--neural-purple);
+}
+
+.word-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.word-tag {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.fact-words .word-tag {
+    background: rgba(52, 152, 219, 0.1);
+    color: var(--neural-blue);
+    border: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+.opinion-words .word-tag {
+    background: rgba(155, 89, 182, 0.1);
+    color: var(--neural-purple);
+    border: 1px solid rgba(155, 89, 182, 0.2);
+}
+
+.word-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+/* 练习技巧 */
+.practice-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.tip-item {
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-medium);
+}
+
+.tip-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.tip-icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.tip-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: var(--spacing-sm);
+}
+
+.tip-item p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* 交互练习 - 独立清晰布局 */
+.interactive-practice {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 28px;
+    padding: 40px;
+    backdrop-filter: blur(40px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08),
+        0 8px 25px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.practice-question h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.question-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.question-item {
+    padding: var(--spacing-lg);
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-medium);
+}
+
+.question-item:hover {
+    box-shadow: var(--shadow-medium);
+}
+
+.item-text {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+}
+
+.item-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+.choice-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: 2px solid;
+    background: transparent;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    min-width: 80px;
+}
+
+.choice-btn[data-choice="fact"] {
+    border-color: var(--neural-blue);
+    color: var(--neural-blue);
+}
+
+.choice-btn[data-choice="opinion"] {
+    border-color: var(--neural-purple);
+    color: var(--neural-purple);
+}
+
+.choice-btn:hover {
+    transform: translateY(-2px);
+}
+
+.choice-btn[data-choice="fact"]:hover {
+    background: var(--neural-blue);
+    color: white;
+}
+
+.choice-btn[data-choice="opinion"]:hover {
+    background: var(--neural-purple);
+    color: white;
+}
+
+.choice-btn.correct {
+    background: var(--neural-green);
+    border-color: var(--neural-green);
+    color: white;
+}
+
+.choice-btn.incorrect {
+    background: var(--neural-red);
+    border-color: var(--neural-red);
+    color: white;
+}
+
+.feedback {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.feedback.correct {
+    background: rgba(39, 174, 96, 0.1);
+    color: var(--neural-green);
+    border: 1px solid rgba(39, 174, 96, 0.2);
+}
+
+.feedback.incorrect {
+    background: rgba(231, 76, 60, 0.1);
+    color: var(--neural-red);
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 响应式设计补充 */
+@media (max-width: 768px) {
+    .signal-words {
+        grid-template-columns: 1fr;
+    }
+
+    .method-steps .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .item-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choice-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
